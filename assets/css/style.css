@@ -1,0 +1,415 @@
+  @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  :root {
+      --primary-color: #04aa6d;
+      --second-color: #d9eee1;
+      --dark-color: #1f1f1f;
+      --back-color: #ffffff;
+      --front-color: #d4d4d4;
+      --card-color: #fff;
+      --title-color: #b9b9b9;
+      --p-color: #8f8f8f;
+      --border-radius: 20px;
+      --padding-card: 10px;
+      --box-shadow-card: 0 0.5rem 4rem rgb(227 253 243);
+      --hover-link-color: #0bc480;
+      --color-hover-star: #FFCC36;
+      --color-star: #FF912C;
+  }
+
+  /* @media (prefers-color-scheme: dark) {
+      :root {
+          --second-color: #193c2f;
+          --dark-color: #d9eee1;
+          --back-color: #052216;
+          --front-color: #d9eee1;
+          --card-color: #112b21;
+          --title-color: #d9eee1;
+          --p-color: #d9eee1;
+          --box-shadow-card: 0 0.5rem 4rem rgb(4, 14, 9);
+          --color-hover-star: #0bc480;
+          --color-star: #04aa6d;
+      }
+  } */
+
+  ::-webkit-scrollbar {
+      width: 8px;
+      height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: var(--second-color);
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: var(--hover-link-color);
+      border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background: var(--primary-color);
+  }
+
+  * {
+      font-family: 'Vazirmatn', sans-serif;
+      font-weight: normal;
+  }
+
+  form{
+    margin: 0;
+  }
+
+  a {
+      text-decoration: none;
+      color: var(--primary-color);
+      transition: all .3s;
+  }
+
+  a:hover {
+      color: var(--hover-link-color) !important;
+  }
+
+  /* p {
+      margin: 0;
+      padding: 0;
+  } */
+
+  ul,
+  li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      background: var(--back-color);
+  }
+
+  .nav {
+      padding: 0 20px;
+      height: 75px;
+      background: var(--card-color);
+  }
+
+  .menu {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+  .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: 10px;
+      border: 1px solid var(--second-color);
+  }
+
+  .menu ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  .menu ul li {
+      margin: 0 15px;
+  }
+
+  .menu ul li a {
+      color: var(--dark-color);
+  }
+
+  .card {
+      background: var(--card-color);
+      padding: var(--padding-card);
+      border: none;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow-card);
+      margin-bottom: 2rem;
+  }
+
+  .content-card p {
+      font-size: 15px;
+      font-weight: 200;
+      line-height: 2.2;
+      color: var(--p-color);
+  }
+
+  .card-v2 {
+      background: var(--card-color);
+      padding: var(--padding-card);
+      /* border: 2px dashed var(--second-color); */
+      border-radius: var(--border-radius);
+      margin-bottom: 1.6rem;
+      box-shadow: var(--box-shadow-card);
+      /* box-shadow: 0 0.5rem 4rem rgb(227 253 243); */
+  }
+
+  .header-product-single {
+      background: var(--primary-color);
+      padding: 2rem 4rem;
+      width: 100%;
+      height: 150px;
+      background-attachment: fixed;
+  }
+
+  .header-product-single .title h1 {
+      font-size: 25px !important;
+      font-weight: bold !important;
+      color: var(--card-color) !important;
+  }
+
+  .breadcrumbs,
+  .woocommerce-breadcrumb a,
+  .breadcrumbs a,
+  .woocommerce-breadcrumb {
+      color: var(--card-color) !important;
+
+  }
+
+  .breadcrumbs,
+  .woocommerce-breadcrumb {
+      margin-top: 8px !important;
+      font-size: 18px !important;
+  }
+
+  .woocommerce-breadcrumb i {
+      margin: 0 8px !important;
+  }
+
+  .video-card {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .content-card {
+      padding: 20px;
+  }
+
+  .primary-btn {
+      width: 100%;
+      display: block;
+      background: var(--second-color);
+      color: var(--primary-color);
+      padding: 15px 10px;
+      border-radius: var(--border-radius);
+      text-align: center;
+      outline: none;
+      border: none;
+  }
+
+  .primary-btn i {
+      margin-left: 10px;
+  }
+
+  .product-order {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      margin-bottom: 30px;
+  }
+
+  .product-order {
+      color: var(--title-color);
+  }
+
+  .product-order .title {
+      position: relative;
+      font-size: 18px;
+  }
+
+  /* .product-order .title::before {
+      content: '';
+      width: 30px;
+      position: absolute;
+      border-bottom: 3px solid #d9eee1;
+      bottom: 13px;
+      transform: rotate(270deg);
+      z-index: -1;
+      right: -22px;
+  } */
+
+  .product-order .price {
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .product-order .price del {
+      color: var(--front-color);
+      font-size: 16px;
+  }
+
+  .product-order .orginal {
+      color: var(--primary-color);
+      font-weight: bold;
+      font-size: 36px;
+  }
+
+  .product-info {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .block-info {
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 20px;
+      flex-grow: 1;
+      width: 30%;
+  }
+
+  .block-info .title {
+      color: var(--dark-color);
+  }
+
+  .block-info .content {
+      width: 100%;
+      text-align: center;
+      padding: 2px 4px;
+      border-radius: var(--border-radius);
+      border: 1px solid var(--front-color);
+      color: var(--title-color);
+  }
+
+  .sidebar {
+      position: sticky;
+      top: 20px;
+      z-index: 99;
+  }
+
+  .congratulations {
+      color: var(--primary-color);
+  }
+
+  .customer {
+      color: var(--title-color);
+      padding-right: 10px;
+  }
+
+  .rating-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  .rating {
+      color: var(--title-color);
+      margin-right: 6px;
+      font-size: 18px;
+  }
+
+  .votes {
+      color: var(--title-color);
+      margin-right: 6px;
+      border-right: 1px solid var(--title-color);
+      padding-right: 14px;
+      font-size: 18px;
+  }
+
+  .rating-stars ul {
+      list-style-type: none;
+      padding: 0;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+  }
+
+  .rating-stars ul>li.star {
+      display: inline-block;
+      cursor: pointer;
+  }
+
+  .rating-stars ul>li.star>i.fa {
+      font-size: 1.5em;
+      color: var(--front-color);
+  }
+
+  .rating-stars ul>li.star.hover>i.fa {
+      color: var(--color-hover-star);
+  }
+
+  .rating-stars ul>li.star.selected>i.fa {
+      color: var(--color-star);
+  }
+
+  .copy-text {
+      position: relative;
+      padding: 10px;
+      border: 1px solid var(--second-color);
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .copy-text input.text {
+      padding: 10px;
+      font-size: 18px;
+      background: var(--card-color);
+      color: var(--title-color);
+      border: none;
+      outline: none;
+  }
+
+  .copy-text button {
+      padding: 10px;
+      background: var(--second-color);
+      color: var(--primary-color);
+      font-size: 18px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .copy-text button:active {
+      background: var(--hover-link-color);
+  }
+
+  .copy-text button:before {
+      content: "لینک کپی شد";
+      position: absolute;
+      top: -43px;
+      left: -10px;
+      background: var(--second-color);
+      padding: 8px 10px;
+      border-radius: 20px;
+      font-size: 15px;
+      display: none;
+  }
+
+  .copy-text button:after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 34px;
+      width: 10px;
+      height: 10px;
+      background: var(--second-color);
+      transform: rotate(45deg);
+      display: none;
+  }
+
+  .copy-text.active button:before,
+  .copy-text.active button:after {
+      display: block;
+  }
