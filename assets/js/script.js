@@ -15,16 +15,16 @@ jQuery(document).ready(function ($) {
         });
     });
 
-    $('#stars .star').on('click', function () {
-        var onStar = parseInt($(this).data('value'), 10);
-        var stars = $(this).parent().children('li.star');
-        for (i = 0; i < stars.length; i++) {
-            $(stars[i]).removeClass('selected');
-        }
-        for (i = 0; i < onStar; i++) {
-            $(stars[i]).addClass('selected');
-        }
-    });
+    // $('#stars .star').on('click', function () {
+    //     var onStar = parseInt($(this).data('value'), 10);
+    //     var stars = $(this).parent().children('li.star');
+    //     for (i = 0; i < stars.length; i++) {
+    //         $(stars[i]).removeClass('selected');
+    //     }
+    //     for (i = 0; i < onStar; i++) {
+    //         $(stars[i]).addClass('selected');
+    //     }
+    // });
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
         if (event.matches) {

@@ -46,41 +46,43 @@ if (post_password_required()) {
 			</div>
 		</div>
 
-		<div class="card">
-			<div class="content-card">
-				<?php
-				do_action('woocommerce_after_single_product_summary');
-				?>
-			</div>
-		</div>
+
+		<?php
+		do_action('woocommerce_after_single_product_summary');
+		?>
+
 
 	</div>
 	<div class="col-12 col-sm-12 col-md-12 col-lg-4">
 		<div class="sidebar">
 			<div class="card-v2">
 				<div class="content-card">
+					<?php
+					$product = wc_get_product(get_the_ID());
+					$rating  = $product->get_average_rating();
+					?>
 					<div class="rating-section">
 						<span class="rating">امتیاز : </span>
 						<div class="rating-stars text-center">
 							<ul id="stars">
-								<li class="star" data-value="1" title="خیلی ضعیف">
+								<li class="star-rated <?= $rating >= 1 ? 'selected' : '' ?>">
 									<i class="fa fa-star fa-fw"></i>
 								</li>
-								<li class="star" data-value="2" title="ضعیف">
+								<li class="star-rated <?= $rating >= 2 ? 'selected' : '' ?>">
 									<i class="fa fa-star fa-fw"></i>
 								</li>
-								<li class="star" data-value="3" title="متوسط">
+								<li class="star-rated <?= $rating >= 3 ? 'selected' : '' ?>">
 									<i class="fa fa-star fa-fw"></i>
 								</li>
-								<li class="star" data-value="4" title="خوب">
+								<li class="star-rated <?= $rating >= 4 ? 'selected' : '' ?>">
 									<i class="fa fa-star fa-fw"></i>
 								</li>
-								<li class="star" data-value="5" title="عالی">
+								<li class="star-rated <?= $rating >= 5 ? 'selected' : '' ?>">
 									<i class="fa fa-star fa-fw"></i>
 								</li>
 							</ul>
 						</div>
-						<span class="votes"> ۲ رای</span>
+						<span class="votes"> <?= $product->get_review_count() ?> رای</span>
 					</div>
 				</div>
 			</div>
