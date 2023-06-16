@@ -3,11 +3,16 @@
   :root {
       --primary-color: #04aa6d;
       --second-color: #d9eee1;
+      --border-input-color: #d9eee1;
+      --bg-input-color: #fff;
+      --second-light-color: #f0fff5;
       --dark-color: #1f1f1f;
       --back-color: #ffffff;
       --front-color: #d4d4d4;
       --card-color: #fff;
       --title-color: #b9b9b9;
+      --tab-color: #f0f0f0;
+      --tab-title-color: #04aa6d;
       --p-color: #8f8f8f;
       --border-radius: 20px;
       --border-radius-btn: 10px;
@@ -22,6 +27,7 @@
   /* @media (prefers-color-scheme: dark) {
       :root {
           --second-color: #193c2f;
+          --second-light-color: #2e5346;
           --dark-color: #d9eee1;
           --back-color: #052216;
           --front-color: #d9eee1;
@@ -31,6 +37,10 @@
           --box-shadow-card: 0 0.5rem 4rem rgb(4, 14, 9);
           --color-hover-star: #0bc480;
           --color-star: #04aa6d;
+          --tab-title-color: #052216;
+          --shadow-input-color: #12412f38;
+          --bg-input-color: #193c2f;
+          --border-input-color: #2e5346;
       }
   } */
 
@@ -64,12 +74,18 @@
       margin: 0;
   }
 
+  input,
+  textarea,
+  select {
+      background: var(--bg-input-color) !important;
+      border-color: var(--border-input-color) !important;
+  }
+
   .form-control:focus {
-      border-color: var(--second-color) !important;
       box-shadow: 0 0 0 0.25rem var(--shadow-input-color) !important;
       color: var(--p-color);
   }
-  
+
   .form-control::placeholder {
       color: var(--front-color);
   }
@@ -369,7 +385,7 @@
   .rating-stars ul>li.star-rated {
       display: inline-block;
   }
-  
+
   .rate .rating-stars ul>li.star-rated {
       font-size: 12px;
   }
@@ -555,4 +571,33 @@
       background: #0bc480;
       color: #ffffff !important;
       border-radius: 6px;
+  }
+
+  .header-tab {
+      display: flex;
+      width: 100%;
+      height: 64px;
+      border-radius: 4px;
+      background: var(--second-light-color);
+      align-items: center;
+  }
+
+  a.tab-item {
+      color: var(--tab-title-color) !important;
+      width: 100%;
+      height: 50px;
+      margin: 0 6px;
+      border-radius: 2px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+  }
+
+  a.tab-active {
+      color: var(--p-color) !important;
+      font-weight: bold;
+      background: var(--card-color);
+      box-shadow: 0 3px 6px rgba(173, 188, 200, .23);
   }
