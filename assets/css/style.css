@@ -67,6 +67,11 @@
   .form-control:focus {
       border-color: var(--second-color) !important;
       box-shadow: 0 0 0 0.25rem var(--shadow-input-color) !important;
+      color: var(--p-color);
+  }
+  
+  .form-control::placeholder {
+      color: var(--front-color);
   }
 
   a {
@@ -364,6 +369,10 @@
   .rating-stars ul>li.star-rated {
       display: inline-block;
   }
+  
+  .rate .rating-stars ul>li.star-rated {
+      font-size: 12px;
+  }
 
   .rating-stars ul>li.star-rated.selected>i.fa {
       color: var(--color-star);
@@ -496,30 +505,54 @@
       top: 40px;
       width: 70px;
       text-align: center;
+      font-weight: bold;
   }
 
   .status-label-color-admin {
-      background: #049baa;
+      background: #09cadd;
   }
 
   .status-label-color-customer {
-      background: #04aa6d;
+      background: #0bdf91;
   }
-  
+
   .status-label-color-user {
-      background: #8104aa;
+      background: #f32756;
   }
 
 
 
   .bg-admin-comment {
-      border: 2px dashed #049baa;
+      border: 2px dashed #0fd1e2;
   }
 
   .date-comment {
-    font-size: 10px;
-    color: var(--front-color);
-    position: absolute;
-    bottom: 12px;
-    left: 14px;
-}
+      font-size: 10px;
+      color: var(--front-color);
+      position: absolute;
+      bottom: 12px;
+      left: 14px;
+  }
+
+  .woocommerce nav.woocommerce-pagination ul {
+      border: unset;
+  }
+
+  .woocommerce nav.woocommerce-pagination ul li {
+      border-left: unset;
+  }
+
+  a.page-numbers {
+      background: #d9eee1;
+      margin: 0 6px !important;
+      border-radius: 6px;
+      color: #0bc480;
+  }
+
+  .woocommerce nav.woocommerce-pagination ul li a:focus,
+  .woocommerce nav.woocommerce-pagination ul li a:hover,
+  .woocommerce nav.woocommerce-pagination ul li span.current {
+      background: #0bc480;
+      color: #ffffff !important;
+      border-radius: 6px;
+  }

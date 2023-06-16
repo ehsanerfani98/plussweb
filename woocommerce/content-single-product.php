@@ -35,57 +35,56 @@ if (post_password_required()) {
 
 <div class="row p-lg-5 p-md-5" id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
 	<div class="col-12 col-sm-12 col-md-12 col-lg-8">
-		<div class="video-card mt-4 mt-lg-0">
-			<video width="100%" poster="https://plussweb.ir/wp-content/uploads/2023/03/thumbnail-youtube.png" controls>
-				<source type="video/mp4" src="https://plussweb.ir/wp-content/uploads/2023/03/Rec-0004.mp4">
-			</video>
-		</div>
-		<div class="card">
-			<div class="content-card">
-				<?php the_content() ?>
+		<?php if (get_query_var('pagename') == 'discuss') :  ?>
+			<?php do_action('woocommerce_after_single_product_summary'); ?>
+		<?php else : ?>
+			<div class="video-card mt-4 mt-lg-0">
+				<video width="100%" poster="https://plussweb.ir/wp-content/uploads/2023/03/thumbnail-youtube.png" controls>
+					<source type="video/mp4" src="https://plussweb.ir/wp-content/uploads/2023/03/Rec-0004.mp4">
+				</video>
 			</div>
-		</div>
-
-
-		<?php
-		do_action('woocommerce_after_single_product_summary');
-		?>
-
-
-	</div>
-	<div class="col-12 col-sm-12 col-md-12 col-lg-4">
-		<div class="sidebar">
-			<div class="card-v2">
+			<div class="card">
 				<div class="content-card">
-					<?php
-					$product = wc_get_product(get_the_ID());
-					$rating  = $product->get_average_rating();
-					?>
-					<div class="rating-section">
-						<span class="rating">امتیاز : </span>
-						<div class="rating-stars text-center">
-							<ul id="stars">
-								<li class="star-rated <?= $rating >= 1 ? 'selected' : '' ?>">
-									<i class="fa fa-star fa-fw"></i>
-								</li>
-								<li class="star-rated <?= $rating >= 2 ? 'selected' : '' ?>">
-									<i class="fa fa-star fa-fw"></i>
-								</li>
-								<li class="star-rated <?= $rating >= 3 ? 'selected' : '' ?>">
-									<i class="fa fa-star fa-fw"></i>
-								</li>
-								<li class="star-rated <?= $rating >= 4 ? 'selected' : '' ?>">
-									<i class="fa fa-star fa-fw"></i>
-								</li>
-								<li class="star-rated <?= $rating >= 5 ? 'selected' : '' ?>">
-									<i class="fa fa-star fa-fw"></i>
-								</li>
-							</ul>
-						</div>
-						<span class="votes"> <?= $product->get_review_count() ?> رای</span>
-					</div>
+					<?php the_content() ?>
 				</div>
 			</div>
+		<?php endif; ?>
+	</div>
+	<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+		<div class="card-v2">
+			<div class="content-card">
+				<?php
+				$product = wc_get_product(get_the_ID());
+				$rating  = $product->get_average_rating();
+				?>
+				<div class="rating-section">
+					<span class="rating">امتیاز : </span>
+					<div class="rating-stars text-center">
+						<ul id="stars">
+							<li class="star-rated <?= $rating >= 1 ? 'selected' : '' ?>">
+								<i class="fa fa-star fa-fw"></i>
+							</li>
+							<li class="star-rated <?= $rating >= 2 ? 'selected' : '' ?>">
+								<i class="fa fa-star fa-fw"></i>
+							</li>
+							<li class="star-rated <?= $rating >= 3 ? 'selected' : '' ?>">
+								<i class="fa fa-star fa-fw"></i>
+							</li>
+							<li class="star-rated <?= $rating >= 4 ? 'selected' : '' ?>">
+								<i class="fa fa-star fa-fw"></i>
+							</li>
+							<li class="star-rated <?= $rating >= 5 ? 'selected' : '' ?>">
+								<i class="fa fa-star fa-fw"></i>
+							</li>
+						</ul>
+					</div>
+					<span class="votes"> <?= $product->get_review_count() ?> رای</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="sidebar">
 			<div class="card-v2">
 				<div class="content-card">
 					<div class="product-order">
@@ -212,7 +211,7 @@ if (post_password_required()) {
 			<div class="card-v2">
 				<div class="d-flex align-items-center justify-content-center">
 					<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_qedmivnw.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
-					<span class="customer">تعداد دانشجویان دوره : <?= empty(get_post_meta(get_the_ID(), '_total_sales', true)) ? 'بدون دانشجو' :  get_post_meta(get_the_ID(), '_total_sales', true) . ' نفر' ?></span>
+					<span class="customer">تعداد دانشجویان دوره : <?= empty($product->get_total_sales()) ? 'بدون دانشجو' : $product->get_total_sales() . ' نفر' ?></span>
 				</div>
 			</div>
 			<div class="card-v2">
