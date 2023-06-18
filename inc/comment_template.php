@@ -36,7 +36,7 @@ function better_comments($comment, $args, $depth)
                     <?php comment_author() ?>
                 </div>
             </div>
-            <?php if ($status != 'admin') : ?>
+            <?php if ($status != 'admin' && $depth == 1) : ?>
                 <div class="rate">
                     <div class="rating-section justify-content-start">
                         <div class="rating-stars">
@@ -65,7 +65,9 @@ function better_comments($comment, $args, $depth)
         <div class="content mt-2">
             <?php comment_text() ?>
         </div>
-        <div class="date-comment">
+        <div class="comment-option">
+            <input type="hidden" class="comment-id" value="<?= $comment_id ?>">
+            <button type="button" class="btn-light reply" data-toggle="modal" data-target="#replyComment">پاسخ</button>
             <?php comment_date() ?>
         </div>
     </div>

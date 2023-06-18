@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
 
     var onStar = '';
-    $('#stars .star').on('click', function () {
+    $('.stars .star').on('click', function () {
         onStar = parseInt($(this).data('value'), 10);
         var stars = $(this).parent().children('li.star');
         for (i = 0; i < stars.length; i++) {
@@ -12,36 +12,57 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $('#btn-comment-woocommerce').click(function () {
+    $('#newcomment').on('hidden.bs.modal', function (e) {
+        onStar = '';
+        $('.star').removeClass('selected');
+    })
 
-        if (onStar == '') {
-            alert('یک امتیاز برای این دوره انتخاب کنید');
-            return;
+    $('.comment-form').submit(function (e) {
+        e.preventDefault();
+
+
+        if (!$(this).find('.replyId').hasClass('replyId')) {
+            if (onStar == '') {
+                alert('یک امتیاز برای این دوره انتخاب کنید');
+                return;
+            }
         }
 
-        var product_id = $('#product-id').val();
-        var message = $('#message-comment').val();
-        var email = $('#email-comment').val();
-        var name = $('#name-comment').val();
-        var rating = onStar;
+        $('.card-loading').addClass('d-flex');
+
+        var dataForm = $(this).serializeArray();
+        var postData = new FormData();
+        $.each(dataForm, function (i, val) {
+            postData.append(val.name, val.value);
+        });
+        postData.append('action', 'comment_woocommerce_ajax');
+        postData.append('security', ajax_nonce);
+        postData.append('rating', onStar);
 
         $.ajax({
             type: "post",
             url: ajax_setup_plswb,
-            data: {
-                security: ajax_nonce,
-                action: 'comment_woocommerce_ajax',
-                productId: product_id,
-                email: email,
-                name: name,
-                message: message,
-                rating: rating,
-            },
+            data: postData,
+            cache: false,
+            contentType: false,
+            processData: false,
             success: function (response) {
-                if(response.status == 'ok'){
-                    alert('دیدگاه شما با موفقیت ثبت شد');
+                console.log(response);
+                if (response.status == 'ok') {
+                    $('.card-loading').removeClass('d-flex');
+                    $('#newcomment').modal('hide');
+                    $('#replyComment').modal('hide');
+                    $(".comment-form").trigger('reset');
+                    onStar = '';
+                    $('.star').removeClass('selected');
+                    if (!$(this).find('.replyId').hasClass('replyId')) {
+                        plswbAlert('پرسش شما با موفقیت ثبت شد', 'success' , 3000);
+                    }else{
+                        plswbAlert('دیدگاه شما با موفقیت ثبت شد', 'success' , 3000);
+                    }
                 }
             }
         });
     });
+
 });

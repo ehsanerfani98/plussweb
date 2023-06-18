@@ -16,3 +16,8 @@ include PLSWB_THEME_PATH . 'inc/ajax.php';
 include PLSWB_THEME_PATH . 'inc/script.php';
 
 
+// add_action( 'template_redirect' , function(){
+//     global $wp_rewrite;
+//     print_r($wp_rewrite);
+//     exit;
+// });

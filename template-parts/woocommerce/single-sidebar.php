@@ -42,7 +42,7 @@
             </div>
 
             <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
-                <button type="submit" name="add-to-cart" value="<?= get_the_ID() ?>" class="single_add_to_cart_button primary-btn">ثبت نام در دوره</button>
+                <button type="submit" name="add-to-cart" value="<?= get_the_ID() ?>" class="single_add_to_cart_button btn-primary">ثبت نام در دوره</button>
             </form>
         </div>
     </div>

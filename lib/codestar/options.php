@@ -534,10 +534,10 @@ if (class_exists('CSF')) {
 	));
 
 	//============================//
-	$prefix = 'hlr_framework_agents';
+	$prefix = 'PLSWB_COURSE_OPTION';
 	CSF::createMetabox($prefix, array(
-		'title'     =>	'Agents Information',
-		'post_type' =>	'agents'
+		'title'     =>	'تنظیمات صفحه',
+		'post_type' =>	'product'
 	));
 
 	CSF::createSection(
@@ -545,38 +545,12 @@ if (class_exists('CSF')) {
 		array(
 			'fields'	=>	array(
 				array(
-					'id'    => 'opt-agents-email',
-					'type'  => 'text',
-					'title' => 'Email'
+					'id'          => 'opt-description-card',
+					'type'        => 'radio',
+					'title'       => 'انتخاب کارت توضیحات',
+					'options' => apply_filters('card_option', ['option1' => 'value1'], 20),
+					'default'     => ''
 				),
-
-				array(
-					'id'    => 'opt-agents-phone',
-					'type'  => 'number',
-					'title' => 'Phone'
-				),
-
-				array(
-					'id'    => 'opt-agents-fax',
-					'type'  => 'number',
-					'title' => 'Fax'
-				),
-
-				array(
-					'id'    => 'opt-agents-address',
-					'type'  => 'text',
-					'title' => 'address'
-				),
-
-				array(
-					'id'      => 'opt-show-information',
-					'type'    => 'switcher',
-					'title'   => 'Show information',
-					'text_on'  => 'Yes',
-					'text_off' => 'No',
-					'default' => false
-				),
-
 			)
 		)
 	);

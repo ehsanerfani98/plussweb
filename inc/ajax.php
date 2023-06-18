@@ -6,8 +6,8 @@ function comment_woocommerce_ajax()
 {
     check_ajax_referer( 'special-check', 'security' );
 
-    $productId = $_POST['productId'];
-    $message = $_POST['message'];
+    $productId = $_POST['product-id'];
+    $message = $_POST['message-comment'];
     $rating = $_POST['rating'];
     $userId = '';
     if ($_POST['replyId']) $parent = $_POST['replyId'];
@@ -27,8 +27,8 @@ function comment_woocommerce_ajax()
         $displayName = $user->display_name;
         $email = $user->user_email;
     } else {
-        $firstName = $_POST['name'];
-        $email = $_POST['email'];
+        $firstName = $_POST['name-comment'];
+        $email = $_POST['email-comment'];
         $displayName = $firstName;
     }
     
@@ -43,8 +43,11 @@ function comment_woocommerce_ajax()
         'comment_author_IP'     =>  $ip,
         'comment_approved'      =>  0,
     ));
-    
-    if ($commentId) update_comment_meta($commentId, 'rating', $rating);
+
+
+    if (!$_POST['replyId']){
+        if ($commentId) update_comment_meta($commentId, 'rating', $rating);
+    }
 
     wp_send_json([
         'status' => 'ok'

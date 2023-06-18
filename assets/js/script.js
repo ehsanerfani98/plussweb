@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-  
+
     $('#stars .star').on('mouseover', function () {
         var onStar = parseInt($(this).data('value'), 10);
         $(this).parent().children('li.star').each(function (e) {
@@ -14,17 +14,6 @@ jQuery(document).ready(function ($) {
             $(this).removeClass('hover');
         });
     });
-
-    // $('#stars .star').on('click', function () {
-    //     var onStar = parseInt($(this).data('value'), 10);
-    //     var stars = $(this).parent().children('li.star');
-    //     for (i = 0; i < stars.length; i++) {
-    //         $(stars[i]).removeClass('selected');
-    //     }
-    //     for (i = 0; i < onStar; i++) {
-    //         $(stars[i]).addClass('selected');
-    //     }
-    // });
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
         if (event.matches) {
@@ -47,4 +36,24 @@ jQuery(document).ready(function ($) {
         }, 2500);
     });
 
+
+    $('.reply').click(function () {
+        var comment_id = $(this).parent().find('.comment-id').val();
+        $('input[name="replyId"]').val(comment_id);
+    });
+
 });
+
+
+function plswbAlert(message, status, duration) {
+    if (status == 'success') {
+        status = 'plswb-alert-success';
+    } else if (status == 'danger') {
+        status = 'plswb-alert-danger';
+    }
+
+    jQuery('.plswb-alert').addClass(status + ' plswb-show-alert').text(message);
+    setTimeout(() => {
+        jQuery('.plswb-alert').removeClass(status + ' plswb-show-alert')
+    }, duration);
+}

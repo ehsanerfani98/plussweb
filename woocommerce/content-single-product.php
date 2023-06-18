@@ -42,6 +42,7 @@ if (post_password_required()) {
 			<a href="<?= get_permalink() ?>" class="tab-item <?= get_query_var('pagename') == '' ? 'tab-active' : '' ?>">توضیحات</a>
 			<a href="#" class="tab-item">سرفصل ها</a>
 			<a href="<?= get_permalink() . '/discussions' ?>" class="tab-item <?= get_query_var('pagename') == 'discussions' ? 'tab-active' : '' ?>">پرسش و پاسخ</a>
+			<a href="#" class="tab-item">سوالات متداول</a>
 		</div>
 		<?php if (get_query_var('pagename') != 'discussions') : ?>
 			<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-content.php'; ?>
