@@ -5,24 +5,24 @@ if (class_exists('CSF')) {
 
 
 	//============================//
-	$prefix = 'plswb_settings';
+	$prefix = 'PLSWB_MAKTABYAR_SETTINGS';
 
 	CSF::createOptions($prefix, array(
-		'framework_title'	=>	'تنظیمات مکتب یار',
-		'menu_title'		=>	'تنظیمات مکتب یار',
-		'menu_slug'			=>	'plswb-Settings',
+		'framework_title'	=>	'تنظیمات قالب مکتب یار',
+		'menu_title'		=>	'تنظیمات قالب مکتب یار',
+		'menu_slug'			=>	'PLSWB_MAKTABYAR_SETTINGS',
 		'footer_credit'		=>	'پنل تنظیمات توسط تیم توسعه پلاس وب طراحی شده است'
 	));
 
 	CSF::createSection($prefix, array(
-		'id'			=>	'header',
-		'title'			=>	'Header Settings',
+		'id'			=>	'commemts',
+		'title'			=>	'بخش نظرات',
 	));
 
 	CSF::createSection($prefix, array(
-		'id'			=>	'Slider',
-		'parent'		=>	'header',
-		'title'			=>	'Slider And Ads Settings',
+		'id'			=>	'poat-commemts',
+		'parent'		=>	'commemts',
+		'title'			=>	'نظرات نوشته ها',
 		'fields'	=>	array(
 			array(
 				'id'     => 'opt-slider-fieldset',
@@ -114,133 +114,66 @@ if (class_exists('CSF')) {
 	));
 
 	CSF::createSection($prefix, array(
-		'id'			=>	'Menu',
-		'parent'		=>	'header',
-		'title'			=>	'Menu Settings',
+		'id'			=>	'product-commemts',
+		'parent'		=>	'commemts',
+		'title'			=>	'پرسش و پاسخ محصول',
 		'fields'	=>	array(
 			array(
-				'id'    	=>	'opt-menu-logo',
-				'type'  	=>	'media',
-				'title'		=>	'Logo',
-				'subtitle'	=>	'Please select an image',
-				'library'	=>	'image'
-			),
-			array(
-				'id'         => 'opt-display-menu',
+				'id'         => 'opt-product-display-form-comments',
 				'type'       => 'button_set',
-				'title'      => 'Display menu',
+				'title'      => 'فرم پرسش و پاسخ',
 				'options'    => array(
-					true  => 'Enabled',
-					false => 'Disabled',
+					false => 'غیرفعال',
+					true  => 'فعال',
 				),
 				'default'    => true
 			),
 			array(
-				'id'         => 'opt-fixed-menu',
+				'id'         => 'opt-product-display-rating-comments',
 				'type'       => 'button_set',
-				'title'      => 'Fixed menu',
+				'title'      => 'امتیازدهی به دوره',
 				'options'    => array(
-					true  => 'Enabled',
-					false => 'Disabled',
+					false => 'غیرفعال',
+					true  => 'فعال',
 				),
 				'default'    => true
 			),
 			array(
-				'id'         => 'opt-display-menu-social',
+				'id'         => 'opt-product-allow-reply-comments',
 				'type'       => 'button_set',
-				'title'      => 'Display social menu',
+				'title'      => 'اجازه پاسخ دهی به دیگران',
 				'options'    => array(
-					true  => 'Enabled',
-					false => 'Disabled',
+					false => 'غیرفعال',
+					true  => 'فعال',
 				),
 				'default'    => true
 			),
-			// array(
-			// 	'id'			=>	'menu-social',
-			// 	'title'			=>	'Menu social',
-			// 	'type'   => 'fieldset',
-			// 	'fields'	=>	array(
-			// 		array(
-			// 			'id'     => 'opt_social_items',
-			// 			'type'   => 'repeater',
-			// 			'desc'  => 'Click the + button to add item.',
-			// 			'fields' => array(
-
-			// 				array(
-			// 					'id'    => 'opt-icon-social',
-			// 					'type'  => 'icon',
-			// 					'title' => 'Icon social',
-			// 				),
-			// 				array(
-			// 					'id'    	=>	'opt-link-social',
-			// 					'type'  	=>	'link',
-			// 					'title'		=>	'link social',
-			// 				),
-			// 			),
-			// 		),
-			// 	)
-			// )
 			array(
-				'id'			=>	'footer-mobile-menu',
-				'title'			=>	'Footer Mobile Menu',
-				'type'   => 'fieldset',
-				'fields'	=>	array(
-					array(
-						'id'         => 'opt-display-footer-mobile-menu',
-						'type'       => 'button_set',
-						'title'      => 'Footer Mobile Menu',
-						'options'    => array(
-							true  => 'Enabled',
-							false => 'Disabled',
-						),
-						'default'    => true
-					),
-					array(
-						'id'        => 'opt-footer-mobile-menu-one-item',
-						'type'      => 'fieldset',
-						'title'     => 'One Item',
-						'fields'    => array(
-							array(
-								'id'    => 'opt-icon-footer-mobile-menu-one-item',
-								'type'  => 'icon',
-								'title' => 'Icon',
-							),
-							array(
-								'id'    => 'opt-title-footer-mobile-menu-one-item',
-								'type'  => 'text',
-								'title' => 'Title',
-							),
-							array(
-								'id'    =>	'opt-link-footer-mobile-menu-one-item',
-								'type'  =>	'link',
-								'title'	=>	'link',
-							),
-						),
-					),
-					array(
-						'id'        => 'opt-footer-mobile-menu-two-item',
-						'type'      => 'fieldset',
-						'title'     => 'Two Item',
-						'fields'    => array(
-							array(
-								'id'    => 'opt-icon-footer-mobile-menu-two-item',
-								'type'  => 'icon',
-								'title' => 'Icon',
-							),
-							array(
-								'id'    => 'opt-title-footer-mobile-menu-two-item',
-								'type'  => 'text',
-								'title' => 'Title',
-							),
-							array(
-								'id'    =>	'opt-link-footer-mobile-menu-two-item',
-								'type'  =>	'link',
-								'title'	=>	'link',
-							),
-						),
-					),
-				)
-			)
+				'id'         => 'opt-product-allow-add-comments',
+				'type'       => 'button_set',
+				'title'      => 'چه کسانی می توانند پرسش ثبت کنند؟',
+				'options'    => array(
+					false => 'فقط خریداران',
+					true  => 'همه',
+				),
+				'default'    => true
+			),
+			array(
+				'id'         => 'opt-product-rules-display-comments',
+				'type'       => 'button_set',
+				'title'      => 'نمایش قوانین',
+				'options'    => array(
+					false => 'خیر',
+					true  => 'بله',
+				),
+				'default'    => true
+			),
+			array(
+				'id'    	=>	'opt-product-rules-comments',
+				'type'  	=>	'wp_editor',
+				'title'		=>	'قوانین مربوط به پرسش و پاسخ دوره',
+			),
+			
 		)
 	));
 

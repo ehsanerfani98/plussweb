@@ -44,14 +44,14 @@ if (post_password_required()) {
 			<a href="<?= get_permalink() . '/discussions' ?>" class="tab-item <?= get_query_var('pagename') == 'discussions' ? 'tab-active' : '' ?>">پرسش و پاسخ</a>
 			<a href="#" class="tab-item">سوالات متداول</a>
 		</div>
-		<?php if (get_query_var('pagename') != 'discussions') : ?>
-			<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-content.php'; ?>
+		<?php if (get_query_var('pagename') == 'discussions') : ?>
+			<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-product/single-discussions.php'; ?>
 		<?php else : ?>
-			<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-discussions.php'; ?>
+			<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-product/single-content.php'; ?>
 		<?php endif; ?>
 	</div>
 	<div class="col-12 col-sm-12 col-md-12 col-lg-4">
-		<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-sidebar.php'; ?>
+		<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-product/single-sidebar.php'; ?>
 	</div>
 </div>
 

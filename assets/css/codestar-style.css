@@ -1,0 +1,103 @@
+  @import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+  .csf-options {
+      font-family: 'Vazirmatn', sans-serif !important;
+  }
+
+  .csf-options h1 , .csf-options h2 , .csf-options h3 , .csf-options h4 , .csf-options h5 , .csf-options h4 {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+
+  .csf-nav-normal+.csf-content {
+      margin-left: unset !important;
+  }
+
+  .csf-theme-dark .csf-nav-background {
+      background-color: #fff !important;
+  }
+
+  .csf-theme-dark .csf-header-inner {
+      background-color: #ffffff !important;
+  }
+
+  .csf-theme-dark .csf-nav ul li a,
+  .csf-theme-dark .csf-nav ul ul li a {
+      color: #fff;
+      border-color: #a18fff;
+      background-color: #7055ff;
+  }
+
+  .csf-theme-dark .csf-nav ul ul li a {
+      color: #fff !important;
+      border-color: #a18fff !important;
+      background-color: #563bdf !important;
+  }
+
+  .csf-theme-dark .csf-nav ul li .csf-active {
+      color: #563bdf !important;
+      background-color: #efecff !important;
+  }
+
+  .csf--button {
+      border: none !important;
+      background: #fcfbff !important;
+      box-shadow: 0px 0px 40px -3px #c6bbff !important;
+      padding: 15px 43px !important;
+      font-size: 20px;
+      border-radius: 4px !important;
+      margin: 0 5px !important;
+  }
+
+  .csf--sibling.csf--button.csf--active {
+      background: #7055ff !important;
+  }
+
+  .csf-buttons .button {
+    border: none !important;
+    background: #fcfbff !important;
+    padding: 8px 20px !important;
+    font-size: 16px;
+    border-radius: 4px !important;
+    margin: 0 5px !important;
+    color: #563bdf !important;
+}
+
+.csf-buttons .csf-save {
+    background: #16d938 !important;
+    box-shadow: 0px 0px 40px -3px #93ffa5 !important;
+    color: white !important;
+}
+
+.csf-buttons .csf-reset-all {
+    background: #ef0a0a !important;
+    box-shadow: 0px 0px 40px -3px #ffb1b1 !important;
+    color: white !important;
+}
+
+.csf-buttons .csf-reset-section {
+    background: #f9b418 !important;
+    box-shadow: 0px 0px 40px -3px #ffe7ae !important;
+    color: white !important;
+}
+
+.csf-field .csf-title {
+    width: 100% !important;
+    margin-bottom: 30px !important;
+}
+
+.csf-field .csf-title h4 {
+    color: #563bdf !important;
+    font-size: 16px;
+}
+
+.csf-field .csf-fieldset {
+    width: 100% !important;
+}
+
+.csf-field {
+    padding: 30px 50px 30px 30px !important;
+}
+
+.csf-theme-dark .csf-footer {
+    background-color: #ffffff !important;
+}

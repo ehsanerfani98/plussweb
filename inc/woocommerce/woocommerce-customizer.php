@@ -9,7 +9,7 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_r
 
 add_action('woocommerce_after_single_product_summary', 'add_custom_review');
 function add_custom_review(){
-    add_filter( 'comments_template', function() { return PLSWB_THEME_PATH . 'inc/woocommerce/single-product-reviews.php'; }, 30 );
+    add_filter( 'comments_template', function() { return PLSWB_THEME_PATH . 'inc/woocommerce/comments/main.php'; }, 30 );
     comments_template();
 }
 

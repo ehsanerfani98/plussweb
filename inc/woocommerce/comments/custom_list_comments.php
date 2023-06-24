@@ -1,6 +1,6 @@
 <?php
 
-function better_comments($comment, $args, $depth)
+function custom_list_comments($comment, $args, $depth)
 {
     $user = get_userdata($comment->user_id);
     if (!empty($user) && $user) {

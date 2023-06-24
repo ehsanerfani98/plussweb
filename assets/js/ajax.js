@@ -22,9 +22,11 @@ jQuery(document).ready(function ($) {
 
 
         if (!$(this).find('.replyId').hasClass('replyId')) {
-            if (onStar == '') {
-                alert('یک امتیاز برای این دوره انتخاب کنید');
-                return;
+            if(is_rating_product){
+                if (onStar == '') {
+                    alert('یک امتیاز برای این دوره انتخاب کنید');
+                    return;
+                }
             }
         }
 
@@ -55,7 +57,7 @@ jQuery(document).ready(function ($) {
                     $(".comment-form").trigger('reset');
                     onStar = '';
                     $('.star').removeClass('selected');
-                    if (!$(this).find('.replyId').hasClass('replyId')) {
+                    if (!$('.comment-form').find('.replyId').hasClass('replyId')) {
                         plswbAlert('پرسش شما با موفقیت ثبت شد', 'success' , 3000);
                     }else{
                         plswbAlert('دیدگاه شما با موفقیت ثبت شد', 'success' , 3000);

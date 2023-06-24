@@ -6,7 +6,7 @@
             <ol class="commentlist">
                 <?php
                 wp_list_comments([
-                    'callback' => 'better_comments',
+                    'callback' => 'custom_list_comments',
                     'reverse_top_level' => true
                 ]);
                 ?>
@@ -30,8 +30,6 @@
             ?>
         </div>
     </div>
-
-
 
     <!-- Modal-Reply -->
     <div class="modal fade" id="replyComment" tabindex="-1" role="dialog" aria-labelledby="newcommentTitle" aria-hidden="true">
@@ -65,6 +63,5 @@
             </div>
         </div>
     </div>
-
 
 <?php endif; ?>

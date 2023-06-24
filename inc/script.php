@@ -7,10 +7,21 @@ function header_scripts()
 
     <script>
         var ajax_setup_plswb = '<?= admin_url('admin-ajax.php'); ?>';
-        var ajax_nonce = '<?= wp_create_nonce("special-check")?>';
-
+        var ajax_nonce = '<?= wp_create_nonce("special-check") ?>';
     </script>
 
+    <?php if (is_singular('product')) : ?>
+        <?php $maktabyar_theme_options = get_option('PLSWB_MAKTABYAR_SETTINGS', true); ?>
+        <?php if (!$maktabyar_theme_options['opt-product-display-rating-comments']) : ?>
+            <script>
+                var is_rating_product = <?= $maktabyar_theme_options['opt-product-display-rating-comments']; ?>;
+            </script>
+        <?php else : ?>
+            <script>
+                var is_rating_product = 1;
+            </script>
+        <?php endif; ?>
+    <?php endif; ?>
 
 <?php
 }
@@ -25,6 +36,18 @@ function footer_scripts()
 }
 
 
+function admin_enqueue_scripts($hook) {
+
+    if($_GET['page'] == 'PLSWB_MAKTABYAR_SETTINGS'){
+        wp_register_style('style', PLSWB_THEME_ASSETS . 'css/codestar-style.css');
+        wp_enqueue_style('style');    
+    }
+   
+}
+
+add_action('admin_enqueue_scripts', 'admin_enqueue_scripts');
+
+
 add_action('wp_enqueue_scripts', 'theme_scripts');
 function theme_scripts()
 {
@@ -36,8 +59,8 @@ function theme_scripts()
     // wp_register_style('responsive', PLSWB_THEME_ASSETS . 'css/responsive.css');
 
     wp_enqueue_style('bootstrap');
-    wp_enqueue_style('font-awesome2');
     wp_enqueue_style('font-awesome');
+    wp_enqueue_style('font-awesome2');
 
     wp_enqueue_style('style');
     // wp_enqueue_style('responsive');
