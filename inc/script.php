@@ -32,6 +32,7 @@ function header_scripts()
                 "@context": "https://schema.org", 
                 "@type": "BlogPosting",
                 "headline": "<?= get_the_title() ?>",
+                "author": "<?= get_the_author() ?>",
                 "editor": "<?= get_the_author() ?>",
                 "description": "<?= get_the_excerpt() ?>",
                 "articleBody": "<?= get_the_excerpt() ?>",
