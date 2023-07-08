@@ -25,14 +25,16 @@ function header_scripts()
 
 
     <?php if (is_singular('post')) : ?>
-        <?php $maktabyar_post_options = get_post_meta(get_the_ID(), 'PLSWB_POST_OPTION', true); ?>
+        <?php 
+            $author_id=$post->post_author;
+            $maktabyar_post_options = get_post_meta(get_the_ID(), 'PLSWB_POST_OPTION', true); ?>
 
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org", 
                 "@type": "BlogPosting",
                 "headline": "<?= get_the_title() ?>",
-                "author": "<?= get_the_author() ?>",
+                "author": "<?php the_author_meta( 'user_nicename' , $author_id ); ?>",
                 "editor": "<?= get_the_author() ?>",
                 "description": "<?= get_the_excerpt() ?>",
                 "articleBody": "<?= get_the_excerpt() ?>",
