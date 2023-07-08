@@ -33,7 +33,7 @@ function header_scripts()
                 "author": "<?= get_the_author() ?>",
                 "content": "<?= get_the_excerpt() ?>",
                 "date": "<?= get_the_date() ?>",
-                "category": "<?php the_category() ?>,
+                "category": "<?php foreach((get_the_category()) as $category) { $postcat= $category->cat_ID; $catname =$category->cat_name; echo $postcat; echo $catname; } ?>,
                 "image": "<?= get_the_post_thumbnail_url() ?>",
                 "video": "https://www.youtube.com/embed/<?= $maktabyar_post_options['opt-youtube-video-code']  ?>"
             }
