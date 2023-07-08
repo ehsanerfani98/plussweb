@@ -38,6 +38,7 @@ function header_scripts()
                 "datePublished": "<?= get_the_date() ?>",
                 "category": "<?php foreach((get_the_category()) as $category) { $postcat= $category->cat_ID; $catname =$category->cat_name; echo $catname.','; } ?>",
                 "image": "<?= get_the_post_thumbnail_url() ?>"
+                "video": "https://www.youtube.com/embed/<?= $maktabyar_post_options['opt-youtube-video-code'] ?>"
             }
         </script>
     <?php endif; ?>
