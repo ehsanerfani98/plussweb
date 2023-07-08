@@ -80,6 +80,7 @@ function theme_scripts()
     wp_enqueue_style('font-awesome');
     wp_enqueue_style('font-awesome2');
 
+    
     wp_enqueue_style('style');
     // wp_enqueue_style('responsive');
 
