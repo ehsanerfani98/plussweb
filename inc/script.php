@@ -34,7 +34,7 @@ function header_scripts()
                 "headline": "<?= get_the_title() ?>",
                 "editor": "<?= get_the_author() ?>",
                 "description": "<?= get_the_excerpt() ?>",
-                "articleBody": "<?= get_the_content() ?>",
+                "articleBody": "<?= get_the_excerpt() ?>",
                 "datePublished": "<?= get_the_date() ?>",
                 "category": "<?php foreach((get_the_category()) as $category) { $postcat= $category->cat_ID; $catname =$category->cat_name; echo $catname.','; } ?>,
                 "image": "<?= get_the_post_thumbnail_url() ?>",
