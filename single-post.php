@@ -1,4 +1,11 @@
-<?php get_header() ?>
+<?php get_header();
+
+
+wp_die(var_dump(get_the_author_nickname()));
+
+
+
+?>
 <?php $maktabyar_post_options = get_post_meta(get_the_ID(), 'PLSWB_POST_OPTION', true); ?>
 
 <div class="row">
