@@ -33,7 +33,7 @@ function header_scripts()
                 "author": "<?= get_the_author() ?>",
                 "content": "<?= get_the_excerpt() ?>",
                 "date": "<?= get_the_date() ?>",
-                "category": "<?= get_the_category() ?>,
+                "category": "<?php the_category() ?>,
                 "image": "<?= get_the_post_thumbnail_url() ?>",
                 "video": "https://www.youtube.com/embed/<?= $maktabyar_post_options['opt-youtube-video-code']  ?>"
             }
@@ -80,7 +80,7 @@ function theme_scripts()
     wp_enqueue_style('font-awesome');
     wp_enqueue_style('font-awesome2');
 
-    
+
     wp_enqueue_style('style');
     // wp_enqueue_style('responsive');
 
