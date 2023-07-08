@@ -1,34 +1,8 @@
 jQuery(document).ready(function ($) {
 
-    var onStar = '';
-    $('.stars .star').on('click', function () {
-        onStar = parseInt($(this).data('value'), 10);
-        var stars = $(this).parent().children('li.star');
-        for (i = 0; i < stars.length; i++) {
-            $(stars[i]).removeClass('selected');
-        }
-        for (i = 0; i < onStar; i++) {
-            $(stars[i]).addClass('selected');
-        }
-    });
-
-    $('#newcomment').on('hidden.bs.modal', function (e) {
-        onStar = '';
-        $('.star').removeClass('selected');
-    })
 
     $('.comment-form').submit(function (e) {
         e.preventDefault();
-
-
-        if (!$(this).find('.replyId').hasClass('replyId')) {
-            if(is_rating_product){
-                if (onStar == '') {
-                    alert('یک امتیاز برای این دوره انتخاب کنید');
-                    return;
-                }
-            }
-        }
 
         $('.card-loading').addClass('d-flex');
 
@@ -37,9 +11,8 @@ jQuery(document).ready(function ($) {
         $.each(dataForm, function (i, val) {
             postData.append(val.name, val.value);
         });
-        postData.append('action', 'comment_woocommerce_ajax');
+        postData.append('action', 'comment_post_ajax');
         postData.append('security', ajax_nonce);
-        postData.append('rating', onStar);
 
         $.ajax({
             type: "post",
@@ -65,6 +38,11 @@ jQuery(document).ready(function ($) {
                 }
             }
         });
+    });
+
+    $('.reply').click(function () {
+        var comment_id = $(this).parent().find('.comment-id').val();
+        $('input[name="replyId"]').val(comment_id);
     });
 
 });

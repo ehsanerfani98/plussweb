@@ -23,6 +23,23 @@ function header_scripts()
         <?php endif; ?>
     <?php endif; ?>
 
+
+    <?php if (is_singular('post')) : ?>
+        <?php $maktabyar_post_options = get_post_meta(get_the_ID(), 'PLSWB_POST_OPTION', true); ?>
+
+        <script type="application/ld+json">
+            {
+                "title": "<?= get_the_title() ?>",
+                "author": "<?= get_the_author() ?>",
+                "content": "<?= get_the_excerpt() ?>",
+                "date": "<?= get_the_date() ?>",
+                "category": "<?= get_the_category() ?>,
+                "image": "<?= get_the_post_thumbnail_url() ?>",
+                "video": "https://www.youtube.com/embed/<?= $maktabyar_post_options['opt-youtube-video-code']  ?>"
+            }
+        </script>
+    <?php endif; ?>
+
 <?php
 }
 
@@ -36,13 +53,14 @@ function footer_scripts()
 }
 
 
-function admin_enqueue_scripts($hook) {
-
-    if($_GET['page'] == 'PLSWB_MAKTABYAR_SETTINGS'){
-        wp_register_style('style', PLSWB_THEME_ASSETS . 'css/codestar-style.css');
-        wp_enqueue_style('style');    
+function admin_enqueue_scripts($hook)
+{
+    if (isset($_GET['page'])) {
+        if ($_GET['page'] == 'PLSWB_MAKTABYAR_SETTINGS') {
+            wp_register_style('style', PLSWB_THEME_ASSETS . 'css/codestar-style.css');
+            wp_enqueue_style('style');
+        }
     }
-   
 }
 
 add_action('admin_enqueue_scripts', 'admin_enqueue_scripts');
@@ -68,12 +86,22 @@ function theme_scripts()
     wp_register_script('bootstrap-bundle', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js', array("jquery"), "1.0.0", true);
     wp_register_script('lottie-player', 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js', array(), "", true);
     wp_register_script('plswb-script', PLSWB_THEME_ASSETS . 'js/script.js', [], "1.0.0", true);
-    wp_register_script('plswb-ajax', PLSWB_THEME_ASSETS . 'js/ajax.js', [], "1.0.0", true);
+    wp_register_script('plswb-ajax-comment-product', PLSWB_THEME_ASSETS . 'js/ajax-comment-product.js', [], "1.0.0", true);
+    wp_register_script('plswb-ajax-comment-post', PLSWB_THEME_ASSETS . 'js/ajax-comment-post.js', [], "1.0.0", true);
+    wp_register_script('plswb-single-product', PLSWB_THEME_ASSETS . 'js/single-product.js', [], "1.0.0", true);
 
     wp_enqueue_script('bootstrap-bundle');
     wp_enqueue_script('lottie-player');
     wp_enqueue_script('plswb-script');
-    wp_enqueue_script('plswb-ajax');
+
+    if (is_singular('product')) {
+        wp_enqueue_script('plswb-single-product');
+        wp_enqueue_script('plswb-ajax-comment-product');
+    }
+
+    if (is_singular('post')) {
+        wp_enqueue_script('plswb-ajax-comment-post');
+    }
 
     // if (is_singular('product')) {
     //     wp_enqueue_style('pgwslideshow');

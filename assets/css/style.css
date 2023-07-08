@@ -226,6 +226,11 @@
       margin-bottom: 20px;
   }
 
+  .video-card img {
+      width: 100%;
+      height: auto;
+  }
+
   .content-card {
       padding: 20px;
   }
@@ -736,16 +741,14 @@
   }
 
   .title-rules {
-    background: var(--second-light-color);
-    color: var(--hover-link-color);
-    padding: 15px;
-    width: fit-content;
-    margin: 10px 10px 0 10px;
-    border-radius: 4px;
-}
+      background: var(--second-light-color);
+      color: var(--hover-link-color);
+      padding: 15px;
+      width: fit-content;
+      margin: 10px 10px 0 10px;
+      border-radius: 4px;
+  }
 
-.title-rules i{
-    margin-left: 6px;
-}
-
-
+  .title-rules i {
+      margin-left: 6px;
+  }

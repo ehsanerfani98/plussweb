@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset') ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آموزش</title>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <div class="container-fluid">
         <div class="row nav d-none d-lg-flex">
             <div class="col-lg-9">
