@@ -1,4 +1,4 @@
-<?php get_header() 
+<?php get_header();
 
 wp_die(get_the_author_nickname());
 
