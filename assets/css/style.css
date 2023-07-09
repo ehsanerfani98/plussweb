@@ -865,6 +865,10 @@
       width: 60%;
   }
 
+  .search-bar input::placeholder {
+      color: #ccc;
+  }
+
   .search-bar button {
       border: none;
       box-shadow: none;
