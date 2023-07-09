@@ -800,14 +800,14 @@
 .owl-prev {
     left: 0;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transition: all .45s cubic-bezier(.165, .84, .44, 1) 0s;
 }
 
 .owl-next {
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 40%;
     transition: all .45s cubic-bezier(.165, .84, .44, 1) 0s;
 }
 
