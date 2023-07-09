@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
         loop: true,
         nav: true,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-        margin: 10,
+        margin: 20,
         autoplay: true,
         autoplaySpeed: 1500,
         autoplayTimeout: 5000,
