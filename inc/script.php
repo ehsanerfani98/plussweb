@@ -26,16 +26,18 @@ function header_scripts()
 
     <?php if (is_singular('post')) : ?>
         <?php
-        global $post;
-        $author_id = $post->post_author;
-        $maktabyar_post_options = get_post_meta(get_the_ID(), 'PLSWB_POST_OPTION', true); ?>
-
+        $maktabyar_post_options = get_post_meta(get_the_ID(), 'PLSWB_POST_OPTION', true); 
+        the_post();
+        
+        ?>
+        
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
                 "headline": "<?= get_the_title() ?>",
-                "author": "<?php the_author_meta('user_nicename', $author_id); ?>",
+                "author": "<?= get_the_author() ?>",
+                "url": "<?= get_the_permalink() ?>",
                 "editor": "<?= get_the_author() ?>",
                 "description": "<?= get_the_excerpt() ?>",
                 "articleBody": "<?= get_the_excerpt() ?>",
