@@ -75,13 +75,13 @@
             </div>
             <div class="social">
                 <a href="#">
-                    <i class="fa fa-instagram"></i>
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-youtube"></i>
+                    <i class="fab fa-youtube"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-linkedin"></i>
+                    <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
