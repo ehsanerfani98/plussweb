@@ -963,10 +963,6 @@
       font-size: 16px;
   }
 
-  .copy-right h6:hover {
-      color: var(--front-color) !important;
-  }
-
   .social {
       margin-top: 12px;
       display: flex;
@@ -978,4 +974,8 @@
   .social a {
       font-size: 25px;
       color: white;
+  }
+
+  .social a:hover {
+      color: var(--front-color) !important;
   }
