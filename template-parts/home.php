@@ -1,19 +1,19 @@
 <div class="row">
     <div class="col-12 px-0">
-       <div class="header-home">
+        <div class="header-home">
             <div class="title">
-            از فوق‌ مبتدی تا فوق‌ حرفه‌ای
+                از فوق‌ مبتدی تا فوق‌ حرفه‌ای
 
             </div>
             <div class="content">
-            شما هم اکنون به بیش از ۷ هزار ویدئوی آموزشی به زبان فارسی دسترسی دارید…
+                شما هم اکنون به بیش از ۷ هزار ویدئوی آموزشی به زبان فارسی دسترسی دارید…
 
             </div>
             <div class="search-bar">
                 <input type="text" placeholder="جستجو در آموزش‌های برنامه‌نویسی - هک و امنیت - گرافیک - پایگاه داده - بازی سازی - سئو ">
                 <button><i class="fa fa-search"></i></button>
             </div>
-       </div>
+        </div>
     </div>
 </div>
 
@@ -36,7 +36,7 @@
                             <?php the_post_thumbnail() ?>
                         </div>
                         <div class="card-title-list">
-                            <h2><?php the_title() ?></h2>
+                            <h2><?= strlen(get_the_title())  > 30 ? substr(get_the_title(), 0, 30) . '...' : get_the_title() ?></h2>
                         </div>
                     </div>
                 </a>
