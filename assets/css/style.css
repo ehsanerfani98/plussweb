@@ -985,3 +985,7 @@
   .wp-caption , .wp-caption img{
     width: 100% !important;
   }
+
+  .shadow-none{
+    box-shadow: none !important;
+  }
