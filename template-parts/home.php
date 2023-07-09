@@ -44,7 +44,7 @@
                             <?php the_post_thumbnail() ?>
                         </div>
                         <div class="card-title-list">
-                            <h2><?= mb_strlen(get_the_title())  > 70 ? mb_substr(get_the_title(), 0, 70) . '...' : get_the_title() ?></h2>
+                            <h2><?= mb_strlen(get_the_title())  > 65 ? mb_substr(get_the_title(), 0, 65) . '...' : get_the_title() ?></h2>
                         </div>
                     </div>
                 </a>
@@ -86,7 +86,7 @@
                             <?php the_post_thumbnail() ?>
                         </div>
                         <div class="card-title-list">
-                            <h2><?= mb_strlen(get_the_title())  > 70 ? mb_substr(get_the_title(), 0, 70) . '...' : get_the_title() ?></h2>
+                            <h2><?= mb_strlen(get_the_title())  > 65 ? mb_substr(get_the_title(), 0, 65) . '...' : get_the_title() ?></h2>
                         </div>
                     </div>
                 </a>
