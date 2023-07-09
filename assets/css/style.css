@@ -770,3 +770,7 @@
       padding: 22px 10px 0 10px;
       text-align: center;
   }
+
+  .carousel-item img{
+    height: 450px;
+  }
