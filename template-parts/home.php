@@ -36,7 +36,7 @@
                             <?php the_post_thumbnail() ?>
                         </div>
                         <div class="card-title-list">
-                            <h2><?= strlen(get_the_title())  > 80 ? substr(get_the_title(), 0, 80) . '...' : get_the_title() ?></h2>
+                            <h2><?= strlen(get_the_title())  > 85 ? substr(get_the_title(), 0, 85) . '...' : get_the_title() ?></h2>
                         </div>
                     </div>
                 </a>
