@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-12">
+    <div class="col-12 px-0">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
