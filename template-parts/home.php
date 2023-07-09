@@ -21,6 +21,9 @@
     <div class="row">
         <div class="col-12">
             <div class="list-title">
+                <div class="list-icon">
+                    <i class="fa fa-list"></i>
+                </div>
                 <h4>دانش وردپرسی خودت رو منفجر کن!</h4>
             </div>
         </div>
