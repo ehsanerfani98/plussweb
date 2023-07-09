@@ -916,6 +916,7 @@
   }
 
   .footer::before {
+      content: '';
       padding: 0;
       background: #c0ffe8;
       position: absolute;
