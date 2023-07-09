@@ -900,7 +900,7 @@
   .list-icon {
       font-size: 20px;
       background: var(--hover-link-color);
-      color: var(--second-color);
+      color: var(--second-light-color2);
       width: 35px;
       height: 35px;
       display: flex;
