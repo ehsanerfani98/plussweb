@@ -906,3 +906,61 @@
       align-items: center;
       border-radius: 4px;
   }
+
+  .footer {
+      height: 250px;
+      background: #0bc480;
+      position: relative;
+      border-top-right-radius: 10%;
+      border-top-left-radius: 30%;
+  }
+
+  .footer::before {
+      padding: 0;
+      background: #0bc480;
+      position: relative;
+      border-top-right-radius: 10%;
+      border-top-left-radius: 20%;
+  }
+
+  .footer-content {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+
+  .footer-menu ul {
+      display: flex;
+      gap: 3rem;
+      color: white;
+  }
+
+  .footer-menu ul a {
+      color: white;
+      font-size: 20px;
+  }
+
+  .copy-right {
+      margin-top: 30px;
+  }
+
+  .copy-right h6 {
+      color: #ceffed;
+      font-size: 16px;
+  }
+
+  .social {
+      margin-top: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .social a {
+      font-size: 25px;
+      color: white;
+  }
