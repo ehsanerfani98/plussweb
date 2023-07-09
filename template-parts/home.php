@@ -25,7 +25,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container-fluid my-5">
         <div class="owl-carousel card-product-slider owl-theme">
             <?php
             $args = [
