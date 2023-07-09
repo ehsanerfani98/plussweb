@@ -100,7 +100,7 @@
 </div>
 
 
-<div class="row footer">
+<div class="row footer mt-5">
     <div class="col-lg-9">
         <div class="footer-content">
             <div class="footer-menu">
