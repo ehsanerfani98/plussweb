@@ -951,7 +951,7 @@
   }
 
   .footer-menu ul a:hover {
-      color: var(--front-color) !important;
+      color: var(--second-color) !important;
   }
 
   .copy-right {
@@ -977,5 +977,5 @@
   }
 
   .social a:hover {
-      color: var(--front-color) !important;
+      color: var(--second-color) !important;
   }
