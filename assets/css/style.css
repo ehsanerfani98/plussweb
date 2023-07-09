@@ -873,15 +873,11 @@
   }
 
   .search-bar button {
-      border: none;
-      box-shadow: none;
-      outline: none;
-      background: var(--hover-link-color);
-      color: white;
+      background: var(--hover-link-color) !important;
+      color: white !important;
       padding: 17px;
       border-radius: 4px;
       font-size: 20px;
-      cursor: pointer;
   }
 
   .list-title {
