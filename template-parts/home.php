@@ -20,7 +20,9 @@
 <div class="container-fluid my-5">
     <div class="row">
         <div class="col-12">
-            <h4>دانش وردپرسی خودت رو منفجر کن!</h4>
+            <div class="list-title">
+                <h4>دانش وردپرسی خودت رو منفجر کن!</h4>
+            </div>
         </div>
     </div>
     <div class="owl-carousel card-product-slider owl-theme">
