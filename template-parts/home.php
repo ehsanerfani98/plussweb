@@ -57,6 +57,49 @@
     </div>
 </div>
 
+<div class="container-fluid my-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="list-title">
+                <div class="list-icon">
+                    <i class="fa fa-wordpress"></i>
+                </div>
+                <h4>دوره های حرفه ای وردپرس!</h4>
+            </div>
+        </div>
+    </div>
+    <div class="owl-carousel card-product-slider owl-theme">
+        <?php
+        $args = [
+            'post_type' => 'product',
+            'posts_per_page' => 6,
+            'post_status' => 'publish'
+        ];
+        $posts = new WP_Query($args);
+        if ($posts->have_posts()) :
+            while ($posts->have_posts()) :
+                $posts->the_post();
+        ?>
+                <a href="<?php the_permalink() ?>" class="card shadow-none">
+                    <div class="content-card p-2">
+                        <div class="card-image-list">
+                            <?php the_post_thumbnail() ?>
+                        </div>
+                        <div class="card-title-list">
+                            <h2><?= strlen(get_the_title())  > 60 ? substr(get_the_title(), 0, 60) . '...' : get_the_title() ?></h2>
+                        </div>
+                    </div>
+                </a>
+        <?php
+            endwhile;
+            wp_reset_postdata();
+            wp_reset_query();
+        endif;
+        ?>
+    </div>
+</div>
+
+
 <div class="row footer">
     <div class="col-lg-9">
         <div class="footer-content">
