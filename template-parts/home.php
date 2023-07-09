@@ -19,7 +19,7 @@
                                 <?php the_post_thumbnail() ?>
                             </div>
                             <div class="card-title-list">
-                                <?php the_title() ?>
+                                <h2><?php the_title() ?></h2>
                             </div>
                         </div>
                     </a>
