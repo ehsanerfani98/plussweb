@@ -889,7 +889,12 @@
       gap: 20px;
   }
 
+  .list-title h4 {
+      font-size: 20px;
+  }
+
   .list-icon {
+      font-size: 20px;
       background: var(--hover-link-color);
       color: var(--second-color);
       width: 35px;
