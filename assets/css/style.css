@@ -918,7 +918,7 @@
   .footer::before {
       content: '';
       padding: 0;
-      background: var(--second-color);
+      background: var(--border-input-color);
       position: absolute;
       border-top-right-radius: 10%;
       border-top-left-radius: 20%;
