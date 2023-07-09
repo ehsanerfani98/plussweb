@@ -979,3 +979,7 @@
   .social a:hover {
       color: var(--second-color) !important;
   }
+
+  .wp-caption img{
+    width: 100% !important;
+  }
