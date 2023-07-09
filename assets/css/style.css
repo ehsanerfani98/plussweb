@@ -980,6 +980,6 @@
       color: var(--second-color) !important;
   }
 
-  .wp-caption img{
+  .wp-caption , .wp-caption img{
     width: 100% !important;
   }
