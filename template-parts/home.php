@@ -1,9 +1,9 @@
-<div class="container">
+<div class="container my-5">
     <div class="row">
         <?php
         $args = [
             'post_type' => 'post',
-            'posts_per_page' => 4,
+            'posts_per_page' => 6,
             'post_status' => 'publish'
         ];
 
