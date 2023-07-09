@@ -752,3 +752,14 @@
   .title-rules i {
       margin-left: 6px;
   }
+
+  .card-image-list {
+      border-radius: 20px;
+      overflow: hidden;
+  }
+
+  .card-image-list img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }

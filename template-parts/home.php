@@ -12,9 +12,9 @@
             while ($posts->have_posts()) :
                 $posts->the_post();
         ?>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <a href="<?php the_permalink() ?>" class="card">
-                        <div class="content-card">
+                        <div class="content-card p-2">
                             <div class="card-image-list">
                                 <?php the_post_thumbnail() ?>
                             </div>
