@@ -881,3 +881,21 @@
       font-size: 20px;
       cursor: pointer;
   }
+
+  .list-title {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .list-icon {
+      background: var(--hover-link-color);
+      color: var(--second-color);
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+  }
