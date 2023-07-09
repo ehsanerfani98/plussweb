@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
     $('.carousel').carousel();
 
     $(".card-product-slider").owlCarousel({
-        responsive: { 0: { items: 1.5, }, 600: { items: 2, }, 768: { items: 3, }, 1200: { items: 3, }, },
+        responsive: { 0: { items: 1.5, }, 600: { items: 2, }, 768: { items: 3, }, 1200: { items: 4, }, },
         loop: true,
         nav: true,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
