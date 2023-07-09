@@ -820,3 +820,7 @@
     background: var(--primary-color) !important;
     color: var(--second-color) !important;
 }
+
+.pw-bg-light{
+    background: var(--second-light-color) !important;
+}
