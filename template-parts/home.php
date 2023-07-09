@@ -18,6 +18,9 @@
 </div>
 
 <div class="container-fluid my-5">
+    <div class="row">
+        <h4>دانش وردپرسیت رو منفجر کن!</h4>
+    </div>
     <div class="owl-carousel card-product-slider owl-theme">
         <?php
         $args = [
