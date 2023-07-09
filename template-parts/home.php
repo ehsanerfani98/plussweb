@@ -57,7 +57,3 @@
     endif;
     ?>
 </div>
-
-<script>
-    $('.carousel').carousel();
-</script>

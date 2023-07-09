@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-    
+
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
         if (event.matches) {
             $('path').attr('stroke', '#d9eee1');
@@ -7,6 +7,8 @@ jQuery(document).ready(function ($) {
             $('path').attr('stroke', '#292D32');
         }
     });
+
+    $('.carousel').carousel();
 
     $(".card-product-slider").owlCarousel({
         responsive: { 0: { items: 1.5, }, 600: { items: 2, }, 768: { items: 3, }, 1200: { items: 4, }, },
@@ -22,6 +24,8 @@ jQuery(document).ready(function ($) {
         center: false,
         dots: false,
     });
+
+
 
 });
 
