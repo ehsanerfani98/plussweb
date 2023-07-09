@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         rtl: true,
-        center: false,
+        center: true,
         dots: false,
     });
 
