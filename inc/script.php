@@ -103,7 +103,7 @@ function theme_scripts()
 
     wp_register_script('bootstrap-bundle', 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js', array("jquery"), "1.0.0", true);
     wp_register_script('lottie-player', 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js', array(), "", true);
-    wp_register_script('lottie-player', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array(), "", true);
+    wp_register_script('owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array(), "jquery", true);
     wp_register_script('plswb-script', PLSWB_THEME_ASSETS . 'js/script.js', [], "1.0.0", true);
     wp_register_script('plswb-ajax-comment-product', PLSWB_THEME_ASSETS . 'js/ajax-comment-product.js', [], "1.0.0", true);
     wp_register_script('plswb-ajax-comment-post', PLSWB_THEME_ASSETS . 'js/ajax-comment-post.js', [], "1.0.0", true);
@@ -111,6 +111,7 @@ function theme_scripts()
 
     wp_enqueue_script('bootstrap-bundle');
     wp_enqueue_script('lottie-player');
+    wp_enqueue_script('owl-carousel');
     wp_enqueue_script('plswb-script');
 
     if (is_singular('product')) {
