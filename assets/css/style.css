@@ -908,7 +908,7 @@
   }
 
   .footer {
-      height: 250px;
+      height: 200px;
       background: var(--hover-link-color);
       position: relative;
       border-top-right-radius: 10%;
