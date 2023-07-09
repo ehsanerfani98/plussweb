@@ -79,7 +79,7 @@
       font-family: 'yekan', sans-serif;
       font-weight: normal;
       direction: rtl !important;
-      text-align: right !important;
+      text-align: right;
   }
 
   form {
