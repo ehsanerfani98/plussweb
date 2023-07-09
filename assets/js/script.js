@@ -22,6 +22,7 @@ jQuery(document).ready(function ($) {
         autoplayHoverPause: true,
         rtl: true,
         center: true,
+        autoWidth:true,
         dots: false,
     });
 
