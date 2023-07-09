@@ -247,13 +247,11 @@
   .btn-primary {
       width: 100%;
       display: block;
-      background: var(--second-color);
-      color: var(--primary-color);
+      background: var(--second-color) !important;
+      color: var(--primary-color) !important;
       padding: 15px 10px;
       border-radius: var(--border-radius-btn);
       text-align: center;
-      outline: none;
-      border: none;
   }
 
   .btn-primary i {
@@ -262,7 +260,7 @@
 
   .btn-success {
       display: block;
-      color: var(--primary-color);
+      color: var(--primary-color) !important;
       padding: 4px 12px;
       border-radius: var(--border-radius-btn);
       text-align: center;
@@ -272,13 +270,10 @@
 
   .btn-light {
       display: block;
-      background: none;
-      color: var(--primary-color);
+      color: var(--primary-color) !important;
       padding: 4px 12px;
       text-align: center;
-      outline: none;
-      border: none;
-      background: var(--second-color);
+      background: var(--second-color) !important;
       border-radius: 4px;
   }
 
