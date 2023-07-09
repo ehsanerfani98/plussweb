@@ -825,3 +825,53 @@
   .pw-bg-light {
       background: var(--second-light-color) !important;
   }
+
+
+  .header-home {
+      width: 100%;
+      height: 250px;
+      background: var(--second-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 16px;
+  }
+
+  .header-home .title {
+      font-size: 40px;
+      color: var(--hover-link-color);
+  }
+
+  .header-home .content {
+      color: #525252;
+      font-size: 20px;
+  }
+
+  .search-bar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .search-bar input {
+      border: none;
+      box-shadow: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 4px;
+      width: 60%;
+  }
+
+  .search-bar button {
+      border: none;
+      box-shadow: none;
+      outline: none;
+      background: var(--hover-link-color);
+      color: white;
+      padding: 17px;
+      border-radius: 4px;
+      font-size: 20px;
+  }
