@@ -17,6 +17,7 @@
       --bg-input-color: #fff;
       --second-light-color: #f0fff5;
       --second-light-color2: #e0ffea;
+      --second-light-color3: #f4fff8;
       --dark-color: #1f1f1f;
       --back-color: #ffffff;
       --front-color: #d4d4d4;
@@ -825,7 +826,7 @@
   }
 
   .pw-bg-light {
-      background: var(--second-light-color) !important;
+      background: var(--second-light-color3) !important;
   }
 
 
