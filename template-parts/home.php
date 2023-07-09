@@ -62,7 +62,7 @@
         <div class="col-12">
             <div class="list-title">
                 <div class="list-icon">
-                    <i class="fa fa-wordpress"></i>
+                    <i class="fab fa-wordpress"></i>
                 </div>
                 <h4>دوره های حرفه ای وردپرس!</h4>
             </div>
