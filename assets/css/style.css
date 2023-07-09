@@ -774,3 +774,49 @@
   .carousel-item img{
     height: 450px;
   }
+
+
+  .owl-theme .owl-nav button {
+    background: #fff none repeat scroll 0 0 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, .2);
+    display: inline-block;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 40px;
+    color: black;
+    outline: none;
+}
+
+.owl-theme .owl-nav .owl-prev {
+    margin: 0 0 0 -20px;
+}
+
+.owl-theme .owl-nav .owl-next {
+    margin: 0 -20px 0 0;
+}
+
+.owl-prev {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transition: all .45s cubic-bezier(.165, .84, .44, 1) 0s;
+}
+
+.owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: all .45s cubic-bezier(.165, .84, .44, 1) 0s;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    background: var(--second-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: var(--primary-color) !important;
+    color: var(--second-color) !important;
+}
