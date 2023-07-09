@@ -909,7 +909,7 @@
 
   .footer {
       height: 250px;
-      background: #0bc480;
+      background: var(--hover-link-color);
       position: relative;
       border-top-right-radius: 10%;
       border-top-left-radius: 30%;
@@ -918,7 +918,7 @@
   .footer::before {
       content: '';
       padding: 0;
-      background: #c0ffe8;
+      background: var(--second-color);
       position: absolute;
       border-top-right-radius: 10%;
       border-top-left-radius: 20%;
@@ -955,7 +955,7 @@
   }
 
   .copy-right h6 {
-      color: #ceffed;
+      color: var(--second-color);
       font-size: 16px;
   }
 
