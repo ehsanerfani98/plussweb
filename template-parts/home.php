@@ -26,19 +26,19 @@
 </div>
 
 <div class="row my-5">
-    <?php
-    $args = [
-        'post_type' => 'post',
-        'posts_per_page' => 6,
-        'post_status' => 'publish'
-    ];
 
-    $posts = new WP_Query($args);
-    if ($posts->have_posts()) :
-        while ($posts->have_posts()) :
-            $posts->the_post();
-    ?>
-            <div class="owl-carousel card-product-slider owl-theme">
+    <div class="owl-carousel card-product-slider owl-theme">
+        <?php
+        $args = [
+            'post_type' => 'post',
+            'posts_per_page' => 6,
+            'post_status' => 'publish'
+        ];
+        $posts = new WP_Query($args);
+        if ($posts->have_posts()) :
+            while ($posts->have_posts()) :
+                $posts->the_post();
+        ?>
                 <a href="<?php the_permalink() ?>" class="card">
                     <div class="content-card p-2">
                         <div class="card-image-list">
@@ -49,11 +49,12 @@
                         </div>
                     </div>
                 </a>
-            </div>
-    <?php
-        endwhile;
-        wp_reset_postdata();
-        wp_reset_query();
-    endif;
-    ?>
+        <?php
+            endwhile;
+            wp_reset_postdata();
+            wp_reset_query();
+        endif;
+        ?>
+    </div>
+
 </div>
