@@ -8,7 +8,7 @@
                 دوره های جامع افزونه نویسی و طراحی قالب وردپرس
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="جستجو در آموزش‌های برنامه‌نویسی - هک و امنیت - گرافیک - پایگاه داده - بازی سازی - سئو ">
+                <input type="text" placeholder="طراحی قالب وردپرس ، افزونه نویسی وردپرس ، افزونه های رایگان ، دوره های رایگان">
                 <button><i class="fa fa-search"></i></button>
             </div>
         </div>
