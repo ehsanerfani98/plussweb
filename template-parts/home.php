@@ -38,7 +38,7 @@
             while ($posts->have_posts()) :
                 $posts->the_post();
         ?>
-                <a href="<?php the_permalink() ?>" class="card">
+                <a href="<?php the_permalink() ?>" class="card shadow-none">
                     <div class="content-card p-2">
                         <div class="card-image-list">
                             <?php the_post_thumbnail() ?>
