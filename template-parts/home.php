@@ -25,9 +25,7 @@
     </div>
 </div>
 
-<div class="row my-5">
-
-    <div class="px-5">
+<div class="my-5">
         <div class="owl-carousel card-product-slider owl-theme">
             <?php
             $args = [
@@ -57,7 +55,4 @@
             endif;
             ?>
         </div>
-    </div>
-
-
 </div>
