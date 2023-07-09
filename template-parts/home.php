@@ -22,7 +22,7 @@
         <div class="col-12">
             <div class="list-title">
                 <div class="list-icon">
-                    <i class="fa fa-list"></i>
+                    <i class="fa fa-graduation-cap"></i>
                 </div>
                 <h4>دانش وردپرسی خودت رو منفجر کن!</h4>
             </div>
