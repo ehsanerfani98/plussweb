@@ -160,7 +160,7 @@
     }
 
     .header-home .content {
-        font-size: 15px !important;
+        font-size: 13px !important;
     }
 
     .list-title h4 {
@@ -199,54 +199,7 @@
 }
 
 /* mobile landscape */
-@media (min-width:481px) and (max-width:732px) {
-    .header-home {
-        height: auto !important;
-        padding: 30px !important;
-    }
-
-    .header-home .title {
-        font-size: 5px !important;
-    }
-
-    .header-home .content {
-        font-size: 15px !important;
-    }
-
-    .list-title h4 {
-        font-size: 17px !important;
-    }
-
-    .list-icon {
-        font-size: 11px !important;
-        width: 25px !important;
-        height: 25px !important;
-    }
-
-    .footer-menu ul {
-        gap: 20px !important;
-    }
-
-    .footer-menu ul a {
-        font-size: 12px !important;
-    }
-
-    .copy-right h6 {
-        font-size: 12px !important;
-    }
-
-    .search-bar input {
-        width: 100% !important;
-    }
-
-    .card-image-list img {
-        height: auto !important;
-    }
-
-    .card-title-list h2 {
-        font-size: 12px !important;
-    }
-}
+@media (min-width:481px) and (max-width:732px) {}
 
 /* tablet And ipad mini*/
 @media (min-width:733px) and (max-width:768px) {}
