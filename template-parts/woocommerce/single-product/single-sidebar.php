@@ -1,9 +1,10 @@
+<?php
+$product = wc_get_product(get_the_ID());
+$rating  = $product->get_average_rating();
+?>
+
 <div class="card-v2">
     <div class="content-card">
-        <?php
-        $product = wc_get_product(get_the_ID());
-        $rating  = $product->get_average_rating();
-        ?>
         <div class="rating-section">
             <span class="rating">امتیاز : </span>
             <div class="rating-stars text-center">
@@ -40,10 +41,13 @@
                     <!-- <span class="orginal">۱۰۰۰,۰۰۰ تومان</span> -->
                 </span>
             </div>
-
-            <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
-                <button type="submit" name="add-to-cart" value="<?= get_the_ID() ?>" class="single_add_to_cart_button btn-primary">ثبت نام در دوره</button>
-            </form>
+            <?php if ($product->get_stock_quantity() > 0) : ?>
+                <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
+                    <button type="submit" name="add-to-cart" value="<?= get_the_ID() ?>" class="single_add_to_cart_button btn-primary">ثبت نام در دوره</button>
+                </form>
+            <?php else: ?>
+                <button type="button" class="btn-primary">ظرفیت تکمیل شد</button>
+            <?php endif; ?>
         </div>
     </div>
     <!-- <div class="card-v2">
