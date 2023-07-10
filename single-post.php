@@ -29,8 +29,11 @@
                     <?php the_post_thumbnail() ?>
                 </div>
             <?php endif; ?>
+        <?php else : ?>
+            <div class="video-card mt-4 mt-lg-0">
+                <?php the_post_thumbnail() ?>
+            </div>
         <?php endif; ?>
-
         <div class="card">
             <div class="content-card">
                 <?php the_content() ?>
