@@ -621,7 +621,7 @@
       width: 100%;
       height: 64px;
       border-radius: 4px;
-      background: var(--second-light-color);
+      background: var(--second-light-color2);
       align-items: center;
       /* overflow-x: scroll; */
   }
