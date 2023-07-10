@@ -33,28 +33,24 @@ $rating  = $product->get_average_rating();
 <div class="sidebar">
     <div class="card-v2">
         <div class="content-card">
-        <?php if ($product->get_stock_quantity() > 0) :
-            
-            var_dump($product->stock_status);
-            
-            ?>
-            <div class="product-order">
-                <span class="title">قیمت دوره</span>
-                <span class="price">
-                    <del>۳۵۰,۰۰۰ تومان</del>
-                    <span class="orginal">رایـــــگـان</span>
-                    <!-- <span class="orginal">۱۰۰۰,۰۰۰ تومان</span> -->
-                </span>
-            </div>
-                <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
-                    <button type="submit" name="add-to-cart" value="<?= get_the_ID() ?>" class="single_add_to_cart_button btn-primary">ثبت نام در دوره</button>
-                </form>
-            <?php else: 
-                            var_dump($product->stock_status);
-
-                ?>
-
+            <?php if ($product->stock_status == 'outofstock') : ?>
                 <button type="button" class="btn-primary">ظرفیت تکمیل شد</button>
+            <?php else : ?>
+                <?php if ($product->get_stock_quantity() > 0) : ?>
+                    <div class="product-order">
+                        <span class="title">قیمت دوره</span>
+                        <span class="price">
+                            <del>۳۵۰,۰۰۰ تومان</del>
+                            <span class="orginal">رایـــــگـان</span>
+                            <!-- <span class="orginal">۱۰۰۰,۰۰۰ تومان</span> -->
+                        </span>
+                    </div>
+                    <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
+                        <button type="submit" name="add-to-cart" value="<?= get_the_ID() ?>" class="single_add_to_cart_button btn-primary">ثبت نام در دوره</button>
+                    </form>
+                <?php else : ?>
+                    <button type="button" class="btn-primary">ظرفیت تکمیل شد</button>
+                <?php endif; ?>
             <?php endif; ?>
         </div>
     </div>
