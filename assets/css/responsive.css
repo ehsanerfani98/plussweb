@@ -45,6 +45,10 @@
     .card-image-list img {
         height: auto !important;
     }
+
+    .card-title-list h2 {
+        font-size: 12px !important;
+    }
 }
 
 /* large mobile */
@@ -91,6 +95,10 @@
     .card-image-list img {
         height: auto !important;
     }
+
+    .card-title-list h2 {
+        font-size: 12px !important;
+    }
 }
 
 /* mobile */
@@ -136,6 +144,10 @@
 
     .card-image-list img {
         height: auto !important;
+    }
+
+    .card-title-list h2 {
+        font-size: 12px !important;
     }
 }
 
