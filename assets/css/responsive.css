@@ -41,6 +41,10 @@
     .search-bar input {
         width: 100% !important;
     }
+
+    .card-image-list img {
+        height: auto !important;
+    }
 }
 
 /* large mobile */
@@ -83,6 +87,10 @@
     .search-bar input {
         width: 100% !important;
     }
+
+    .card-image-list img {
+        height: auto !important;
+    }
 }
 
 /* mobile */
@@ -109,7 +117,7 @@
         width: 25px !important;
         height: 25px !important;
     }
-    
+
     .footer-menu ul {
         gap: 20px !important;
     }
@@ -124,6 +132,10 @@
 
     .search-bar input {
         width: 100% !important;
+    }
+
+    .card-image-list img {
+        height: auto !important;
     }
 }
 
