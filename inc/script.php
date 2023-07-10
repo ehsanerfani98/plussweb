@@ -89,7 +89,7 @@ function theme_scripts()
     wp_register_style('owl-carousel', PLSWB_THEME_ASSETS . 'css/owl.carousel.css');
     wp_register_style('owl-theme-default', PLSWB_THEME_ASSETS . 'css/owl.theme.default.css');
     wp_register_style('style', PLSWB_THEME_ASSETS . 'css/style.css');
-    // wp_register_style('responsive', PLSWB_THEME_ASSETS . 'css/responsive.css');
+    wp_register_style('responsive', PLSWB_THEME_ASSETS . 'css/responsive.css');
 
     wp_enqueue_style('bootstrap');
     wp_enqueue_style('font-awesome');
@@ -99,7 +99,7 @@ function theme_scripts()
 
 
     wp_enqueue_style('style');
-    // wp_enqueue_style('responsive');
+    wp_enqueue_style('responsive');
 
     wp_register_script('bootstrap-bundle', PLSWB_THEME_ASSETS. 'js/bootstrap.min.js', array("jquery"), "1.0.0", true);
     wp_register_script('lottie-player', 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js', array(), "", true);

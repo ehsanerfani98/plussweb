@@ -1,0 +1,57 @@
+/* mini mobile */
+@media (min-width:280px) and (max-width:319px) {}
+
+/* medium mobile */
+@media (min-width:320px) and (max-width:359px) {}
+
+/* large mobile */
+@media (min-width:360px) and (max-width:393px) {}
+
+/* mobile */
+@media (min-width:394px) and (max-width:480px) {
+    .header-home {
+        height: auto !important;
+        padding: 30px !important;
+    }
+
+    .header-home .title {
+        font-size: 22px !important;
+    }
+
+    .header-home .content {
+        font-size: 15px !important;
+    }
+
+    .list-title h4 {
+        font-size: 17px !important;
+    }
+
+    .footer-menu ul {
+        gap: 20px !important;
+    }
+
+    .footer-menu ul a {
+        font-size: 12px !important;
+    }
+
+    .copy-right h6 {
+        font-size: 12px !important;
+    }
+}
+
+/* mobile landscape */
+@media (min-width:481px) and (max-width:732px) {}
+
+/* tablet And ipad mini*/
+@media (min-width:733px) and (max-width:768px) {}
+
+/* ipad */
+@media (min-width:769px) and (max-width:912px) {}
+
+/* minimize on desktop */
+@media (min-width:992px) and (max-width:1300px) {}
+
+/* desktop */
+@media (min-width:821px) {}
+
+@media (max-width:1060px) {}
