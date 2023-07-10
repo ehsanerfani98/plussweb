@@ -2,7 +2,36 @@
 @media (min-width:280px) and (max-width:319px) {}
 
 /* medium mobile */
-@media (min-width:320px) and (max-width:359px) {}
+@media (min-width:320px) and (max-width:359px) {
+    .header-home {
+        height: auto !important;
+        padding: 30px !important;
+    }
+
+    .header-home .title {
+        font-size: 18px !important;
+    }
+
+    .header-home .content {
+        font-size: 13px !important;
+    }
+
+    .list-title h4 {
+        font-size: 14px !important;
+    }
+
+    .footer-menu ul {
+        gap: 20px !important;
+    }
+
+    .footer-menu ul a {
+        font-size: 12px !important;
+    }
+
+    .copy-right h6 {
+        font-size: 12px !important;
+    }
+}
 
 /* large mobile */
 @media (min-width:360px) and (max-width:393px) {
