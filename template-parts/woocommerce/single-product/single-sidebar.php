@@ -33,6 +33,7 @@ $rating  = $product->get_average_rating();
 <div class="sidebar">
     <div class="card-v2">
         <div class="content-card">
+        <?php if ($product->get_stock_quantity() > 0) : ?>
             <div class="product-order">
                 <span class="title">قیمت دوره</span>
                 <span class="price">
@@ -41,7 +42,6 @@ $rating  = $product->get_average_rating();
                     <!-- <span class="orginal">۱۰۰۰,۰۰۰ تومان</span> -->
                 </span>
             </div>
-            <?php if ($product->get_stock_quantity() > 0) : ?>
                 <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
                     <button type="submit" name="add-to-cart" value="<?= get_the_ID() ?>" class="single_add_to_cart_button btn-primary">ثبت نام در دوره</button>
                 </form>
