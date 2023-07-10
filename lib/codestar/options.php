@@ -470,12 +470,16 @@ if (class_exists('CSF')) {
 	$prefix = 'PLSWB_COURSE_OPTION';
 	CSF::createMetabox($prefix, array(
 		'title'     =>	'تنظیمات صفحه',
-		'post_type' =>	'product'
+		'post_type' =>	'product',
+		'nav'                => 'normal',
+		'theme'              => 'light',
+	
 	));
 
 	CSF::createSection(
 		$prefix,
 		array(
+			'title'       => 'انتخاب کارت توضیحات',
 			'fields'	=>	array(
 				array(
 					'id'          => 'opt-description-card',
@@ -491,6 +495,7 @@ if (class_exists('CSF')) {
 	CSF::createSection(
 		$prefix,
 		array(
+			'title'       => 'نمایش ویدیو',
 			'fields'	=>	array(
 				array(
 					'id'          => 'opt-show-youtube-video',
