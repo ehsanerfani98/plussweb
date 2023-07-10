@@ -33,7 +33,11 @@ $rating  = $product->get_average_rating();
 <div class="sidebar">
     <div class="card-v2">
         <div class="content-card">
-        <?php if ($product->get_stock_quantity() > 0) : ?>
+        <?php if ($product->get_stock_quantity() > 0) :
+            
+            var_dump($product->stock_status);
+            
+            ?>
             <div class="product-order">
                 <span class="title">قیمت دوره</span>
                 <span class="price">
