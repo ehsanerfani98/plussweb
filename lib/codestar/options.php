@@ -488,6 +488,27 @@ if (class_exists('CSF')) {
 		)
 	);
 
+	CSF::createSection(
+		$prefix,
+		array(
+			'fields'	=>	array(
+				array(
+					'id'          => 'opt-show-youtube-video',
+					'type'        => 'switcher',
+					'title'       => 'نمایش ویدیو',
+					true  => 'فعال',
+					false => 'غیر فعال',
+					'default'    => false
+				),
+				array(
+					'id'          => 'opt-youtube-video-code',
+					'type'        => 'text',
+					'title'       => 'کد ویدیو در یوتیوب',
+					'dependency' => array('opt-show-youtube-video', '==', 'true') // check for true/false by field id
+				),
+			)
+		)
+	);
 
 	//============================//
 	$prefix = 'PLSWB_POST_OPTION';
