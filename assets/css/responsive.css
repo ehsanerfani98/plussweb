@@ -1,5 +1,52 @@
 /* mini mobile */
-@media (min-width:280px) and (max-width:319px) {}
+@media (min-width:280px) and (max-width:319px) {
+    .header-home {
+        height: auto !important;
+        padding: 30px !important;
+    }
+
+    .header-home .title {
+        font-size: 14px !important;
+    }
+
+    .header-home .content {
+        font-size: 11px !important;
+    }
+
+    .list-title h4 {
+        font-size: 11px !important;
+    }
+
+    .list-icon {
+        font-size: 11px !important;
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .footer-menu ul {
+        gap: 20px !important;
+    }
+
+    .footer-menu ul a {
+        font-size: 10px !important;
+    }
+
+    .copy-right h6 {
+        font-size: 10px !important;
+    }
+
+    .search-bar input {
+        width: 100% !important;
+    }
+
+    .card-image-list img {
+        height: auto !important;
+    }
+
+    .card-title-list h2 {
+        font-size: 12px !important;
+    }
+}
 
 /* medium mobile */
 @media (min-width:320px) and (max-width:359px) {
