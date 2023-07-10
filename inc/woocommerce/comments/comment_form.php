@@ -7,7 +7,7 @@
 	</div>
 
 	<div class="total">
-		۱۵۸
+		<?= get_comment_count(get_the_ID())['approved'] ?>
 	</div>
 
 	<div class="title">
