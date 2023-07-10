@@ -153,12 +153,12 @@
             </div>
         </div>
     </div>
-    <div class="card-v2">
+    <!-- <div class="card-v2">
         <div class="d-flex align-items-center justify-content-center">
             <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_qedmivnw.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
             <span class="customer">تعداد دانشجویان دوره : <?= empty($product->get_total_sales()) ? 'بدون دانشجو' : $product->get_total_sales() . ' نفر' ?></span>
         </div>
-    </div>
+    </div> -->
     <div class="card-v2">
         <div class="content-card">
             <div class="copy-text">
