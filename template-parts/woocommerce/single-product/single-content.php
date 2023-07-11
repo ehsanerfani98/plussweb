@@ -6,7 +6,7 @@
     <?php if ($PLSWB_COURSE_OPTION['opt-show-youtube-video']) :  ?>
         <?php if (!empty($PLSWB_COURSE_OPTION['opt-youtube-video-code'])) :  ?>
             <?php
-              echo var_export(unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR'])))['geoplugin_countryName'];
+              echo unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']))['geoplugin_countryName'];
 
             
             
