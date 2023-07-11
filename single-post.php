@@ -17,12 +17,13 @@
         <?php if (isset($maktabyar_post_options['opt-show-youtube-video'])) :  ?>
             <?php if ($maktabyar_post_options['opt-show-youtube-video']) :  ?>
                 <?php if (!empty($maktabyar_post_options['opt-youtube-video-code'])) :  ?>
+
                     <?php $remote_add = $_SERVER['REMOTE_ADDR'];
                     $xml = simplexml_load_file("http://www.geoplugin.net/xml.gp?ip=" . $remote_add);
                     $country = $xml->geoplugin_countryName;
                     if ($country == 'Iran') : ?>
                        
-                       <div style="padding: 10px; background: #ff5757; margin: 0 0 20px 0; color: white; border-radius: 4px; text-align: center; box-shadow: 0px 0px 17px 0px #fb8988;">برای تماشای ویدیو ابتدا vpn خود را <span style="padding:4px;background:orange">روشن</span> کرده و صفحه را رفرش کنید.</div>
+                       <div style="padding: 10px; background: #ff5757; margin: 0 0 20px 0; color: white; border-radius: 4px; text-align: center; box-shadow: 0px 0px 17px 0px #fb8988;">برای تماشای ویدیو ابتدا vpn خود را <span style="padding: 4px 10px; background: orange; border-radius: 6px;">روشن</span> کرده و صفحه را رفرش کنید.</div>
                     <?php else : ?>
                         <div class="video-card mt-4 mt-lg-0">
                             <iframe title="<?php the_title() ?>" src="https://www.youtube.com/embed/<?= $maktabyar_post_options['opt-youtube-video-code']  ?>" width="100%" height="450" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start"></span></iframe>
