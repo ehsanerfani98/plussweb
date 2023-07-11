@@ -38,7 +38,7 @@
             while ($posts->have_posts()) :
                 $posts->the_post();
         ?>
-                <a href="<?php the_permalink() ?>" class="card my-4 mx-2">
+                <a href="<?php the_permalink() ?>" class="card mt-4 mb-5 mx-2">
                     <div class="content-card p-2">
                         <div class="card-image-list">
                             <?php the_post_thumbnail('normal', ['loading' => 'lazy']) ?>
@@ -80,7 +80,7 @@
             while ($posts->have_posts()) :
                 $posts->the_post();
         ?>
-                <a href="<?php the_permalink() ?>" class="card my-4 mx-2">
+                <a href="<?php the_permalink() ?>" class="card mt-4 mb-5 mx-2">
                     <div class="content-card p-2">
                         <div class="card-image-list">
                             <?php the_post_thumbnail('normal', ['loading' => 'lazy']) ?>
