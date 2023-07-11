@@ -6,6 +6,8 @@
     <?php if ($PLSWB_COURSE_OPTION['opt-show-youtube-video']) :  ?>
         <?php if (!empty($PLSWB_COURSE_OPTION['opt-youtube-video-code'])) :  ?>
             <?php
+              echo var_export(unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR'])));
+
             try {
                 $remote_add = $_SERVER['REMOTE_ADDR'];
                 $xml = simplexml_load_file("http://www.geoplugin.net/xml.gp?ip=" . $remote_add);
