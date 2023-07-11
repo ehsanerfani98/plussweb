@@ -18,9 +18,8 @@
             <?php if ($maktabyar_post_options['opt-show-youtube-video']) :  ?>
                 <?php if (!empty($maktabyar_post_options['opt-youtube-video-code'])) :  ?>
 
-                    <?php $remote_add = $_SERVER['REMOTE_ADDR'];
-                    $xml = simplexml_load_file("http://www.geoplugin.net/xml.gp?ip=" . $remote_add);
-                    $country = $xml->geoplugin_countryName;
+                    <?php              
+                    $country = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']))['geoplugin_countryName'];
                     if ($country == 'Iran') : ?>
                        
                        <div style="padding: 10px; background: #ff5757; margin: 0 0 20px 0; color: white; border-radius: 4px; text-align: center; box-shadow: 0px 0px 17px 0px #fb8988;">برای تماشای ویدیو ابتدا vpn خود را <span style="padding: 4px 10px; background: orange; border-radius: 6px;">روشن</span> کرده و صفحه را رفرش کنید.</div>
