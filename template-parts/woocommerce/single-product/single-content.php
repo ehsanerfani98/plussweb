@@ -9,7 +9,6 @@
             try {
                 $remote_add = $_SERVER['REMOTE_ADDR'];
                 $xml = simplexml_load_file("http://www.geoplugin.net/xml.gp?ip=" . $remote_add);
-                $country = $xml->geoplugin_countryName;    
             } catch (\Throwable $th) {
                 echo 'مشکلی در برقرار ارتباط پیش آمده ، لطفا دوباره صفحه را رفرش کنید';
             }
