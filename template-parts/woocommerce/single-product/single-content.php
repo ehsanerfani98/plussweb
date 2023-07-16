@@ -15,6 +15,7 @@
               curl_setopt($ch, CURLOPT_URL, $url);
               curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
               $result = curl_exec($ch);
+              var_dump($result);
               $country = unserialize($result)['geoplugin_countryName'];
             if ($country == 'Iran') : ?>
                        <div style="padding: 10px; background: #ff5757; margin: 0 0 20px 0; color: white; border-radius: 4px; text-align: center; box-shadow: 0px 0px 17px 0px #fb8988;">برای تماشای ویدیو ابتدا vpn خود را <span style="padding: 4px 10px; background: orange; border-radius: 6px;">روشن</span> کرده و صفحه را رفرش کنید. (ویدیو در یوتیوب بارگذاری شده است)</div>
