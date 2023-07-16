@@ -6,7 +6,7 @@
     <?php if ($PLSWB_COURSE_OPTION['opt-show-youtube-video']) :  ?>
         <?php if (!empty($PLSWB_COURSE_OPTION['opt-youtube-video-code'])) :  ?>
             <?php
-            $url = 'https://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR'];
+            $url = 'http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR'];
               $ch = curl_init();
               curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
               curl_setopt($ch, CURLOPT_HEADER, 0);
