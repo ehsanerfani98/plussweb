@@ -6,8 +6,16 @@
     <?php if ($PLSWB_COURSE_OPTION['opt-show-youtube-video']) :  ?>
         <?php if (!empty($PLSWB_COURSE_OPTION['opt-youtube-video-code'])) :  ?>
             <?php
-              
-              $country = unserialize(file_get_contents('https://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR'], false))['geoplugin_countryName'];
+            $url = 'https://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR'];
+              $ch = curl_init();
+              curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
+              curl_setopt($ch, CURLOPT_HEADER, 0);
+              curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+              curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36');
+              curl_setopt($ch, CURLOPT_URL, $url);
+              curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+              $result = curl_exec($ch);
+              $country = unserialize($result)['geoplugin_countryName'];
             if ($country == 'Iran') : ?>
                        <div style="padding: 10px; background: #ff5757; margin: 0 0 20px 0; color: white; border-radius: 4px; text-align: center; box-shadow: 0px 0px 17px 0px #fb8988;">برای تماشای ویدیو ابتدا vpn خود را <span style="padding: 4px 10px; background: orange; border-radius: 6px;">روشن</span> کرده و صفحه را رفرش کنید. (ویدیو در یوتیوب بارگذاری شده است)</div>
             <?php else : ?>
