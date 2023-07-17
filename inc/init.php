@@ -19,6 +19,13 @@ function theme_setup()
     );
     flush_rewrite_rules();
 
+
+    $locations = array(
+        'main-menu'   => 'منوی اصلی',
+        'mobile-menu'   => 'منوی موبایل',
+    );
+    register_nav_menus($locations);
+
 }
 add_action('init', 'theme_setup');
 
