@@ -990,3 +990,22 @@
   .shadow-none {
       box-shadow: none !important;
   }
+
+  .pagination {
+      justify-content: center;
+      align-items: center;
+  }
+
+  a.page-numbers {
+      padding: 7px 14px;
+      font-size: 13px;
+      margin: 0 !important;
+  }
+
+  span.page-numbers.current {
+      padding: 7px 14px;
+      background: #0bc480;
+      border-radius: 6px;
+      font-size: 13px;
+      color: white;
+  }
