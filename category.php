@@ -42,16 +42,12 @@
             wp_reset_query();
             ?>
 
-        <div class="col-12">
-            <div class="pagination">
-                <?php the_posts_pagination(); ?>
-            </div>
-        </div>
+          
         </div>
     <?php
     endif;
     ?>
 
-    
+
 
     <?php get_footer() ?>
