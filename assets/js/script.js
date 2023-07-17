@@ -43,3 +43,6 @@ function plswbAlert(message, status, duration) {
 }
 
 
+String.prototype.EntoFa = function () {
+    return this.replace(/\d/g, d => '۰۱۲۳۴۵۶۷۸۹'[d])
+}
