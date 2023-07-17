@@ -19,7 +19,7 @@
     ];
     $posts = new WP_Query($args);
     if ($posts->have_posts()) : ?>
-        <div class="row my-5">
+        <div class="row">
             <?php
             while ($posts->have_posts()) :
                 $posts->the_post();
@@ -43,7 +43,7 @@
             wp_reset_query();
             ?>
 
-            <div class="col-12">
+            <div class="col-12 my-3">
                 <div class="pagination">
                     <?php the_posts_pagination(); ?>
                 </div>
