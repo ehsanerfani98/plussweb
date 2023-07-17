@@ -13,7 +13,7 @@
     <?php
     $args = [
         'post_type' => 'post',
-        'posts_per_page' => 6,
+        'posts_per_page' => 12,
         'post_status' => 'publish'
     ];
     $posts = new WP_Query($args);
@@ -45,6 +45,13 @@
     <?php
     endif;
     ?>
-</div>
 
-<?php get_footer() ?>
+    <div class="row">
+        <div class="col-12">
+            <div class="pagination">
+                <?php the_posts_pagination(); ?>
+            </div>
+        </div>
+    </div>
+
+    <?php get_footer() ?>
