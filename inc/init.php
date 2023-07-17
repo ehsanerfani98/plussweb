@@ -19,7 +19,6 @@ function theme_setup()
     );
     flush_rewrite_rules();
 
-
     $locations = array(
         'main-menu'   => 'منوی اصلی',
         'mobile-menu'   => 'منوی موبایل',
