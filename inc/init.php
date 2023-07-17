@@ -21,6 +21,7 @@ function theme_setup()
 
     $locations = array(
         'main-menu'   => 'منوی اصلی',
+        'footer-menu'   => 'منوی فوتر',
         'mobile-menu'   => 'منوی موبایل',
     );
     register_nav_menus($locations);

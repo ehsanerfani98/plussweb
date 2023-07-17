@@ -15,8 +15,6 @@
                     <div class="logo">
                         <img class="img-fluid" src="<?= PLSWB_THEME_ASSETS ?>images/logo.png" alt="">
                     </div>
-
-
                         <?php
                         $locations = get_nav_menu_locations();
                         $menu = wp_get_nav_menu_object($locations['main-menu']);
