@@ -102,7 +102,8 @@ function theme_scripts()
     wp_enqueue_style('responsive');
 
     wp_register_script('bootstrap-bundle', PLSWB_THEME_ASSETS. 'js/bootstrap.min.js', array("jquery"), "1.0.0", true);
-    wp_register_script('owl-carousel', PLSWB_THEME_ASSETS. 'js/owl.carousel.min.js', array(), "jquery", true);
+    wp_register_script('owl-carousel', PLSWB_THEME_ASSETS. 'js/owl.carousel.min.js', array("jquery"), "1.0.0", true);
+    wp_register_script('Persian', 'https://www.jqueryscript.net/demo/Convert-Numbers-To-Persian-Arabic-jQuery-persianNum/persianNum.jquery.js', array("jquery"), "1.0.0", true);
     wp_register_script('plswb-script', PLSWB_THEME_ASSETS . 'js/script.js', [], "1.0.0", true);
     wp_register_script('plswb-ajax-comment-product', PLSWB_THEME_ASSETS . 'js/ajax-comment-product.js', [], "1.0.0", true);
     wp_register_script('plswb-ajax-comment-post', PLSWB_THEME_ASSETS . 'js/ajax-comment-post.js', [], "1.0.0", true);
@@ -110,6 +111,7 @@ function theme_scripts()
 
     wp_enqueue_script('bootstrap-bundle');
     wp_enqueue_script('owl-carousel');
+    wp_enqueue_script('Persian');
     wp_enqueue_script('plswb-script');
 
     if (is_singular('product')) {

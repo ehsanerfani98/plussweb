@@ -24,6 +24,7 @@ jQuery(document).ready(function ($) {
         dots: false,
     });
 
+    $('body').persianNum();
 
 });
 
