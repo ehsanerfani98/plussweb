@@ -1,4 +1,5 @@
 <?php get_header() ?>
+
 <div class="container-fluid my-5">
     <div class="row">
         <div class="col-12">
@@ -42,12 +43,14 @@
             wp_reset_query();
             ?>
 
-          
+            <div class="col-12">
+                <div class="pagination">
+                    <?php the_posts_pagination(); ?>
+                </div>
+            </div>
         </div>
     <?php
     endif;
     ?>
-
-
-
-    <?php get_footer() ?>
+</div>
+<?php get_footer() ?>
