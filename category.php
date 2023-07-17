@@ -21,6 +21,8 @@
         while ($posts->have_posts()) :
             $posts->the_post();
     ?>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
             <a href="<?php the_permalink() ?>" class="card mt-4 mb-5 mx-2">
                 <div class="content-card p-2">
                     <div class="card-image-list">
@@ -31,6 +33,7 @@
                     </div>
                 </div>
             </a>
+            </div>
     <?php
         endwhile;
         wp_reset_postdata();
