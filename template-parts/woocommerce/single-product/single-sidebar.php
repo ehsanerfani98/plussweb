@@ -82,13 +82,8 @@ $rating  = $product->get_average_rating();
         <div class="content-card">
             <div class="product-info">
                 <div class="block-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none">
-                        <path d="M6 3L10 4.5L12 5V9V21L9 20.5L5.5 19L3 18.5L2 16.5V10L2.5 3H6Z" fill="#3772FF" fill-opacity="0.25"></path>
-                        <path d="M22 16.74V4.67001C22 3.47001 21.02 2.58001 19.83 2.68001H19.77C17.67 2.86001 14.48 3.93001 12.7 5.05001L12.53 5.16001C12.24 5.34001 11.76 5.34001 11.47 5.16001L11.22 5.01001C9.44 3.90001 6.26 2.84001 4.16 2.67001C2.97 2.57001 2 3.47001 2 4.66001V16.74C2 17.7 2.78 18.6 3.74 18.72L4.03 18.76C6.2 19.05 9.55 20.15 11.47 21.2L11.51 21.22C11.78 21.37 12.21 21.37 12.47 21.22C14.39 20.16 17.75 19.05 19.93 18.76L20.26 18.72C21.22 18.6 22 17.7 22 16.74Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                        <path d="M12 5.48999V20.49" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M7.75 8.48999H5.5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8.5 11.49H5.5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <!--?xml version="1.0" ?--><svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.17,2.06A13.1,13.1,0,0,0,19,1.87a12.94,12.94,0,0,0-7,2.05,12.94,12.94,0,0,0-7-2,13.1,13.1,0,0,0-2.17.19,1,1,0,0,0-.83,1v12a1,1,0,0,0,1.17,1,10.9,10.9,0,0,1,8.25,1.91l.12.07.11,0a.91.91,0,0,0,.7,0l.11,0,.12-.07A10.9,10.9,0,0,1,20.83,16a1,1,0,0,0,1.17-1v-12A1,1,0,0,0,21.17,2.06ZM11,15.35a12.87,12.87,0,0,0-6-1.48c-.33,0-.66,0-1,0v-10a8.69,8.69,0,0,1,1,0,10.86,10.86,0,0,1,6,1.8Zm9-1.44c-.34,0-.67,0-1,0a12.87,12.87,0,0,0-6,1.48V5.67a10.86,10.86,0,0,1,6-1.8,8.69,8.69,0,0,1,1,0Zm1.17,4.15A13.1,13.1,0,0,0,19,17.87a12.94,12.94,0,0,0-7,2.05,12.94,12.94,0,0,0-7-2.05,13.1,13.1,0,0,0-2.17.19A1,1,0,0,0,2,19.21,1,1,0,0,0,3.17,20a10.9,10.9,0,0,1,8.25,1.91,1,1,0,0,0,1.16,0A10.9,10.9,0,0,1,20.83,20,1,1,0,0,0,22,19.21,1,1,0,0,0,21.17,18.06Z" fill="#6563ff"></path>
                     </svg>
                     <div class="title">
                         تعداد جلسات
@@ -98,13 +93,8 @@ $rating  = $product->get_average_rating();
                     </div>
                 </div>
                 <div class="block-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none">
-                        <path d="M5.5 12C5.5 8.41 8.41 5.5 12 5.5C15.59 5.5 18.5 8.41 18.5 12C18.5 14.08 17.52 15.94 16 17.13H15.99C14.89 17.99 13.51 18.5 12 18.5C10.51 18.5 9.14 18 8.04 17.15H8.03C6.49 15.96 5.5 14.1 5.5 12Z" fill="#FFD166" fill-opacity="0.45" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 9.65997V12.45L13.4 13.85" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M8.03003 17.15H8.04003C9.14003 18 10.51 18.5 12 18.5C13.51 18.5 14.89 17.99 15.99 17.13H16L15.49 19.6C15 21.5 13.9 22 12.55 22H11.46C10.11 22 9.00003 21.5 8.52003 19.59L8.03003 17.15Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                        <path d="M8.03003 6.85H8.04003C9.14003 6 10.51 5.5 12 5.5C13.51 5.5 14.89 6.01 15.99 6.87H16L15.49 4.4C15 2.5 13.9 2 12.55 2H11.46C10.11 2 9.00003 2.5 8.52003 4.41L8.03003 6.85Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
+                    <!--?xml version="1.0" ?--><svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17,8.61,16,2.84A1,1,0,0,0,15,2H9a1,1,0,0,0-1,.84l-1,5.77a6,6,0,0,0,0,6.78l1,5.77A1,1,0,0,0,9,22h6a1,1,0,0,0,1-.84l1-5.77a6,6,0,0,0,0-6.78ZM9.85,4h4.3l.44,2.59a6,6,0,0,0-5.18,0Zm4.3,16H9.85l-.44-2.59a6,6,0,0,0,5.18,0ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16Z" fill="#6563ff"></path>
                     </svg>
                     <div class="title">
                         مدت دوره
@@ -114,14 +104,8 @@ $rating  = $product->get_average_rating();
                     </div>
                 </div>
                 <div class="block-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <path d="M22.5446 16.1546L31.0346 10.4696C31.8896 9.8996 32.1146 8.7296 31.5446 7.8896L28.8146 3.82457C28.2446 2.96957 27.0746 2.74457 26.2346 3.31457L17.7446 8.99958L22.5446 16.1546Z" fill="#FF6838" fill-opacity="0.45" stroke="#23262F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M18.2608 9.71874L11.0942 14.5186L14.9341 20.2518L22.1006 15.452L18.2608 9.71874Z" stroke="#23262F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                        <path d="M8.74482 23.8499L14.6698 19.8899L11.3098 14.8799L5.38481 18.8399C4.69481 19.3049 4.51482 20.2349 4.97982 20.9249L6.67481 23.4449C7.12481 24.1199 8.05482 24.2999 8.74482 23.8499Z" stroke="#23262F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                        <path d="M18.0749 18.2998L11.3398 32.9998" stroke="#23262F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M18 18.2998L24.66 32.9998" stroke="#23262F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <!--?xml version="1.0" ?--><svg width="36" height="36" data-name="Layer 1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.9,7.59l-1-3.87A3,3,0,0,0,17.19,1.6l-1.93.52a1,1,0,0,0-.71,1.23l.26,1L4.19,7.16a1,1,0,0,0-.71,1.22l.26,1-1,.26a1,1,0,0,0,.25,2,1.09,1.09,0,0,0,.26,0l1-.27.26,1a1,1,0,0,0,.46.6,1,1,0,0,0,.5.14.75.75,0,0,0,.26,0L9,12.08v.42a2.9,2.9,0,0,0,.3,1.28l-5,5a1,1,0,0,0,1.41,1.42l5-5,.28.11V21.5a1,1,0,0,0,2,0V15.32a2.52,2.52,0,0,0,.29-.12l5,5a1,1,0,1,0,1.41-1.42l-5-5A3.09,3.09,0,0,0,15,12.5v-2l1.35-.36.25,1a1,1,0,0,0,1,.74l.26,0,1.93-.52A3,3,0,0,0,21.9,7.59ZM13,12.5a1,1,0,0,1-.28.69h0v0a1,1,0,0,1-.69.28,1,1,0,0,1-.7-.29h0a1,1,0,0,1-.29-.7v-1L13,11ZM6.19,10.76,5.67,8.83l9.66-2.59.26,1,.26,1Zm13.68-1.9a1,1,0,0,1-.61.47l-1,.26-.78-2.9L17,4.76h0l-.26-1,1-.26a1,1,0,0,1,1.23.71l1,3.87A1,1,0,0,1,19.87,8.86Z" fill="#6563ff"></path>
                     </svg>
                     <div class="title">
                         نوع دوره
@@ -131,11 +115,8 @@ $rating  = $product->get_average_rating();
                     </div>
                 </div>
                 <div class="block-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <path d="M31.6202 12.8701V23.13C31.6202 24.81 30.7202 26.3701 29.2652 27.2251L20.3552 32.3701C18.9002 33.2101 17.1002 33.2101 15.6302 32.3701L6.72025 27.2251C5.26525 26.3851 4.36523 24.825 4.36523 23.13V12.8701C4.36523 11.1901 5.26525 9.62999 6.72025 8.77499L15.6302 3.63C17.0852 2.79 18.8852 2.79 20.3552 3.63L29.2652 8.77499C30.7202 9.62999 31.6202 11.1751 31.6202 12.8701Z" stroke="#23262F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                        <path d="M14.625 18.0003V16.2003C14.625 13.8903 16.26 12.9454 18.255 14.1004L19.815 15.0003L21.375 15.9003C23.37 17.0553 23.37 18.9454 21.375 20.1004L19.815 21.0003L18.255 21.9003C16.26 23.0553 14.625 22.1104 14.625 19.8004V18.0003Z" fill="#9757D7" fill-opacity="0.45" stroke="#23262F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
+                    <!--?xml version="1.0" ?--><svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18,6H14.41l2.3-2.29a1,1,0,1,0-1.42-1.42L12,5.54l-1.17-2a1,1,0,1,0-1.74,1L10,6H6A3,3,0,0,0,3,9v8a3,3,0,0,0,3,3v1a1,1,0,0,0,2,0V20h8v1a1,1,0,0,0,2,0V20a3,3,0,0,0,3-3V9A3,3,0,0,0,18,6Zm1,11a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V9A1,1,0,0,1,6,8H18a1,1,0,0,1,1,1Z" fill="#6563ff"></path>
                     </svg>
                     <div class="title">
                         نحوه دریافت
@@ -145,11 +126,8 @@ $rating  = $product->get_average_rating();
                     </div>
                 </div>
                 <div class="block-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <path d="M24.6602 13.3496C30.0602 13.8146 32.2652 16.5896 32.2652 22.6646V22.8596C32.2652 29.5646 29.5802 32.2496 22.8752 32.2496H13.1102C6.40521 32.2496 3.72021 29.5646 3.72021 22.8596V22.6646C3.72021 16.6346 5.89521 13.8596 11.2052 13.3646" stroke="#23262F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                        <path d="M18 3V22.32" stroke="#58BD7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M23.0251 18.9746L18.0001 23.9996L12.9751 18.9746" stroke="#58BD7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <!--?xml version="1.0" ?--><svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.29,13.29a1,1,0,0,0,0,1.42l3,3a1,1,0,0,0,1.42,0l3-3a1,1,0,0,0-1.42-1.42L13,14.59V3a1,1,0,0,0-2,0V14.59l-1.29-1.3A1,1,0,0,0,8.29,13.29ZM18,9H16a1,1,0,0,0,0,2h2a1,1,0,0,1,1,1v7a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V12a1,1,0,0,1,1-1H8A1,1,0,0,0,8,9H6a3,3,0,0,0-3,3v7a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V12A3,3,0,0,0,18,9Z" fill="#6563ff"></path>
                     </svg>
                     <div class="title">
                         حجم دوره
@@ -159,13 +137,8 @@ $rating  = $product->get_average_rating();
                     </div>
                 </div>
                 <div class="block-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none">
-                        <path d="M17.22 2H8.96005C8.56005 2 8.18002 2.14 7.87002 2.38L5.68002 4.13C4.80002 4.83 4.80002 6.15999 5.68002 6.85999L7.87002 8.60999C8.18002 8.85999 8.57005 8.98999 8.96005 8.98999H17.22C18.19 8.98999 18.97 8.20999 18.97 7.23999V3.73999C18.97 2.77999 18.19 2 17.22 2Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                        <path d="M6.80005 12H15.0601C15.4601 12 15.8401 12.14 16.1501 12.38L18.3401 14.13C19.2201 14.83 19.2201 16.16 18.3401 16.86L16.1501 18.61C15.8401 18.86 15.4501 18.99 15.0601 18.99H6.80005C5.83005 18.99 5.05005 18.21 5.05005 17.24V13.74C5.05005 12.78 5.83005 12 6.80005 12Z" fill="#CDB4DB" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 12V9" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M12 22V19" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M9 22H15" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <!--?xml version="1.0" ?--><svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.53,7.15a1,1,0,0,0-1,0L17,8.89A3,3,0,0,0,14,6H5A3,3,0,0,0,2,9v6a3,3,0,0,0,3,3h9a3,3,0,0,0,3-2.89l3.56,1.78A1,1,0,0,0,21,17a1,1,0,0,0,.53-.15A1,1,0,0,0,22,16V8A1,1,0,0,0,21.53,7.15ZM15,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V9A1,1,0,0,1,5,8h9a1,1,0,0,1,1,1Zm5-.62-3-1.5V11.12l3-1.5Z" fill="#6563ff"></path>
                     </svg>
                     <div class="title">
                         وضعیت
