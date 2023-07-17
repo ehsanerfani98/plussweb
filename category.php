@@ -19,7 +19,7 @@
     ];
     $posts = new WP_Query($args);
     if ($posts->have_posts()) : ?>
-        <div class="row my-3">
+        <div class="row my-5">
             <?php
             while ($posts->have_posts()) :
                 $posts->the_post();
