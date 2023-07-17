@@ -8,6 +8,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div style="padding: 10px;background: greenyellow;color: green;">قالب سایت در دست طراحی می باشد</div>
     <div class="container-fluid">
         <div class="row nav d-none d-lg-flex">
             <div class="col-lg-9">
