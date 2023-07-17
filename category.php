@@ -21,18 +21,20 @@
         while ($posts->have_posts()) :
             $posts->the_post();
     ?>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 
-            <a href="<?php the_permalink() ?>" class="card mt-4 mb-5 mx-2">
-                <div class="content-card p-2">
-                    <div class="card-image-list">
-                        <?php the_post_thumbnail('normal', ['loading' => 'lazy']) ?>
-                    </div>
-                    <div class="card-title-list">
-                        <h2><?= mb_strlen(get_the_title())  > 65 ? mb_substr(get_the_title(), 0, 65) . '...' : get_the_title() ?></h2>
-                    </div>
+                    <a href="<?php the_permalink() ?>" class="card mt-4 mb-5 mx-2">
+                        <div class="content-card p-2">
+                            <div class="card-image-list">
+                                <?php the_post_thumbnail('normal', ['loading' => 'lazy']) ?>
+                            </div>
+                            <div class="card-title-list">
+                                <h2><?= mb_strlen(get_the_title())  > 65 ? mb_substr(get_the_title(), 0, 65) . '...' : get_the_title() ?></h2>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
             </div>
     <?php
         endwhile;
