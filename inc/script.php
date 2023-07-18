@@ -5,6 +5,12 @@ function header_scripts()
 {
 ?>
 
+    <?php if (is_singular()) : ?>
+        <link rel="canonical" href="<?= get_permalink() ?>" />
+    <?php endif; ?>
+    <?php if (is_home()) : ?>
+        <link rel="canonical" href="<?= home_url('/') ?>" />
+    <?php endif; ?>
     <script>
         var ajax_setup_plswb = '<?= admin_url('admin-ajax.php'); ?>';
         var ajax_nonce = '<?= wp_create_nonce("special-check") ?>';
