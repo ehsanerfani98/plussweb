@@ -12,7 +12,7 @@ function header_scripts()
         <meta property="og:image" content="<?= get_the_post_thumbnail_url() ?>" />
     <?php endif; ?>
     <?php if (is_home()) : ?>
-        <link rel="canonical" href="<?= home_url('/') ?>" />
+        <link rel="canonical" href="<?= home_url() ?>" />
     <?php endif; ?>
     <script>
         var ajax_setup_plswb = '<?= admin_url('admin-ajax.php'); ?>';
