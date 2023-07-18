@@ -4,7 +4,6 @@ add_action('wp_head', 'header_scripts');
 function header_scripts()
 {
 ?>
-
     <?php if (is_singular()) : ?>
         <link rel="canonical" href="<?= get_permalink() ?>" />
         <meta property="og:title" content="<?php the_title() ?>" />
