@@ -7,6 +7,9 @@ function header_scripts()
 
     <?php if (is_singular()) : ?>
         <link rel="canonical" href="<?= get_permalink() ?>" />
+        <meta property="og:title" content="<?php the_title() ?>" />
+        <meta property="og:description" content="<?= strip_tags(get_the_excerpt()) ?>" />
+        <meta property="og:image" content="<?= get_the_post_thumbnail_url() ?>" />
     <?php endif; ?>
     <?php if (is_home()) : ?>
         <link rel="canonical" href="<?= home_url('/') ?>" />
