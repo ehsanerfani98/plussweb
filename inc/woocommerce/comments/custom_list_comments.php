@@ -3,6 +3,7 @@
 function custom_list_comments($comment, $args, $depth)
 {
     $user = get_userdata($comment->user_id);
+    $status = '';
     if (!empty($user) && $user) {
         if ($user->roles[0] == 'administrator' || $user->roles[0] == 'shop_manager') {
             $label = 'مدیر سایت';
