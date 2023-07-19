@@ -1023,12 +1023,12 @@
   }
 
   .playlist-image img {
-      width: 60px;
+      width: 74px;
       height: auto;
       border-radius: 10px;
   }
 
   .playlist-title {
-      font-size: 13px;
+      font-size: 12px;
       line-height: 1.7;
   }
