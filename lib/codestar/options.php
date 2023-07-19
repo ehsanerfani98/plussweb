@@ -559,8 +559,7 @@ if (class_exists('CSF')) {
 	CSF::createMetabox($prefix, array(
 		'title'     =>	'تنظیمات نوشته',
 		'post_type' =>	'post',
-		'nav'                => 'normal',
-		'theme'              => 'light',
+		
 	));
 
 	CSF::createSection(
