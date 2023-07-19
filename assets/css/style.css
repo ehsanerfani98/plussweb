@@ -455,6 +455,7 @@
       color: var(--title-color);
       border: none;
       outline: none;
+      text-align: left;
   }
 
   .copy-text button {
