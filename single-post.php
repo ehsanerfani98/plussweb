@@ -150,12 +150,21 @@
                     $similar_posts = get_similar_posts_by_tags();
 
                     if ($similar_posts) {
-                        echo '<ul>';
                         foreach ($similar_posts as $post) {
                             setup_postdata($post);
-                            echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+                    ?>
+
+                            <a href="<?php the_permalink() ?>" class="playlist-item">
+                                <div class="playlist-image">
+                                    <?php the_post_thumbnail() ?>
+                                </div>
+                                <div class="playlist-title">
+                                    <?php the_title(); ?>
+                                </div>
+                            </a>
+
+                    <?php
                         }
-                        echo '</ul>';
                         wp_reset_postdata();
                     }
                     ?>
