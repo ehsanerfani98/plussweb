@@ -32,7 +32,6 @@ if (post_password_required()) {
 	return;
 }
 ?>
-<?php $PLSWB_COURSE_OPTION = get_post_meta(get_the_ID(), 'PLSWB_COURSE_OPTION', true); ?>
 
 <div class="row p-lg-5 p-md-5" id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
 

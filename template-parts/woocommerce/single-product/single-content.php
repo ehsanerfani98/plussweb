@@ -1,5 +1,6 @@
 <?php // do_action('view_content_card'); 
 ?>
+<?php $PLSWB_COURSE_OPTION = get_post_meta(get_the_ID(), 'PLSWB_COURSE_OPTION', true); ?>
 
 <?php if (isset($PLSWB_COURSE_OPTION['opt-show-youtube-video'])) :  ?>
     <?php if ($PLSWB_COURSE_OPTION['opt-show-youtube-video']) :  ?>
