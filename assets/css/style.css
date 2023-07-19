@@ -1011,4 +1011,24 @@
       color: white;
   }
 
-  
+  a.playlist-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+      box-shadow: var(--box-shadow-card);
+      padding: 10px;
+      border-radius: var(--border-radius);
+  }
+
+  .playlist-image img {
+      width: 60px;
+      height: auto;
+      border-radius: 10px;
+  }
+
+  .playlist-title {
+      font-size: 13px;
+      line-height: 1.7;
+  }
