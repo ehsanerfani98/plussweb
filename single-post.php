@@ -138,14 +138,6 @@
             </div>
             <div class="card-v2">
                 <div class="content-card">
-                    <div class="copy-text">
-                        <input type="text" class="text" value="<?= wp_get_shortlink() ?>" />
-                        <button><i class="fa fa-clone"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-v2">
-                <div class="content-card">
                     <?php
                     $similar_posts = get_similar_posts_by_tags();
 
@@ -168,6 +160,14 @@
                         wp_reset_postdata();
                     }
                     ?>
+                </div>
+            </div>
+            <div class="card-v2">
+                <div class="content-card">
+                    <div class="copy-text">
+                        <input type="text" class="text" value="<?= wp_get_shortlink() ?>" />
+                        <button><i class="fa fa-clone"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
