@@ -1025,7 +1025,7 @@
   .playlist-image img {
       width: 60px;
       height: auto;
-      border-radius: 10px;
+      border-radius: var(--border-radius);
   }
 
   .playlist-title {
