@@ -1019,13 +1019,13 @@
       margin: 10px 0;
       box-shadow: var(--box-shadow-card);
       padding: 10px;
-      border-radius: var(--border-radius);
+      border-radius: 10px;
   }
 
   .playlist-image img {
       width: 60px;
       height: auto;
-      border-radius: var(--border-radius);
+      border-radius: 10px;
   }
 
   .playlist-title {
