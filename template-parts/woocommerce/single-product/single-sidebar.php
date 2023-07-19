@@ -1,6 +1,7 @@
 <?php
 $product = wc_get_product(get_the_ID());
 $rating  = $product->get_average_rating();
+var_dump($PLSWB_COURSE_OPTION['opt-info-box-volume']);
 ?>
 
 <div class="card-v2">
