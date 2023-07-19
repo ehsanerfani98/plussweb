@@ -12,7 +12,7 @@ function get_similar_posts_by_tags()
         'post_type' => 'post',
         'post_status' => 'publish',
         'posts_per_page' => -1, 
-        'orderby' => 'ASC',
+        'orderby' => 'DESC',
         'tax_query' => array(
             array(
                 'taxonomy' => 'post_tag',
