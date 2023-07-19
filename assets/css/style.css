@@ -1020,6 +1020,7 @@
       box-shadow: var(--box-shadow-card);
       padding: 10px;
       border-radius: 10px;
+      background: white;
   }
 
   .playlist-image img {

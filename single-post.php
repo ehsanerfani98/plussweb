@@ -137,7 +137,7 @@
                 </div>
             </div>
             <div class="card-v2">
-                <div class="content-card">
+                <div class="content-card py-0">
                     <?php
                     $similar_posts = get_similar_posts_by_tags();
 
