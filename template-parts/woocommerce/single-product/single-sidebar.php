@@ -3,7 +3,7 @@ $product = wc_get_product(get_the_ID());
 $rating  = $product->get_average_rating();
 $PLSWB_COURSE_OPTION2 = get_post_meta(get_the_ID(), 'PLSWB_COURSE_OPTION', true);
 
-var_dump($PLSWB_COURSE_OPTION2);
+var_dump(get_the_ID());
 ?>
 
 <div class="card-v2">
