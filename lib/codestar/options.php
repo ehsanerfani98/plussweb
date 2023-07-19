@@ -473,7 +473,7 @@ if (class_exists('CSF')) {
 		'post_type' =>	'product',
 		'nav'                => 'normal',
 		'theme'              => 'light',
-	
+
 	));
 
 	CSF::createSection(
@@ -487,6 +487,45 @@ if (class_exists('CSF')) {
 					'title'       => 'انتخاب کارت توضیحات',
 					'options' => apply_filters('card_option', ['option1' => 'value1'], 20),
 					'default'     => ''
+				),
+			)
+		)
+	);
+
+	CSF::createSection(
+		$prefix,
+		array(
+			'title'       => 'باکس اطلاعات',
+			'fields'	=>	array(
+				array(
+					'id'          => 'opt-info-box-sessions',
+					'type'        => 'text',
+					'title'       => 'تعداد جلسات',
+				),
+				array(
+					'id'          => 'opt-info-box-time',
+					'type'        => 'text',
+					'title'       => 'مدت دوره',
+				),
+				array(
+					'id'          => 'opt-info-box-type',
+					'type'        => 'text',
+					'title'       => 'نوع دوره',
+				),
+				array(
+					'id'          => 'opt-info-box-download',
+					'type'        => 'text',
+					'title'       => 'نحوه دریافت',
+				),
+				array(
+					'id'          => 'opt-info-box-volume',
+					'type'        => 'text',
+					'title'       => 'حجم دوره',
+				),
+				array(
+					'id'          => 'opt-info-box-status',
+					'type'        => 'text',
+					'title'       => 'وضعیت',
 				),
 			)
 		)
@@ -519,7 +558,9 @@ if (class_exists('CSF')) {
 	$prefix = 'PLSWB_POST_OPTION';
 	CSF::createMetabox($prefix, array(
 		'title'     =>	'تنظیمات نوشته',
-		'post_type' =>	'post'
+		'post_type' =>	'post',
+		'nav'                => 'normal',
+		'theme'              => 'light',
 	));
 
 	CSF::createSection(
@@ -543,6 +584,46 @@ if (class_exists('CSF')) {
 			)
 		)
 	);
+
+	CSF::createSection(
+		$prefix,
+		array(
+			'title'       => 'باکس اطلاعات',
+			'fields'	=>	array(
+				array(
+					'id'          => 'opt-info-box-sessions',
+					'type'        => 'text',
+					'title'       => 'تعداد جلسات',
+				),
+				array(
+					'id'          => 'opt-info-box-time',
+					'type'        => 'text',
+					'title'       => 'مدت دوره',
+				),
+				array(
+					'id'          => 'opt-info-box-type',
+					'type'        => 'text',
+					'title'       => 'نوع دوره',
+				),
+				array(
+					'id'          => 'opt-info-box-download',
+					'type'        => 'text',
+					'title'       => 'نحوه دریافت',
+				),
+				array(
+					'id'          => 'opt-info-box-volume',
+					'type'        => 'text',
+					'title'       => 'حجم دوره',
+				),
+				array(
+					'id'          => 'opt-info-box-status',
+					'type'        => 'text',
+					'title'       => 'وضعیت',
+				),
+			)
+		)
+	);
+
 
 	//============================//
 	$prefix = 'hlr_framework_properties';
