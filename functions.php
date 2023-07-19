@@ -8,6 +8,7 @@ include 'constant.php';
 include PLSWB_THEME_PATH . 'inc/init.php';
 include PLSWB_THEME_PATH . 'lib/codestar/codestar-framework.php';
 include PLSWB_THEME_PATH . 'lib/codestar/options.php';
+include PLSWB_THEME_PATH . 'inc/helper.php';
 include PLSWB_THEME_PATH . 'inc/match_elementor.php';
 include PLSWB_THEME_PATH . 'inc/match_woocommerce.php';
 include PLSWB_THEME_PATH . 'inc/woocommerce/woocommerce-customizer.php';

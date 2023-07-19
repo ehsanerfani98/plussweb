@@ -144,6 +144,23 @@
                     </div>
                 </div>
             </div>
+            <div class="card-v2">
+                <div class="content-card">
+                    <?php
+                    $similar_posts = get_similar_posts_by_tags();
+
+                    if ($similar_posts) {
+                        echo '<ul>';
+                        foreach ($similar_posts as $post) {
+                            setup_postdata($post);
+                            echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+                        }
+                        echo '</ul>';
+                        wp_reset_postdata();
+                    }
+                    ?>
+                </div>
+            </div>
         </div>
 
     </div>
