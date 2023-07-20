@@ -94,7 +94,7 @@
         <div class="col-12">
             <div class="list-title">
                 <div class="list-icon">
-                    <i class="fa fa-graduation-cap"></i>
+                    <i class="fa fa-newspaper"></i>
                 </div>
                 <h4>اخبار تکنولوژی های وب و طراحی سایت</h4>
             </div>
