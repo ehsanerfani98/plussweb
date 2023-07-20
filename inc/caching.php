@@ -15,14 +15,44 @@ function all_product_cache(){
     return $result;
 }
 
-function all_post_cache(){
-    $cache_key = 'all_post_cache';
+function post_free_video_cache(){
+    $cache_key = 'post_free_video_cache';
     $result = get_transient($cache_key);
     if($result === false){
         $args = [
             'post_type' => 'post',
             'posts_per_page' => 6,
-            'post_status' => 'publish'
+            'post_status' => 'publish',
+            'tax_query' => array(
+                array(
+                'taxonomy' => 'category',
+                'field' => 'term_id',
+                'terms' => 16
+                 )
+              )
+        ];
+        $result = new WP_Query($args);
+        set_transient($cache_key, $result, 5 * MINUTE_IN_SECONDS);
+    }
+    return $result;
+}
+
+
+function post_news_cache(){
+    $cache_key = 'post_news_cache';
+    $result = get_transient($cache_key);
+    if($result === false){
+        $args = [
+            'post_type' => 'post',
+            'posts_per_page' => 6,
+            'post_status' => 'publish',
+            'tax_query' => array(
+                array(
+                'taxonomy' => 'category',
+                'field' => 'term_id',
+                'terms' => 108
+                 )
+              )
         ];
         $result = new WP_Query($args);
         set_transient($cache_key, $result, 5 * MINUTE_IN_SECONDS);
