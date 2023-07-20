@@ -70,12 +70,7 @@
     </div>
     <div class="owl-carousel card-product-slider owl-theme">
         <?php
-        $args = [
-            'post_type' => 'product',
-            'posts_per_page' => 6,
-            'post_status' => 'publish'
-        ];
-        $posts = new WP_Query($args);
+        $posts = all_product_cache();
         if ($posts->have_posts()) :
             while ($posts->have_posts()) :
                 $posts->the_post();
