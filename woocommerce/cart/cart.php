@@ -28,9 +28,10 @@ defined('ABSPATH') || exit;
 </div>
 <?php
 do_action('woocommerce_before_cart'); ?>
-<div class="row p-lg-5 p-md-5">
-	<div class="col-lg-8">
-		<form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
+<form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
+
+	<div class="row p-lg-5 p-md-5">
+		<div class="col-lg-8">
 			<?php do_action('woocommerce_before_cart_table'); ?>
 			<div class="plswb-shop-card woocommerce-cart-form__contents">
 				<?php do_action('woocommerce_before_cart_contents'); ?>
@@ -160,24 +161,26 @@ do_action('woocommerce_before_cart'); ?>
 				?>
 			</div>
 			<?php do_action('woocommerce_after_cart_table'); ?>
-		</form>
-		<?php do_action('woocommerce_before_cart_collaterals'); ?>
-	</div>
-
-
-	<div class="col-lg-4">
-		<div class="cart-collaterals">
-			<?php
-			/**
-			 * Cart collaterals hook.
-			 *
-			 * @hooked woocommerce_cross_sell_display
-			 * @hooked woocommerce_cart_totals - 10
-			 */
-			do_action('woocommerce_cart_collaterals');
-			?>
+			<?php do_action('woocommerce_before_cart_collaterals'); ?>
 		</div>
-		<button type="submit" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+
+
+		<div class="col-lg-4">
+			<div class="cart-collaterals">
+				<?php
+				/**
+				 * Cart collaterals hook.
+				 *
+				 * @hooked woocommerce_cross_sell_display
+				 * @hooked woocommerce_cart_totals - 10
+				 */
+				do_action('woocommerce_cart_collaterals');
+				?>
+			</div>
+			<button type="submit" class="button<?php echo esc_attr(wc_wp_theme_get_element_class_name('button') ? ' ' . wc_wp_theme_get_element_class_name('button') : ''); ?>" name="update_cart" value="<?php esc_attr_e('Update cart', 'woocommerce'); ?>"><?php esc_html_e('Update cart', 'woocommerce'); ?></button>
+		</div>
+
 	</div>
-</div>
+</form>
+
 <?php do_action('woocommerce_after_cart'); ?>
