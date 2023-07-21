@@ -29,11 +29,13 @@ defined('ABSPATH') || exit;
 <?php
 do_action('woocommerce_before_cart'); ?>
 <div class="row p-lg-5 p-md-5">
-	<form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
-		<?php do_action('woocommerce_before_cart_table'); ?>
+	<div class="col-lg-9">
 
-		<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
-			<thead>
+		<form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
+			<?php do_action('woocommerce_before_cart_table'); ?>
+
+			<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+				<!-- <thead>
 				<tr>
 					<th class="product-remove"><span class="screen-reader-text"><?php esc_html_e('Remove item', 'woocommerce'); ?></span></th>
 					<th class="product-thumbnail"><span class="screen-reader-text"><?php esc_html_e('Thumbnail image', 'woocommerce'); ?></span></th>
@@ -42,26 +44,26 @@ do_action('woocommerce_before_cart'); ?>
 					<th class="product-quantity"><?php esc_html_e('Quantity', 'woocommerce'); ?></th>
 					<th class="product-subtotal"><?php esc_html_e('Subtotal', 'woocommerce'); ?></th>
 				</tr>
-			</thead>
-			<tbody>
-				<?php do_action('woocommerce_before_cart_contents'); ?>
+			</thead> -->
+				<tbody>
+					<?php do_action('woocommerce_before_cart_contents'); ?>
 
-				<?php
-				foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
-					$_product   = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
-					$product_id = apply_filters('woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key);
-					/**
-					 * Filter the product name.
-					 *
-					 * @since 7.8.0
-					 * @param string $product_name Name of the product in the cart.
-					 */
-					$product_name = apply_filters('woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key);
+					<?php
+					foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+						$_product   = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
+						$product_id = apply_filters('woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key);
+						/**
+						 * Filter the product name.
+						 *
+						 * @since 7.8.0
+						 * @param string $product_name Name of the product in the cart.
+						 */
+						$product_name = apply_filters('woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key);
 
-					if ($_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters('woocommerce_cart_item_visible', true, $cart_item, $cart_item_key)) {
-						$product_permalink = apply_filters('woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink($cart_item) : '', $cart_item, $cart_item_key);
-				?>
-						<!-- <tr class="woocommerce-cart-form__cart-item <?php echo esc_attr(apply_filters('woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key)); ?>">
+						if ($_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters('woocommerce_cart_item_visible', true, $cart_item, $cart_item_key)) {
+							$product_permalink = apply_filters('woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink($cart_item) : '', $cart_item, $cart_item_key);
+					?>
+							<!-- <tr class="woocommerce-cart-form__cart-item <?php echo esc_attr(apply_filters('woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key)); ?>">
 
 							<td class="product-remove">
 								<?php
@@ -164,14 +166,14 @@ do_action('woocommerce_before_cart'); ?>
 								?>
 							</td>
 						</tr> -->
-				<?php
+					<?php
+						}
 					}
-				}
-				?>
+					?>
 
-				<?php do_action('woocommerce_cart_contents'); ?>
+					<!-- <?php do_action('woocommerce_cart_contents'); ?> -->
 
-				<tr>
+					<!-- <tr>
 					<td colspan="6" class="actions">
 
 						<?php if (wc_coupons_enabled()) { ?>
@@ -187,14 +189,15 @@ do_action('woocommerce_before_cart'); ?>
 
 						<?php wp_nonce_field('woocommerce-cart', 'woocommerce-cart-nonce'); ?>
 					</td>
-				</tr>
+				</tr> -->
 
-				<?php do_action('woocommerce_after_cart_contents'); ?>
-			</tbody>
-		</table>
-		<div class="col-lg-9">
+					<!-- <?php do_action('woocommerce_after_cart_contents'); ?> -->
+				</tbody>
+			</table>
 
 			<div class="plswb-shop-card woocommerce-cart-form__contents">
+				<?php do_action('woocommerce_before_cart_contents'); ?>
+
 				<?php
 				foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
 					$_product   = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
@@ -319,10 +322,10 @@ do_action('woocommerce_before_cart'); ?>
 				}
 				?>
 			</div>
-		</div>
 
-		<?php do_action('woocommerce_after_cart_table'); ?>
-	</form>
+			<?php do_action('woocommerce_after_cart_table'); ?>
+		</form>
+	</div>
 
 	<?php do_action('woocommerce_before_cart_collaterals'); ?>
 
