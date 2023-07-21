@@ -50,7 +50,7 @@ $rating  = $product->get_average_rating();
                                     <?php if ($product->get_sale_price() && $product->get_sale_price() != 0 && $product->get_sale_price() != '') : ?>
                                         <span class="orginal"><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
                                     <?php else : ?>
-                                        <span class="orginal">رایـــــگـان</span> -->
+                                        <span class="orginal">رایـــــگـان</span>
                                     <?php endif; ?>
                                 <?php endif; ?>
                             </span>
@@ -72,7 +72,7 @@ $rating  = $product->get_average_rating();
                                 <?php if ($product->get_sale_price() && $product->get_sale_price() != 0 && $product->get_sale_price() != '') : ?>
                                     <span class="orginal"><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
                                 <?php else : ?>
-                                    <span class="orginal">رایـــــگـان</span> -->
+                                    <span class="orginal">رایـــــگـان</span>
                                 <?php endif; ?>
                             <?php endif; ?>
                         </span>
