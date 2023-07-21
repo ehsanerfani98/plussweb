@@ -227,55 +227,57 @@ do_action('woocommerce_before_cart'); ?>
 							);
 							?>
 						</span>
-						<div class="thumbnail">
-							<?php
-							$thumbnail = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
-
-							if (!$product_permalink) {
-								echo $thumbnail; // PHPCS: XSS ok.
-							} else {
-								printf('<a href="%s">%s</a>', esc_url($product_permalink), $thumbnail); // PHPCS: XSS ok.
-							}
-							?>
-						</div>
-						<div class="content">
-							<div class="title" data-title="<?php esc_attr_e('Product', 'woocommerce'); ?>">
+						<div class="wrap-content">
+							<div class="thumbnail">
 								<?php
+								$thumbnail = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
+
 								if (!$product_permalink) {
-									/**
-									 * Filter the product name.
-									 *
-									 * @since 7.8.0
-									 * @param string $product_name Name of the product in the cart.
-									 * @param array $cart_item The product in the cart.
-									 * @param string $cart_item_key Key for the product in the cart.
-									 */
-									echo wp_kses_post(apply_filters('woocommerce_cart_item_name', $product_name, $cart_item, $cart_item_key) . '&nbsp;');
+									echo $thumbnail; // PHPCS: XSS ok.
 								} else {
-									/**
-									 * Filter the product name.
-									 *
-									 * @since 7.8.0
-									 * @param string $product_url URL the product in the cart.
-									 */
-									echo wp_kses_post(apply_filters('woocommerce_cart_item_name', sprintf('<a href="%s">%s</a>', esc_url($product_permalink), $product_name), $cart_item, $cart_item_key));
-								}
-
-								do_action('woocommerce_after_cart_item_name', $cart_item, $cart_item_key);
-
-								// Meta data.
-								echo wc_get_formatted_cart_item_data($cart_item); // PHPCS: XSS ok.
-
-								// Backorder notification.
-								if ($_product->backorders_require_notification() && $_product->is_on_backorder($cart_item['quantity'])) {
-									echo wp_kses_post(apply_filters('woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__('Available on backorder', 'woocommerce') . '</p>', $product_id));
+									printf('<a href="%s">%s</a>', esc_url($product_permalink), $thumbnail); // PHPCS: XSS ok.
 								}
 								?>
 							</div>
-							<div class="price" data-title="<?php esc_attr_e('Price', 'woocommerce'); ?>">
-								<?php
-								echo apply_filters('woocommerce_cart_item_price', WC()->cart->get_product_price($_product), $cart_item, $cart_item_key); // PHPCS: XSS ok.
-								?>
+							<div class="content">
+								<div class="title" data-title="<?php esc_attr_e('Product', 'woocommerce'); ?>">
+									<?php
+									if (!$product_permalink) {
+										/**
+										 * Filter the product name.
+										 *
+										 * @since 7.8.0
+										 * @param string $product_name Name of the product in the cart.
+										 * @param array $cart_item The product in the cart.
+										 * @param string $cart_item_key Key for the product in the cart.
+										 */
+										echo wp_kses_post(apply_filters('woocommerce_cart_item_name', $product_name, $cart_item, $cart_item_key) . '&nbsp;');
+									} else {
+										/**
+										 * Filter the product name.
+										 *
+										 * @since 7.8.0
+										 * @param string $product_url URL the product in the cart.
+										 */
+										echo wp_kses_post(apply_filters('woocommerce_cart_item_name', sprintf('<a href="%s">%s</a>', esc_url($product_permalink), $product_name), $cart_item, $cart_item_key));
+									}
+
+									do_action('woocommerce_after_cart_item_name', $cart_item, $cart_item_key);
+
+									// Meta data.
+									echo wc_get_formatted_cart_item_data($cart_item); // PHPCS: XSS ok.
+
+									// Backorder notification.
+									if ($_product->backorders_require_notification() && $_product->is_on_backorder($cart_item['quantity'])) {
+										echo wp_kses_post(apply_filters('woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__('Available on backorder', 'woocommerce') . '</p>', $product_id));
+									}
+									?>
+								</div>
+								<div class="price" data-title="<?php esc_attr_e('Price', 'woocommerce'); ?>">
+									<?php
+									echo apply_filters('woocommerce_cart_item_price', WC()->cart->get_product_price($_product), $cart_item, $cart_item_key); // PHPCS: XSS ok.
+									?>
+								</div>
 							</div>
 						</div>
 						<div class="total">
