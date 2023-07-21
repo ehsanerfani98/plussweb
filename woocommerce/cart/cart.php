@@ -167,20 +167,24 @@ do_action('woocommerce_before_cart'); ?>
 
 		<div class="col-lg-4">
 			<div class="card-v2">
-				<?php
-				/**
-				 * Cart collaterals hook.
-				 *
-				 * @hooked woocommerce_cross_sell_display
-				 * @hooked woocommerce_cart_totals - 10
-				 */
-				do_action('woocommerce_cart_collaterals');
-				?>
+				<div class="content-card">
+					<?php
+					/**
+					 * Cart collaterals hook.
+					 *
+					 * @hooked woocommerce_cross_sell_display
+					 * @hooked woocommerce_cart_totals - 10
+					 */
+					do_action('woocommerce_cart_collaterals');
+					?>
+				</div>
 			</div>
 			<div class="card-v2">
-				<button type="submit" class="btn-primary" name="update_cart" value="<?php esc_attr_e('Update cart', 'woocommerce'); ?>"><?php esc_html_e('Update cart', 'woocommerce'); ?></button>
-				<?php do_action('woocommerce_cart_actions'); ?>
-				<?php wp_nonce_field('woocommerce-cart', 'woocommerce-cart-nonce'); ?>
+				<div class="content-card">
+					<button type="submit" class="btn-primary" name="update_cart" value="<?php esc_attr_e('Update cart', 'woocommerce'); ?>"><?php esc_html_e('Update cart', 'woocommerce'); ?></button>
+					<?php do_action('woocommerce_cart_actions'); ?>
+					<?php wp_nonce_field('woocommerce-cart', 'woocommerce-cart-nonce'); ?>
+				</div>
 			</div>
 		</div>
 

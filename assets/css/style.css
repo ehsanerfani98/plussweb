@@ -257,7 +257,7 @@
       display: block;
       background: var(--second-color) !important;
       color: var(--primary-color) !important;
-      padding: 15px 10px;
+      padding: 15px 10px !important;
       border-radius: var(--border-radius-btn);
       text-align: center;
   }
