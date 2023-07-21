@@ -1088,18 +1088,18 @@
   }
 
   .plswb-shop-card input {
-    border: none;
-    border-radius: 6px;
-    background: #f3f3f3 !important;
-    padding: 10px;
-    text-align: center !important;
-    outline: none;
-}
+      border: none;
+      border-radius: 6px;
+      background: #f3f3f3 !important;
+      padding: 10px;
+      text-align: center !important;
+      outline: none;
+  }
 
-#add_payment_method .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-checkout .wc-proceed-to-checkout a.checkout-button {
-    margin-bottom: 0 !important;
-}
+  .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+      margin-bottom: 0 !important;
+  }
 
-#add_payment_method .wc-proceed-to-checkout, .woocommerce-cart .wc-proceed-to-checkout, .woocommerce-checkout .wc-proceed-to-checkout {
-    padding: 0 !important;
-}
+  .woocommerce-cart .wc-proceed-to-checkout {
+      padding: 0 !important;
+  }
