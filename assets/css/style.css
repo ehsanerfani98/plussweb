@@ -246,6 +246,11 @@
       padding: 20px;
   }
 
+  .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+      margin-bottom: 0 !important;
+      padding: 0;
+  }
+
   .btn-primary {
       width: 100%;
       display: block;
@@ -1096,12 +1101,6 @@
       outline: none;
   }
 
-  .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
-      margin-bottom: 0 !important;
-      padding: 0;
-  }
-
   .woocommerce-cart .wc-proceed-to-checkout {
       padding: 0 !important;
   }
-
