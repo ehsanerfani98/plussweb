@@ -43,17 +43,16 @@ $rating  = $product->get_average_rating();
                         <div class="product-order">
                             <span class="title">قیمت دوره</span>
                             <span class="price">
-
                                 <?php if ($product->get_sale_price() && $product->get_sale_price() != 0 && $product->get_sale_price() != '') : ?>
                                     <del><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></del>
                                     <span class="orginal"><?= number_format($product->get_sale_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
                                 <?php else : ?>
-                                    <span class="orginal"><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
+                                    <?php if ($product->get_sale_price() && $product->get_sale_price() != 0 && $product->get_sale_price() != '') : ?>
+                                        <span class="orginal"><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
+                                    <?php else : ?>
+                                        <span class="orginal">رایـــــگـان</span> -->
+                                    <?php endif; ?>
                                 <?php endif; ?>
-
-                                <!-- <del>۳۵۰,۰۰۰ تومان</del>
-                                <span class="orginal">رایـــــگـان</span> -->
-                                <!-- <span class="orginal">۱۰۰۰,۰۰۰ تومان</span> -->
                             </span>
                         </div>
                         <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
@@ -70,11 +69,12 @@ $rating  = $product->get_average_rating();
                                 <del><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></del>
                                 <span class="orginal"><?= number_format($product->get_sale_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
                             <?php else : ?>
-                                <span class="orginal"><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
+                                <?php if ($product->get_sale_price() && $product->get_sale_price() != 0 && $product->get_sale_price() != '') : ?>
+                                    <span class="orginal"><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
+                                <?php else : ?>
+                                    <span class="orginal">رایـــــگـان</span> -->
+                                <?php endif; ?>
                             <?php endif; ?>
-                            <!-- <del>۳۵۰,۰۰۰ تومان</del> -->
-                            <!-- <span class="orginal">رایـــــگـان</span> -->
-                            <!-- <span class="orginal">۱۰۰۰,۰۰۰ تومان</span> -->
                         </span>
                     </div>
                     <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
