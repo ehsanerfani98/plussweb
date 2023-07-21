@@ -1051,6 +1051,7 @@
       background: white;
       box-shadow: var(--box-shadow-card);
       border-radius: 20px;
+      margin-bottom: 20px;
   }
 
   .plswb-shop-card .close {
