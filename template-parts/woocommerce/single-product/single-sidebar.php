@@ -47,7 +47,7 @@ $rating  = $product->get_average_rating();
                                     <del><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></del>
                                     <span class="orginal"><?= number_format($product->get_sale_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
                                 <?php else : ?>
-                                    <?php if ($product->get_sale_price() && $product->get_sale_price() != 0 && $product->get_sale_price() != '') : ?>
+                                    <?php if ($product->get_regular_price() && $product->get_regular_price() != 0 && $product->get_regular_price() != '') : ?>
                                         <span class="orginal"><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
                                     <?php else : ?>
                                         <span class="orginal">رایـــــگـان</span>
@@ -69,7 +69,7 @@ $rating  = $product->get_average_rating();
                                 <del><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></del>
                                 <span class="orginal"><?= number_format($product->get_sale_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
                             <?php else : ?>
-                                <?php if ($product->get_sale_price() && $product->get_sale_price() != 0 && $product->get_sale_price() != '') : ?>
+                                <?php if ($product->get_regular_price() && $product->get_regular_price() != 0 && $product->get_regular_price() != '') : ?>
                                     <span class="orginal"><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
                                 <?php else : ?>
                                     <span class="orginal">رایـــــگـان</span>
