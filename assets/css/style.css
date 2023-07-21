@@ -1098,8 +1098,10 @@
 
   .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
       margin-bottom: 0 !important;
+      padding: 0;
   }
 
   .woocommerce-cart .wc-proceed-to-checkout {
       padding: 0 !important;
   }
+
