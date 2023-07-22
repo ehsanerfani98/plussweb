@@ -58,13 +58,13 @@
                 <h6>کپی از محتوای این سایت تحت هیچ شرایطی مجاز نیست.</h6>
             </div>
             <div class="social">
-                <a href="#">
+                <a href="https://www.instagram.com/plussweb.ir">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="#">
+                <a href="https://youtube.com/@plussweb">
                     <i class="fab fa-youtube"></i>
                 </a>
-                <a href="#">
+                <a href="https://linkedin.com/in/plussweb">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
