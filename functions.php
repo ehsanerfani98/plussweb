@@ -47,3 +47,17 @@ include PLSWB_THEME_PATH . 'inc/script.php';
 // }
 
 
+// حذف مرحله چک‌اوت ووکامرس
+add_filter('woocommerce_checkout_process', 'remove_woocommerce_checkout_process');
+function remove_woocommerce_checkout_process() {
+    // حذف اعتبارسنجی سفارش و اطلاعات صورتحساب
+    remove_action('woocommerce_checkout_process', 'wc_checkout_add_validation');
+    // حذف ایجاد سفارش
+    remove_action('woocommerce_checkout_order_created', 'wc_create_order');
+}
+
+// تغییر مقدار سبد خرید به صفحه پرداخت
+add_filter('woocommerce_add_to_cart_redirect', 'redirect_to_checkout');
+function redirect_to_checkout() {
+    return wc_get_checkout_url();
+}
