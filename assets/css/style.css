@@ -1152,3 +1152,7 @@
   .woocommerce-notices-wrapper {
       margin: 2rem 2rem 1rem 2rem;
   }
+
+  .cart-empty {
+      margin: 8rem 2rem 9rem 2rem;
+  }
