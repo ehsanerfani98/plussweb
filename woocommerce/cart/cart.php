@@ -18,14 +18,6 @@
 
 defined('ABSPATH') || exit;
 ?>
-<div class="row">
-	<div class="header-product-single" style="background-image: url('<?= PLSWB_THEME_ASSETS . 'images/icon-back-OWL.png' ?>');">
-		<div class="title">
-			<h1><?php the_title() ?></h1>
-		</div>
-		<?php woocommerce_breadcrumb() ?>
-	</div>
-</div>
 <?php
 do_action('woocommerce_before_cart'); ?>
 <form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
