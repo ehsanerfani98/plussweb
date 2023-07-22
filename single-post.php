@@ -1,15 +1,6 @@
 <?php get_header(); ?>
 <?php $maktabyar_post_options = get_post_meta(get_the_ID(), 'PLSWB_POST_OPTION', true); ?>
 
-<div class="row">
-    <div class="header-product-single" style="background-image: url('<?= PLSWB_THEME_ASSETS . 'images/icon-back-OWL.png' ?>');">
-        <div class="title">
-            <h1><?php the_title() ?></h1>
-        </div>
-        <?php woocommerce_breadcrumb() ?>
-    </div>
-</div>
-
 <div class="row p-lg-5 p-md-5">
 
     <div class="col-12 col-sm-12 col-md-12 col-lg-8">
