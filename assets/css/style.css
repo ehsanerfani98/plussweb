@@ -1142,6 +1142,7 @@
   a.button.wc-forward {
       background: #0bc480;
       color: white;
+      border: 1px solid #0bc480 !important;
   }
 
   a.button.wc-forward:hover {
