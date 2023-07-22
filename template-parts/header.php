@@ -11,6 +11,14 @@
 <body <?php body_class(); ?>>
     <div style="padding: 10px; background: #ffed1b; color: #977600; text-align: center; position: fixed; top: 0; width: 100%; z-index: 9999;">قالب سایت در دست طراحی می باشد</div>
     <div class="container-fluid" style="margin-top: 42px;">
+    <div class="row">
+	<div class="header-product-single" style="background-image: url('<?= PLSWB_THEME_ASSETS . 'images/icon-back-OWL.png' ?>');">
+		<div class="title">
+			<h1><?php the_title() ?></h1>
+		</div>
+		<?php woocommerce_breadcrumb() ?>
+	</div>
+</div>
         <div class="row nav d-none d-lg-flex">
             <div class="col-lg-9">
                 <div class="menu">
