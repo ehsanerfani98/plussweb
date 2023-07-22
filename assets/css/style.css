@@ -1117,14 +1117,14 @@
       border-top: none;
       border-right: 3px solid #0bb9ed;
       background: white;
-      box-shadow: #0bb9ed 0px 0px 30px 6px;
+      box-shadow: #f1f1f1 0px 0px 30px 6px;
   }
 
   .woocommerce-error {
       border-top: none;
       border-right: 3px solid #ff2a3d;
       background: white;
-      box-shadow: #ff2a3d 0px 0px 30px 6px;
+      box-shadow: #f1f1f1 0px 0px 30px 6px;
   }
 
   .woocommerce-message::before {
