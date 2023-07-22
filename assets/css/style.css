@@ -1105,3 +1105,50 @@
   .woocommerce-cart .wc-proceed-to-checkout {
       padding: 0 !important;
   }
+
+  .woocommerce-message {
+      border-top: none;
+      border-right: 3px solid #0bc480;
+      background: white;
+      box-shadow: #f1f1f1 0px 0px 30px 6px;
+  }
+
+  .woocommerce-info {
+      border-top: none;
+      border-right: 3px solid #0bb9ed;
+      background: white;
+      box-shadow: #0bb9ed 0px 0px 30px 6px;
+  }
+
+  .woocommerce-error {
+      border-top: none;
+      border-right: 3px solid #ff2a3d;
+      background: white;
+      box-shadow: #ff2a3d 0px 0px 30px 6px;
+  }
+
+  .woocommerce-message::before {
+      color: #0bc480;
+  }
+
+  .woocommerce-info::before {
+      color: #0bb9ed;
+  }
+
+  .woocommerce-error::before {
+      color: #ff2a3d;
+  }
+
+  a.button.wc-forward {
+      background: #0bc480;
+      color: white;
+  }
+
+  a.button.wc-forward:hover {
+      background: #0bc480;
+      color: white;
+  }
+
+  .woocommerce-notices-wrapper {
+      margin: 2rem 2rem 1rem 2rem;
+  }
