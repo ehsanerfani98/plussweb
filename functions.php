@@ -60,4 +60,5 @@ function remove_woocommerce_checkout_process() {
 add_filter('woocommerce_add_to_cart_redirect', 'redirect_to_checkout');
 function redirect_to_checkout() {
     return wc_get_checkout_url();
+    
 }
