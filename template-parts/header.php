@@ -9,8 +9,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div style="padding: 10px; background: #ffed1b; color: #977600; text-align: center; position: fixed; top: 0; width: 100%; z-index: 9999;">قالب سایت در دست طراحی می باشد</div>
-    <div class="container-fluid" style="margin-top: 42px;">
+    <div class="container-fluid">
 
         <div class="row nav d-none d-lg-flex">
             <div class="col-lg-9">
