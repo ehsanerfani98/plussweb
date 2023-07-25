@@ -142,6 +142,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding: 40px 0;
   }
 
   .nav {
@@ -1166,4 +1167,3 @@
       margin: 2rem 2rem 0 2rem;
   }
 
-  
