@@ -138,10 +138,10 @@
       background: var(--back-color);
   }
 
-  .main{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  .main {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
   }
 
   .nav {
@@ -1166,6 +1166,6 @@
       margin: 2rem 2rem 0 2rem;
   }
 
-  div.woocommerce{
-    padding: 40px 0;
+  div.woocommerce {
+      padding: 40px 0 80px 0;
   }
