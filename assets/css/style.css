@@ -1165,3 +1165,7 @@
   .cart-empty {
       margin: 2rem 2rem 0 2rem;
   }
+
+  .woocommerce{
+    padding: 40px 0;
+  }
