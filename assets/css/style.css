@@ -1165,7 +1165,3 @@
   .cart-empty {
       margin: 2rem 2rem 0 2rem;
   }
-
-  .woocommerce {
-      min-height: 100vh;
-  }
