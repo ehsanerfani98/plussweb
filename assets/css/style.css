@@ -138,6 +138,12 @@
       background: var(--back-color);
   }
 
+  .main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
   .nav {
       padding: 0 20px;
       height: 75px;
@@ -921,6 +927,7 @@
       position: relative;
       border-top-right-radius: 10%;
       border-top-left-radius: 30%;
+      margin-top: auto;
   }
 
   .footer::before {

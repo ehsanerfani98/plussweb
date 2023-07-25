@@ -9,7 +9,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div class="container-fluid">
+    <div class="container-fluid main">
 
         <div class="row nav d-none d-lg-flex">
             <div class="col-lg-9">
