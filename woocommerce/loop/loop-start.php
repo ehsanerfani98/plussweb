@@ -20,5 +20,4 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 ?>
-<div class="container-fluid my-5">
 <div class="row">
