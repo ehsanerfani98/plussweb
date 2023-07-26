@@ -1170,6 +1170,15 @@
       padding: 40px 0 80px 0;
   }
 
-  .woocommerce .woocommerce-result-count, form{
-    margin: 0;
+  .woocommerce .woocommerce-result-count,
+  form {
+      margin: 0;
+  }
+
+  select {
+      border: none;
+      outline: none;
+      padding: 10px;
+      background: #f9f9f9 !important;
+      border-radius: 6px;
   }
