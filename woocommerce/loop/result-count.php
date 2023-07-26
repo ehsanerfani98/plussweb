@@ -24,7 +24,7 @@ if (!defined('ABSPATH')) {
 ?>
 <div class="container p-4 card">
 <div class="row">
-	<div class="col-12 col-lg-6">
+	<div class="col-12 col-lg-6 d-flex align-items-center">
 		<p class="woocommerce-result-count">
 			<?php
 			// phpcs:disable WordPress.Security
