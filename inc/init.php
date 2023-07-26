@@ -6,13 +6,14 @@ function theme_setup()
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
 
+    //remove title shop page woocommerce
     add_filter('woocommerce_show_page_title', 'bbloomer_hide_shop_page_title');
-
     function bbloomer_hide_shop_page_title($title)
     {
         if (is_shop()) $title = false;
         return $title;
     }
+
     add_rewrite_rule(
         'product/([^/]+)/discussions/?$',
         'index.php?product=$matches[1]&pagename=discussions',
@@ -31,7 +32,6 @@ function theme_setup()
         'mobile-menu'   => 'منوی موبایل',
     );
     register_nav_menus($locations);
-
 }
 add_action('init', 'theme_setup');
 
