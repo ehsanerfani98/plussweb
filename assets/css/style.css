@@ -1169,3 +1169,7 @@
   div.woocommerce {
       padding: 40px 0 80px 0;
   }
+
+  .woocommerce .woocommerce-result-count, form{
+    margin: 0;
+  }
