@@ -77,7 +77,13 @@
             <div class="row">
                 <div class="header-product-single" style="background-image: url('<?= PLSWB_THEME_ASSETS . 'images/icon-back-OWL.png' ?>');">
                     <div class="title">
-                        <h1><?php is_category() || is_shop() ? single_cat_title() : the_title() ?></h1>
+                        <?php if (is_category()) : ?>
+                            <h1><?php single_cat_title() ?></h1>
+                        <?php elseif (is_shop()) : ?>
+                            <h1><?php the_title() ?></h1>
+                        <?php else : ?>
+                            <h1><?php the_title() ?></h1>
+                        <?php endif; ?>
                     </div>
                     <?php woocommerce_breadcrumb() ?>
                 </div>
