@@ -6,7 +6,13 @@ function theme_setup()
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
 
+    add_filter('woocommerce_show_page_title', 'bbloomer_hide_shop_page_title');
 
+    function bbloomer_hide_shop_page_title($title)
+    {
+        if (is_shop()) $title = false;
+        return $title;
+    }
     add_rewrite_rule(
         'product/([^/]+)/discussions/?$',
         'index.php?product=$matches[1]&pagename=discussions',
