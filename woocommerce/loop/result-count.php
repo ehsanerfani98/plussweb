@@ -21,6 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
+<div class="row">
 <p class="woocommerce-result-count">
 	<?php
 	// phpcs:disable WordPress.Security
