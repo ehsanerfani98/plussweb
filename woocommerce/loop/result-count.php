@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 ?>
-<div class="container p-4">
+<div class="container p-4 card">
 <div class="row">
 	<div class="col-12 col-lg-6">
 		<p class="woocommerce-result-count">
