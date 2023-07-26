@@ -46,3 +46,7 @@ include PLSWB_THEME_PATH . 'inc/script.php';
 // 	return new WP_REST_Response($array, 200);
 // }
 
+add_filter( 'woocommerce_show_page_title', 'not_a_shop_page' );
+function not_a_shop_page() {
+    return boolval(!is_shop());
+}
