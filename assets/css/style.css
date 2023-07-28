@@ -1197,7 +1197,7 @@
       font-size: 14px;
   }
 
-  .woocommerce-billing-fields h3, .order_review_heading {
+  .woocommerce-billing-fields h3, #order_review_heading {
     border-right: 4px solid var(--hover-link-color);
     padding: 10px;
     font-size: 17px;
