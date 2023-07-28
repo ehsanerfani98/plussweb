@@ -1182,3 +1182,26 @@
       background: #f9f9f9 !important;
       border-radius: 6px;
   }
+
+  .woocommerce-billing-fields input {
+      border: none;
+      outline: none;
+      background: #f9f9f9 !important;
+      padding: 10px;
+      border-radius: 6px;
+      color: #a1a1a1;
+  }
+
+  .woocommerce-billing-fields label {
+      color: #7e7e7e;
+      font-size: 14px;
+  }
+
+  .woocommerce-billing-fields h3, .order_review_heading {
+    border-right: 4px solid #0bc480;
+    padding: 10px;
+    font-size: 17px;
+    box-shadow: var(--box-shadow-card);
+    margin-bottom: 40px;
+    border-radius: 4px;
+}
