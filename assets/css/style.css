@@ -1205,3 +1205,7 @@
     margin-bottom: 40px;
     border-radius: 4px;
 }
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+    border: unset;
+}
