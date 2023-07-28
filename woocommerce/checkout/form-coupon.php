@@ -50,3 +50,4 @@ if (!wc_coupons_enabled()) { // @codingStandardsIgnoreLine.
 
 </div>
 </div>
+</div>

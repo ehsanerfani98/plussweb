@@ -23,6 +23,7 @@ if ( is_user_logged_in() || 'no' === get_option( 'woocommerce_enable_checkout_lo
 
 ?>
 <div class="container-fluid">
+<div class="row">
 	<div class="col-lg-6">
 
 	
