@@ -1183,7 +1183,7 @@
       border-radius: 6px;
   }
 
-  .woocommerce-billing-fields input , .woocommerce-account-fields input{
+  .woocommerce-billing-fields input , .woocommerce-account-fields input, .woocommerce-form-login input{
       border: none;
       outline: none;
       background: #f9f9f9 !important;
@@ -1192,7 +1192,7 @@
       color: #a1a1a1;
   }
 
-  .woocommerce-billing-fields label , .woocommerce-account-fields label{
+  .woocommerce-billing-fields label , .woocommerce-account-fields label , .woocommerce-form-login label{
       color: #7e7e7e;
       font-size: 14px;
   }
