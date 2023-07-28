@@ -1233,3 +1233,15 @@
       color: white !important;
   }
 
+  #add_payment_method #payment div.payment_box::before, .woocommerce-cart #payment div.payment_box::before, .woocommerce-checkout #payment div.payment_box::before {
+    content: "";
+    display: block;
+    border: 1em solid var(--hover-link-color);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: -.75em;
+    right: 0;
+    margin: -1em 2em 0 0;
+}
