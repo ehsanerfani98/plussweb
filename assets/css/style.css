@@ -1183,7 +1183,10 @@
       border-radius: 6px;
   }
 
-  .woocommerce-billing-fields input , .woocommerce-account-fields input, .woocommerce-form-login input{
+  .woocommerce-billing-fields input,
+  .woocommerce-account-fields input,
+  .woocommerce-form-login input ,
+  .woocommerce-form-coupon input {
       border: none;
       outline: none;
       background: #f9f9f9 !important;
@@ -1192,20 +1195,26 @@
       color: #a1a1a1;
   }
 
-  .woocommerce-billing-fields label , .woocommerce-account-fields label , .woocommerce-form-login label{
+  .woocommerce-billing-fields label,
+  .woocommerce-account-fields label,
+  .woocommerce-form-login label ,
+  .woocommerce-form-coupon label {
       color: #7e7e7e;
       font-size: 14px;
   }
 
-  .woocommerce-billing-fields h3, #order_review_heading {
-    border-right: 3px solid var(--hover-link-color);
-    padding: 10px;
-    font-size: 17px;
-    box-shadow: var(--box-shadow-card);
-    margin-bottom: 40px;
-    border-radius: 4px;
-}
+  .woocommerce-billing-fields h3,
+  #order_review_heading {
+      border-right: 3px solid var(--hover-link-color);
+      padding: 10px;
+      font-size: 17px;
+      box-shadow: var(--box-shadow-card);
+      margin-bottom: 40px;
+      border-radius: 4px;
+  }
 
-.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
-    border: unset;
-}
+  .woocommerce form.checkout_coupon,
+  .woocommerce form.login,
+  .woocommerce form.register {
+      border: unset;
+  }
