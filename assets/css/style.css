@@ -1245,3 +1245,7 @@
     right: 0;
     margin: -1em 2em 0 0;
 }
+
+div#order_review table {
+    font-size: 12px;
+}
