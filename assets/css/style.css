@@ -1185,7 +1185,7 @@
 
   .woocommerce-billing-fields input,
   .woocommerce-account-fields input,
-  .woocommerce-form-login input ,
+  .woocommerce-form-login input,
   .woocommerce-form-coupon input {
       border: none;
       outline: none;
@@ -1197,7 +1197,7 @@
 
   .woocommerce-billing-fields label,
   .woocommerce-account-fields label,
-  .woocommerce-form-login label ,
+  .woocommerce-form-login label,
   .woocommerce-form-coupon label {
       color: #7e7e7e;
       font-size: 14px;
@@ -1217,4 +1217,9 @@
   .woocommerce form.login,
   .woocommerce form.register {
       border: unset;
+  }
+
+  .woocommerce-form-login .form-row,
+  .woocommerce-form-coupon .form-row {
+      width: 100% !important;
   }
