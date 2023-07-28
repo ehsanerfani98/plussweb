@@ -45,3 +45,5 @@ if (!wc_coupons_enabled()) { // @codingStandardsIgnoreLine.
 	</div>
 
 </form>
+
+</div>
