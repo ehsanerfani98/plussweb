@@ -1223,3 +1223,12 @@
   .woocommerce-form-coupon .form-row {
       width: 100% !important;
   }
+
+  div#payment {
+      background: var(--second-light-color) !important;
+  }
+
+  .payment_box.payment_method_WC_IDPay {
+      background: var(--hover-link-color) !important;
+      color: white !important;
+  }
