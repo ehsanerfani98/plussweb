@@ -25,8 +25,8 @@ if (is_user_logged_in()) {
 }
 
 ?>
-<div class="card">
-	<form class="woocommerce-form woocommerce-form-login login" method="post" <?php echo ($hidden) ? 'style="display:none;"' : ''; ?>>
+<form class="woocommerce-form woocommerce-form-login login" method="post" <?php echo ($hidden) ? 'style="display:none;"' : ''; ?>>
+	<div class="card">
 
 		<?php do_action('woocommerce_login_form_start'); ?>
 
@@ -60,7 +60,6 @@ if (is_user_logged_in()) {
 		<div class="clear"></div>
 
 		<?php do_action('woocommerce_login_form_end'); ?>
+	</div>
 
-	</form>
-
-</div>
+</form>
