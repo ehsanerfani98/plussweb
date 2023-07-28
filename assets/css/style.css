@@ -1232,3 +1232,7 @@
       background: var(--hover-link-color) !important;
       color: white !important;
   }
+
+  .woocommerce-checkout #payment div.payment_box::before {
+      border: 1em solid var(--hover-link-color);
+  }
