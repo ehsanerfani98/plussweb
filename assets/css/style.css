@@ -1183,7 +1183,7 @@
       border-radius: 6px;
   }
 
-  .woocommerce-billing-fields input {
+  .woocommerce-billing-fields input , select{
       border: none;
       outline: none;
       background: #f9f9f9 !important;
