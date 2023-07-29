@@ -4,6 +4,7 @@
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
+        <i class="fa fa-user"></i>
         <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Collapsible Group Item #1
         </button>
