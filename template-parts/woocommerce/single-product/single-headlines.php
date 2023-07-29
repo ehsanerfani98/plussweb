@@ -3,7 +3,7 @@
         <div class="accordion" id="accordionExample">
             <div class="card">
                 <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
+                    <h2 class="mb-0 d-flex align-items-center">
                         <div class="list-icon">
                             <i class="fa fa-user"></i>
                         </div>
