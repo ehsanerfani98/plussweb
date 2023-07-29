@@ -24,6 +24,17 @@ function theme_setup()
         'index.php?product=$matches[1]&pagename=discussions&cpage=$matches[2]',
         'top'
     );
+
+    add_rewrite_rule(
+        'product/([^/]+)/headlines/?$',
+        'index.php?product=$matches[1]&pagename=headlines',
+        'top'
+    );
+    add_rewrite_rule(
+        'product/([^/]+)/headlines/comment-page-([0-9]{1,})/?$',
+        'index.php?product=$matches[1]&pagename=headlines&cpage=$matches[2]',
+        'top'
+    );
     flush_rewrite_rules();
 
     $locations = array(

@@ -47,6 +47,8 @@ if (post_password_required()) {
 		</div>
 		<?php if (get_query_var('pagename') == 'discussions') : ?>
 			<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-product/single-discussions.php'; ?>
+		<?php elseif (get_query_var('pagename') == 'headlines') : ?>
+			<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-product/single-headlines.php'; ?>
 		<?php else : ?>
 			<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-product/single-content.php'; ?>
 		<?php endif; ?>
