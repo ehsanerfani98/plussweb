@@ -29,11 +29,11 @@
                             <div class="item-headline-title">
                                 قسمت دوم دوره آموزشی سرور کشینگ
                             </div>
-                            <a href="#" class="item-headline-link-download">
+                            <div class="item-headline-link-download">
                                 <div class="list-icon red-icon">
                                     <i class="fa fa-lock"></i>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
