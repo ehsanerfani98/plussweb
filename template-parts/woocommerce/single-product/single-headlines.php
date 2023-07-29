@@ -30,7 +30,7 @@
                                 قسمت دوم دوره آموزشی سرور کشینگ
                             </div>
                             <a href="#" class="item-headline-link-download">
-                                <div class="list-icon">
+                                <div class="list-icon red-icon">
                                     <i class="fa fa-download"></i>
                                 </div>
                             </a>

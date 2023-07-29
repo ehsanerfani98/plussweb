@@ -1278,3 +1278,8 @@ div#order_review table {
     font-size: 14px;
     color: #adadad;
 }
+
+.red-icon {
+    background: #fb1616;
+    color: #ffe6e6;
+}
