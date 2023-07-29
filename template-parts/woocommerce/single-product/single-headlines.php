@@ -1,5 +1,3 @@
-<div class="card">
-    <div class="content-card">
         <div class="accordion" id="accordionExample">
             <div class="card">
                 <div class="card-header" id="headingOne">
@@ -40,5 +38,3 @@
             </div>
 
         </div>
-    </div>
-</div>
