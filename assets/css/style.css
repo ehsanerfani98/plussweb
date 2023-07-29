@@ -1258,8 +1258,8 @@ div#order_review table {
 }
 
 .accordion button {
-    color: #0bc480;
+    color: var(--primary-color);
 }
 .accordion button:hover {
-    color: #0bc480;
+    color: var(--primary-color);
 }
