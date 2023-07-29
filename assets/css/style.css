@@ -1263,3 +1263,13 @@ div#order_review table {
 .accordion button:hover {
     color: var(--primary-color);
 }
+
+.item-headline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-card);
+}
