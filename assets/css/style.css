@@ -1259,6 +1259,7 @@ div#order_review table {
 
 .accordion button {
     color: var(--primary-color);
+    font-size: 18px;
 }
 .accordion button:hover {
     color: var(--primary-color);
