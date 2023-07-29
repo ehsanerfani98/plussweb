@@ -31,7 +31,7 @@
                             </div>
                             <a href="#" class="item-headline-link-download">
                                 <div class="list-icon red-icon">
-                                    <i class="fa fa-download"></i>
+                                    <i class="fa fa-lock"></i>
                                 </div>
                             </a>
                         </div>
