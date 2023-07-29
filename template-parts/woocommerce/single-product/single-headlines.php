@@ -19,7 +19,7 @@
                             <div class="item-headline-title">
                                 قسمت اول دوره آموزشی سرور کشینگ
                             </div>
-                            <div class="item-headline-link-download">
+                            <a href="#" class="item-headline-link-download">
                                 <div class="list-icon">
                                     <i class="fa fa-download"></i>
                                 </div>
