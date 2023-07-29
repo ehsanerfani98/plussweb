@@ -1249,3 +1249,16 @@
 div#order_review table {
     font-size: 12px;
 }
+
+.card-header {
+    background: #e5ffed;
+    border-radius: 10px;
+    border: none;
+}
+
+.accordion button {
+    color: #0bc480;
+}
+.accordion button:hover {
+    color: #0bc480;
+}
