@@ -1251,9 +1251,10 @@ div#order_review table {
 }
 
 .card-header {
-    background: #e5ffed;
-    border-radius: 10px;
+    background: var(--second-light-color2);
+    border-radius: 10px !important;
     border: none;
+    padding: 15px 20px;
 }
 
 .accordion button {
