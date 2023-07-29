@@ -23,7 +23,7 @@
                                 <div class="list-icon">
                                     <i class="fa fa-download"></i>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="item-headline">
                             <div class="item-headline-title">
