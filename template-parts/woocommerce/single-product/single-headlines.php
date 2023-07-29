@@ -1,5 +1,5 @@
 <div class="card">
-    <div class="card-content">
+    <div class="content-card">
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
