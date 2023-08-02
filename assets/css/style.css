@@ -461,6 +461,7 @@
   }
 
   .copy-text input.text {
+      width: 100%;
       padding: 10px;
       font-size: 18px;
       background: var(--card-color);
@@ -1233,54 +1234,57 @@
       color: white !important;
   }
 
-  #add_payment_method #payment div.payment_box::before, .woocommerce-cart #payment div.payment_box::before, .woocommerce-checkout #payment div.payment_box::before {
-    content: "";
-    display: block;
-    border: 1em solid var(--hover-link-color);
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-top-color: transparent;
-    position: absolute;
-    top: -.75em;
-    right: 0;
-    margin: -1em 2em 0 0;
-}
+  #add_payment_method #payment div.payment_box::before,
+  .woocommerce-cart #payment div.payment_box::before,
+  .woocommerce-checkout #payment div.payment_box::before {
+      content: "";
+      display: block;
+      border: 1em solid var(--hover-link-color);
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      position: absolute;
+      top: -.75em;
+      right: 0;
+      margin: -1em 2em 0 0;
+  }
 
-div#order_review table {
-    font-size: 12px;
-}
+  div#order_review table {
+      font-size: 12px;
+  }
 
-.card-header {
-    background: var(--second-light-color2);
-    border-radius: 10px !important;
-    border: none;
-    padding: 15px 20px;
-}
+  .card-header {
+      background: var(--second-light-color2);
+      border-radius: 10px !important;
+      border: none;
+      padding: 15px 20px;
+  }
 
-.accordion button {
-    color: var(--primary-color);
-    font-size: 18px;
-}
-.accordion button:hover {
-    color: var(--primary-color);
-}
+  .accordion button {
+      color: var(--primary-color);
+      font-size: 18px;
+  }
 
-.item-headline {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 0;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow-card);
-}
+  .accordion button:hover {
+      color: var(--primary-color);
+  }
 
-.item-headline-title {
-    font-size: 14px;
-    color: #adadad;
-}
+  .item-headline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: var(--box-shadow-card);
+  }
 
-.red-icon {
-    background: #fb1616;
-    color: #ffe6e6;
-}
+  .item-headline-title {
+      font-size: 14px;
+      color: #adadad;
+  }
+
+  .red-icon {
+      background: #fb1616;
+      color: #ffe6e6;
+  }
