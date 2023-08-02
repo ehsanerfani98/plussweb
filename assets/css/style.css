@@ -895,6 +895,11 @@
       padding: 17px;
       border-radius: 4px;
       font-size: 20px;
+      height: 54px;
+      width: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }
 
   .list-title {
