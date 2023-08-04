@@ -1,4 +1,4 @@
-<?php $headlines = $PLSWB_COURSE_OPTION['opt-headlines'];?>
+<?php $headlines = $PLSWB_COURSE_OPTION['opt-headlines']; ?>
 <div class="accordion" id="accordionExample">
     <?php foreach ($headlines as $index => $headline) : ?>
         <div class="card mb-2">
@@ -15,18 +15,20 @@
 
             <div id="item<?= $index ?>" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                    <?php foreach ($headline['opt-headline-item'] as $item) : ?>
-                        <div class="item-headline">
-                            <div class="item-headline-title">
-                                <?= $item['opt-headline-item-title'] ?>
-                            </div>
-                            <a download href="<?= $item['opt-headline-item-link'] ?>" class="item-headline-link-download">
-                                <div class="list-icon">
-                                    <i class="fa fa-download"></i>
+                    <?php if (isset($headline['opt-headline-item'])) : ?>
+                        <?php foreach ($headline['opt-headline-item'] as $item) : ?>
+                            <div class="item-headline">
+                                <div class="item-headline-title">
+                                    <?= $item['opt-headline-item-title'] ?>
                                 </div>
-                            </a>
-                        </div>
-                    <?php endforeach; ?>
+                                <a download href="<?= $item['opt-headline-item-link'] ?>" class="item-headline-link-download">
+                                    <div class="list-icon">
+                                        <i class="fa fa-download"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
