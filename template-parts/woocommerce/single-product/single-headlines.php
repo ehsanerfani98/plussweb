@@ -53,6 +53,10 @@
                                                         $link = $each_download["file"];
                                                     }
                                                 }
+                                                $order = wc_get_order( $order_id );
+$user_id = $order->get_user_id();
+
+echo $user_id;
                                                 ?>
                                                 <a download href="<?= $link ?>" class="item-headline-link-download">
                                                     <div class="list-icon">
