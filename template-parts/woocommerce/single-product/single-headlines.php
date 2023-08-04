@@ -8,33 +8,25 @@
                         <i class="fa fa-user"></i>
                     </div>
                     <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        فصل اول
+                        <?= $headline['opt-headline-title'] ?>
                     </button>
                 </h2>
             </div>
 
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                    <div class="item-headline">
-                        <div class="item-headline-title">
-                            قسمت اول دوره آموزشی سرور کشینگ
-                        </div>
-                        <a href="#" class="item-headline-link-download">
-                            <div class="list-icon">
-                                <i class="fa fa-download"></i>
+                    <?php foreach ($headline['opt-headline-item'] as $item) : ?>
+                        <div class="item-headline">
+                            <div class="item-headline-title">
+                                <?= $item['opt-headline-item-title'] ?>
                             </div>
-                        </a>
-                    </div>
-                    <div class="item-headline">
-                        <div class="item-headline-title">
-                            قسمت دوم دوره آموزشی سرور کشینگ
+                            <a download href="<?= $item['opt-headline-item-link'] ?>" class="item-headline-link-download">
+                                <div class="list-icon">
+                                    <i class="fa fa-download"></i>
+                                </div>
+                            </a>
                         </div>
-                        <div class="item-headline-link-download">
-                            <div class="list-icon red-icon">
-                                <i class="fa fa-lock"></i>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
