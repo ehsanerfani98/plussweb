@@ -45,3 +45,13 @@ include PLSWB_THEME_PATH . 'inc/script.php';
 
 // 	return new WP_REST_Response($array, 200);
 // }
+function display_custom_download_link() {
+    global $product;
+
+    $download_link = get_post_meta( $product->get_id(), 'pa_download_link', true );
+
+    if ( ! empty( $download_link ) ) {
+        echo '<p><strong>لینک دانلود:</strong> <a href="' . esc_url( $download_link ) . '">دانلود</a></p>';
+    }
+}
+add_action( 'woocommerce_single_product_summary', 'display_custom_download_link', 25 );
