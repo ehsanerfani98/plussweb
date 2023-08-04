@@ -51,7 +51,6 @@
                                                 foreach ($downloads as $key => $each_download) {
                                                     if ($key == $item['opt-headline-item-link']) {
                                                         $link = $each_download["file"];
-                                                    var_dump($each_download);
                                                     }
                                                 }
                                                 ?>
