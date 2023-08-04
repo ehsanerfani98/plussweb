@@ -1,6 +1,16 @@
 <?php
 $product = wc_get_product(get_the_ID());
 $rating  = $product->get_average_rating();
+if (is_user_logged_in()) {
+    $current_user = wp_get_current_user();
+    if (wc_customer_bought_product($current_user->user_email, $current_user->ID, get_the_ID())) {
+        $status_order = true;
+    } else {
+        $status_order = false;
+    }
+} else {
+    $status_order = false;
+}
 ?>
 
 <div class="card-v2">
@@ -31,15 +41,38 @@ $rating  = $product->get_average_rating();
     </div>
 </div>
 <div class="sidebar">
-    <div class="card-v2">
-        <div class="content-card">
-            <?php if ($product->stock_status == 'outofstock') : ?>
-                <button type="button" class="btn-primary">ظرفیت تکمیل شد</button>
-                <?php else :
-                $manage_stock = get_post_meta(get_the_ID(), '_manage_stock', true);
-                if ($manage_stock == 'yes') :
-                ?>
-                    <?php if ($product->get_stock_quantity() > 0) : ?>
+    <?php if (!$status_order) : ?>
+        <div class="card-v2">
+            <div class="content-card">
+                <?php if ($product->stock_status == 'outofstock') : ?>
+                    <button type="button" class="btn-primary">ظرفیت تکمیل شد</button>
+                    <?php else :
+                    $manage_stock = get_post_meta(get_the_ID(), '_manage_stock', true);
+                    if ($manage_stock == 'yes') :
+                    ?>
+                        <?php if ($product->get_stock_quantity() > 0) : ?>
+                            <div class="product-order">
+                                <span class="title">قیمت دوره</span>
+                                <span class="price">
+                                    <?php if ($product->get_sale_price() && $product->get_sale_price() != 0 && $product->get_sale_price() != '') : ?>
+                                        <del><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></del>
+                                        <span class="orginal"><?= number_format($product->get_sale_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
+                                    <?php else : ?>
+                                        <?php if ($product->get_regular_price() && $product->get_regular_price() != 0 && $product->get_regular_price() != '') : ?>
+                                            <span class="orginal"><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
+                                        <?php else : ?>
+                                            <span class="orginal">رایـــــگـان</span>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
+                                </span>
+                            </div>
+                            <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
+                                <button type="submit" name="add-to-cart" value="<?= get_the_ID() ?>" class="single_add_to_cart_button btn-primary">ثبت نام در دوره</button>
+                            </form>
+                        <?php else : ?>
+                            <button type="button" class="btn-primary">ظرفیت تکمیل شد</button>
+                        <?php endif; ?>
+                    <?php else : ?>
                         <div class="product-order">
                             <span class="title">قیمت دوره</span>
                             <span class="price">
@@ -58,40 +91,20 @@ $rating  = $product->get_average_rating();
                         <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
                             <button type="submit" name="add-to-cart" value="<?= get_the_ID() ?>" class="single_add_to_cart_button btn-primary">ثبت نام در دوره</button>
                         </form>
-                    <?php else : ?>
-                        <button type="button" class="btn-primary">ظرفیت تکمیل شد</button>
                     <?php endif; ?>
-                <?php else : ?>
-                    <div class="product-order">
-                        <span class="title">قیمت دوره</span>
-                        <span class="price">
-                            <?php if ($product->get_sale_price() && $product->get_sale_price() != 0 && $product->get_sale_price() != '') : ?>
-                                <del><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></del>
-                                <span class="orginal"><?= number_format($product->get_sale_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
-                            <?php else : ?>
-                                <?php if ($product->get_regular_price() && $product->get_regular_price() != 0 && $product->get_regular_price() != '') : ?>
-                                    <span class="orginal"><?= number_format($product->get_regular_price()) . ' ' . get_woocommerce_currency_symbol() ?></span>
-                                <?php else : ?>
-                                    <span class="orginal">رایـــــگـان</span>
-                                <?php endif; ?>
-                            <?php endif; ?>
-                        </span>
-                    </div>
-                    <form class="cart" action="<?php the_permalink() ?>" method="post" enctype="multipart/form-data">
-                        <button type="submit" name="add-to-cart" value="<?= get_the_ID() ?>" class="single_add_to_cart_button btn-primary">ثبت نام در دوره</button>
-                    </form>
                 <?php endif; ?>
-            <?php endif; ?>
+            </div>
         </div>
-    </div>
-    <!-- <div class="card-v2">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <lottie-player src="https://assets10.lottiefiles.com/datafiles/KZAksH53JBd6PNu/data.json"
-                                background="transparent" speed="1" style="width: 60px; height: 60px;" loop
-                                autoplay></lottie-player>
-                            <span class="congratulations">تبریک! شما دانشجوی دوره هستید</span>
-                        </div>
-                    </div> -->
+    <?php else : ?>
+        <div class="card-v2">
+            <div class="d-flex align-items-center justify-content-center">
+                <i class="fa fa-check"></i>
+                <!-- <lottie-player src="https://assets10.lottiefiles.com/datafiles/KZAksH53JBd6PNu/data.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></lottie-player> -->
+                <span class="congratulations">تبریک! شما دانشجوی دوره هستید</span>
+            </div>
+        </div>
+    <?php endif; ?>
+
     <div class="card-v2">
         <div class="content-card">
             <div class="product-info">
