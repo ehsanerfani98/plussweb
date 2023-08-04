@@ -554,6 +554,52 @@ if (class_exists('CSF')) {
 		)
 	);
 
+	CSF::createSection(
+		$prefix,
+		array(
+			'title'       => 'سرفصل ها',
+			'fields'	=>	array(
+				array(
+					'id'     => 'opt-headlines',
+					'type'   => 'repeater',
+					'desc'  => 'برای اضافه کردن سرفصل روی + کلیک کنید',
+					'fields' => array(
+						array(
+							'id'    => 'opt-headline-title',
+							'type'  => 'text',
+							'title' => 'عنوان سرفصل',
+						),
+						array(
+							'id'     => 'opt-headline-item',
+							'type'   => 'repeater',
+							'desc'  => 'برای اضافه کردن هر بخش روی + کلیک کنید',
+							'fields' => array(
+								array(
+									'id'    => 'opt-headline-item-title',
+									'type'  => 'text',
+									'title' => 'عنوان',
+								),
+								array(
+									'id'    => 'opt-headline-item-link',
+									'type'  => 'text',
+									'title' => 'لینک دانلود',
+								),
+								array(
+									'id'          => 'opt-headline-item-status',
+									'type'        => 'switcher',
+									'title'       => 'رایگان',
+									true  => 'بله',
+									false => 'خیر',
+									'default'    => false
+								),
+							),
+						),
+					),
+				),
+			)
+		)
+	);
+
 	//============================//
 	$prefix = 'PLSWB_POST_OPTION';
 	CSF::createMetabox($prefix, array(
