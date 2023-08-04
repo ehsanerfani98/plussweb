@@ -20,7 +20,7 @@
                                     <div class="item-headline">
                                         <div class="item-headline-title">
                                             <?= $item['opt-headline-item-title'] ?>
-                                            <span><?= $item['opt-headline-item-time'] ?></span>
+                                            <span class="headline-time"><?= $item['opt-headline-item-time'] ?></span>
                                         </div>
                                         <?php if ($item['opt-headline-item-status']) : ?>
                                             <a download href="<?= $item['opt-headline-item-link'] ?>" class="item-headline-link-download">
