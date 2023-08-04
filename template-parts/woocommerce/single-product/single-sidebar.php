@@ -1,16 +1,6 @@
 <?php
 $product = wc_get_product(get_the_ID());
 $rating  = $product->get_average_rating();
-if (is_user_logged_in()) {
-    $current_user = wp_get_current_user();
-    if (wc_customer_bought_product($current_user->user_email, $current_user->ID, get_the_ID())) {
-        $status_order = true;
-    } else {
-        $status_order = false;
-    }
-} else {
-    $status_order = false;
-}
 ?>
 
 <div class="card-v2">

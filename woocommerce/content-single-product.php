@@ -32,7 +32,19 @@ if (post_password_required()) {
 	return;
 }
 ?>
-<?php $PLSWB_COURSE_OPTION = get_post_meta(get_the_ID(), 'PLSWB_COURSE_OPTION', true); ?>
+<?php
+ $PLSWB_COURSE_OPTION = get_post_meta(get_the_ID(), 'PLSWB_COURSE_OPTION', true);
+ if (is_user_logged_in()) {
+    $current_user = wp_get_current_user();
+    if (wc_customer_bought_product($current_user->user_email, $current_user->ID, get_the_ID())) {
+        $status_order = true;
+    } else {
+        $status_order = false;
+    }
+} else {
+    $status_order = false;
+}
+ ?>
 
 <div class="row p-lg-5 p-md-5" id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
 
