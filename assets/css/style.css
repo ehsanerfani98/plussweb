@@ -1293,3 +1293,11 @@
       background: #fb1616;
       color: #ffe6e6;
   }
+
+ .headline-time {
+    background: #f7f7f7;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
