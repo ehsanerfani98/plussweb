@@ -53,11 +53,6 @@
                                                         $link = $each_download["file"];
                                                     }
                                                 }
-                                                $download_link = get_post_meta( $product->get_id(), 'pa_download_link', true );
-
-                                                if ( ! empty( $download_link ) ) {
-                                                    echo '<p><strong>لینک دانلود:</strong> <a href="' . esc_url( $download_link ) . '">دانلود</a></p>';
-                                                }
                                                 ?>
                                                 <a download href="<?= $link ?>" class="item-headline-link-download">
                                                     <div class="list-icon">
