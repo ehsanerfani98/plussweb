@@ -20,7 +20,7 @@
                                     <div class="item-headline">
                                         <div class="item-headline-title">
                                             <?= $item['opt-headline-item-title'] ?>
-                                            <?php if (isset($item['opt-headline-item-time'])) : ?>
+                                            <?php if (!empty($item['opt-headline-item-time'])) : ?>
                                                 <span class="headline-time"><?= $item['opt-headline-item-time'] ?></span>
                                             <?php endif; ?>
                                         </div>
