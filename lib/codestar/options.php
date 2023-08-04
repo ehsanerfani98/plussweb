@@ -580,6 +580,11 @@ if (class_exists('CSF')) {
 									'title' => 'عنوان',
 								),
 								array(
+									'id'    => 'opt-headline-item-time',
+									'type'  => 'text',
+									'title' => 'مدت زمان آموزش',
+								),
+								array(
 									'id'    => 'opt-headline-item-link',
 									'type'  => 'text',
 									'title' => 'لینک دانلود',
