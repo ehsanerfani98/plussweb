@@ -7,13 +7,13 @@
                     <div class="list-icon">
                         <i class="fa fa-user"></i>
                     </div>
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#item<?= $index ?>" aria-controls="collapseOne">
+                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#item<?= $index ?>" aria-expanded="true" aria-controls="collapseOne">
                         <?= $headline['opt-headline-title'] ?>
                     </button>
                 </h2>
             </div>
 
-            <div id="item<?= $index ?>" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div id="item<?= $index ?>" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                     <?php foreach ($headline['opt-headline-item'] as $item) : ?>
                         <div class="item-headline">
