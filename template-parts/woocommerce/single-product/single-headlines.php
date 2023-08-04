@@ -1,4 +1,8 @@
-<?php $headlines = $PLSWB_COURSE_OPTION['opt-headlines'];  ?>
+<?php $headlines = $PLSWB_COURSE_OPTION['opt-headlines'];
+
+var_dump($headlines);
+
+?>
 <div class="accordion" id="accordionExample">
     <?php foreach ($headlines as $headline) : ?>
         <div class="card mb-2">
