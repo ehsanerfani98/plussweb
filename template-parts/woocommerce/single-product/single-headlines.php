@@ -7,7 +7,7 @@
                     <div class="list-icon">
                         <i class="fa fa-user"></i>
                     </div>
-                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#item<?= $index ?>" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#item<?= $index ?>" aria-controls="collapseOne">
                         <?= $headline['opt-headline-title'] ?>
                     </button>
                 </h2>
