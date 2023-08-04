@@ -31,11 +31,19 @@
                                                 </div>
                                             </a>
                                         <?php else : ?>
-                                            <div class="item-headline-link-download">
-                                                <div class="list-icon red-icon">
-                                                    <i class="fa fa-lock"></i>
+                                            <?php if (!$status_order) : ?>
+                                                <div class="item-headline-link-download">
+                                                    <div class="list-icon red-icon">
+                                                        <i class="fa fa-lock"></i>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            <?php else : ?>
+                                                <a download href="<?= $item['opt-headline-item-link'] ?>" class="item-headline-link-download">
+                                                    <div class="list-icon">
+                                                        <i class="fa fa-download"></i>
+                                                    </div>
+                                                </a>
+                                            <?php endif; ?>
                                         <?php endif; ?>
                                     </div>
                                 <?php endforeach; ?>
