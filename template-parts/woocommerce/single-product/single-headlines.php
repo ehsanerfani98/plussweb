@@ -25,15 +25,7 @@
                                             <?php endif; ?>
                                         </div>
                                         <?php if ($item['opt-headline-item-status']) : ?>
-                                            <?php
-                                                $downloads = $product->get_downloads();
-                                                foreach ($downloads as $key => $each_download) {
-                                                    if ($key == $item['opt-headline-item-link']) {
-                                                        $link = $each_download["file"];
-                                                    }
-                                                }
-                                                ?>
-                                            <a download href="<?= $link ?>" class="item-headline-link-download">
+                                            <a download href="<?= $item['opt-headline-item-link'] ?>" class="item-headline-link-download">
                                                 <div class="list-icon">
                                                     <i class="fa fa-download"></i>
                                                 </div>
@@ -46,15 +38,7 @@
                                                     </div>
                                                 </div>
                                             <?php else : ?>
-                                                <?php
-                                                $downloads = $product->get_downloads();
-                                                foreach ($downloads as $key => $each_download) {
-                                                    if ($key == $item['opt-headline-item-link']) {
-                                                        $link = $each_download["file"];
-                                                    }
-                                                }
-                                                ?>
-                                                <a download href="<?= $link ?>" class="item-headline-link-download">
+                                                <a download href="<?= $item['opt-headline-item-link'] ?>" class="item-headline-link-download">
                                                     <div class="list-icon">
                                                         <i class="fa fa-download"></i>
                                                     </div>
