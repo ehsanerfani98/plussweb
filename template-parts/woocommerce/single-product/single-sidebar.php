@@ -88,7 +88,6 @@ $rating  = $product->get_average_rating();
     <?php else : ?>
         <div class="card-v2">
             <div class="d-flex align-items-center justify-content-center">
-                <i class="fa fa-check"></i>
                 <!-- <lottie-player src="https://assets10.lottiefiles.com/datafiles/KZAksH53JBd6PNu/data.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop autoplay></lottie-player> -->
                 <span class="congratulations">تبریک! شما دانشجوی دوره هستید</span>
             </div>

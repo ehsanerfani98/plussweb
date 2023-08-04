@@ -379,6 +379,7 @@
 
   .congratulations {
       color: var(--primary-color);
+      padding: 10px;
   }
 
   .customer {
