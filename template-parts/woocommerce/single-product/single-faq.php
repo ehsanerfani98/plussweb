@@ -23,4 +23,8 @@
                 </div>
             <?php endforeach; ?>
         </div>
+    <?php else: ?>
+        <div class="card my-2">
+            سوالات متداولی برای این محصول درج نشده است!
+        </div>
     <?php endif; ?>
