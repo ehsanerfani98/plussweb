@@ -354,6 +354,18 @@
         font-size: 16px;
     }
 
+    .accordion button {
+        font-size: 12px;
+    }
+
+    .item-headline-title {
+        font-size: 9px;
+    }
+
+    .headline-time {
+        font-size: 6px;
+    }
+
     .item-headline-title {
         display: flex;
         flex-direction: column;
@@ -365,6 +377,7 @@
     .headline-time {
         margin-right: 0;
     }
+
 }
 
 /* mobile */
