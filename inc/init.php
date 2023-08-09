@@ -30,11 +30,14 @@ function theme_setup()
         'index.php?product=$matches[1]&pagename=headlines',
         'top'
     );
+
     add_rewrite_rule(
-        'product/([^/]+)/headlines/comment-page-([0-9]{1,})/?$',
-        'index.php?product=$matches[1]&pagename=headlines&cpage=$matches[2]',
+        'product/([^/]+)/faq/?$',
+        'index.php?product=$matches[1]&pagename=faq',
         'top'
     );
+
+
     flush_rewrite_rules();
 
     $locations = array(
