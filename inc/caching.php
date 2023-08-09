@@ -10,7 +10,7 @@ function all_product_cache(){
             'post_status' => 'publish'
         ];
         $result = new WP_Query($args);
-        set_transient($cache_key, $result, 5 * MINUTE_IN_SECONDS);
+        set_transient($cache_key, $result, 24 * 60 * MINUTE_IN_SECONDS);
     }
     return $result;
 }
@@ -32,11 +32,10 @@ function post_free_video_cache(){
               )
         ];
         $result = new WP_Query($args);
-        set_transient($cache_key, $result, 5 * MINUTE_IN_SECONDS);
+        set_transient($cache_key, $result, 24 * 60 * MINUTE_IN_SECONDS);
     }
     return $result;
 }
-
 
 function post_news_cache(){
     $cache_key = 'post_news_cache';
@@ -55,7 +54,7 @@ function post_news_cache(){
               )
         ];
         $result = new WP_Query($args);
-        set_transient($cache_key, $result, 5 * MINUTE_IN_SECONDS);
+        set_transient($cache_key, $result, 24 * 60 * MINUTE_IN_SECONDS);
     }
     return $result;
 }
