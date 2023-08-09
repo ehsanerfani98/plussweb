@@ -53,8 +53,10 @@
                 </div>
             <?php endforeach; ?>
         </div>
-    <?php else: ?>
+    <?php else : ?>
         <div class="card my-2">
-            سرفصلی برای این محصول درج نشده است!
+            <div class="content-card">
+                سرفصلی برای این محصول درج نشده است!
+            </div>
         </div>
     <?php endif; ?>
