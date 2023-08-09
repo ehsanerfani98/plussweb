@@ -674,7 +674,7 @@ if (class_exists('CSF')) {
 			'title'       => 'باکس اطلاعات',
 			'fields'	=>	array(
 				array(
-					'id'          => 'opt-info-box-status',
+					'id'          => 'opt-info-box-show-status',
 					'type'        => 'switcher',
 					'title'       => 'نمایش باکس',
 					true  => 'فعال',

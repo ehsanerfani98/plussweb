@@ -49,7 +49,7 @@
 
     <div class="col-12 col-sm-12 col-md-12 col-lg-4">
         <div class="sidebar">
-            <?php if ($maktabyar_post_options['opt-info-box-status']) : ?>
+            <?php if ($maktabyar_post_options['opt-info-box-show-status']) : ?>
                 <div class="card-v2">
                     <div class="content-card">
                         <div class="product-info">
@@ -159,6 +159,6 @@
             </div>
         </div>
     </div>
-    
+
 </div>
 <?php get_footer() ?>
