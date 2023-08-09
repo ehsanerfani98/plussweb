@@ -605,6 +605,32 @@ if (class_exists('CSF')) {
 		)
 	);
 
+	CSF::createSection(
+		$prefix,
+		array(
+			'title'       => 'سوالات متداول',
+			'fields'	=>	array(
+				array(
+					'id'     => 'opt-faq',
+					'type'   => 'repeater',
+					'desc'  => 'برای اضافه کردن سرفصل روی + کلیک کنید',
+					'fields' => array(
+						array(
+							'id'    => 'opt-faq-question',
+							'type'  => 'text',
+							'title' => 'پرسش',
+						),
+						array(
+							'id'    => 'opt-faq-answer',
+							'type'  => 'textarea',
+							'title' => 'پاسخ',
+						),
+					),
+				),
+			)
+		)
+	);
+
 	//============================//
 	$prefix = 'PLSWB_POST_OPTION';
 	CSF::createMetabox($prefix, array(
