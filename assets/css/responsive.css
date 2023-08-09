@@ -19,9 +19,9 @@
     }
 
     .list-icon {
-        font-size: 9px !important;
-        width: 20px !important;
-        height: 20px !important;
+        font-size: 7px !important;
+        width: 15px !important;
+        height: 15px !important;
     }
 
     .footer-menu ul {
@@ -49,7 +49,7 @@
     }
 
     a.tab-item {
-        font-size: 10px;
+        font-size: 7px;
         margin: 0 4px
     }
 
@@ -122,11 +122,11 @@
     }
 
     .accordion button {
-        font-size: 12px;
+        font-size: 7px;
     }
 
     .headline-time {
-        font-size: 6px;
+        font-size: 4px;
         margin-right: 0;
     }
 
@@ -136,7 +136,7 @@
         justify-content: center;
         align-items: start;
         gap: 10px;
-        font-size: 9px;
+        font-size: 5px;
     }
 }
 
