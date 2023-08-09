@@ -123,15 +123,15 @@
                     </div>
                 </div>
             <?php endif; ?>
-            <div class="card-v2">
-                <div class="content-card py-0">
-                    <?php
-                    $similar_posts = get_similar_posts_by_tags();
-
-                    if ($similar_posts) {
+            <?php
+            $similar_posts = get_similar_posts_by_tags();
+            if ($similar_posts) { ?>
+                <div class="card-v2">
+                    <div class="content-card py-0">
+                        <?php
                         foreach ($similar_posts as $post) {
                             setup_postdata($post);
-                    ?>
+                        ?>
 
                             <a href="<?php the_permalink() ?>" class="playlist-item">
                                 <div class="playlist-image">
@@ -142,13 +142,15 @@
                                 </div>
                             </a>
 
-                    <?php
+                        <?php
                         }
                         wp_reset_postdata();
-                    }
-                    ?>
+                        ?>
+                    </div>
                 </div>
-            </div>
+            <?php
+            }
+            ?>
             <div class="card-v2">
                 <div class="content-card">
                     <div class="copy-text">
