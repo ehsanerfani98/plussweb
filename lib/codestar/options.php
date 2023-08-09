@@ -565,6 +565,11 @@ if (class_exists('CSF')) {
 					'desc'  => 'برای اضافه کردن سرفصل روی + کلیک کنید',
 					'fields' => array(
 						array(
+							'id'    => 'opt-headline-icon',
+							'type'  => 'icon',
+							'title' => 'آیکون',
+						),
+						array(
 							'id'    => 'opt-headline-title',
 							'type'  => 'text',
 							'title' => 'عنوان سرفصل',

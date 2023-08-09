@@ -9,6 +9,7 @@
                             </div>
                             <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#item<?= $index ?>" aria-expanded="true" aria-controls="collapseOne">
                                 <?= $headline['opt-headline-title'] ?>
+                                <?= $headline['opt-headline-icon'] ?>
                             </button>
                         </h2>
                     </div>

@@ -5,7 +5,7 @@
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0 d-flex align-items-center">
                             <div class="list-icon">
-                                <i class="fa fa-user"></i>
+                                <i class="fa fa-question-circle"></i>
                             </div>
                             <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#item<?= $index ?>" aria-expanded="true" aria-controls="collapseOne">
                                 <?= $faq['opt-faq-question'] ?>
