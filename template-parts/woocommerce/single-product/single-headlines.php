@@ -5,11 +5,10 @@
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0 d-flex align-items-center">
                             <div class="list-icon">
-                                <i class="fa fa-user"></i>
+                                <i class="<?= $headline['opt-headline-icon'] ?>"></i>
                             </div>
                             <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#item<?= $index ?>" aria-expanded="true" aria-controls="collapseOne">
                                 <?= $headline['opt-headline-title'] ?>
-                                <?= $headline['opt-headline-icon'] ?>
                             </button>
                         </h2>
                     </div>
