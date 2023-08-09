@@ -24,7 +24,7 @@
 <?php endif; ?>
 
 <div class="card">
-    <div class="content-card">
+    <div class="content-card content-product">
         <?php the_content() ?>
     </div>
 </div>
