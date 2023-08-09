@@ -674,6 +674,14 @@ if (class_exists('CSF')) {
 			'title'       => 'باکس اطلاعات',
 			'fields'	=>	array(
 				array(
+					'id'          => 'opt-info-box-status',
+					'type'        => 'switcher',
+					'title'       => 'نمایش باکس',
+					true  => 'فعال',
+					false => 'غیر فعال',
+					'default'    => true
+				),
+				array(
 					'id'          => 'opt-info-box-sessions',
 					'type'        => 'text',
 					'title'       => 'تعداد جلسات',
