@@ -258,6 +258,28 @@
     .copy-text input.text {
         font-size: 11px;
     }
+
+    .accordion{
+        margin-bottom: 25px;
+    }
+
+    .accordion button {
+        font-size: 7px;
+    }
+
+    .headline-time {
+        font-size: 4px;
+        margin-right: 0;
+    }
+
+    .item-headline-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+        font-size: 5px;
+    }
 }
 
 /* large mobile */
