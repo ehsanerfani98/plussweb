@@ -354,6 +354,10 @@
         font-size: 16px;
     }
 
+    .accordion{
+        margin-bottom: 25px;
+    }
+
     .accordion button {
         font-size: 12px;
     }
@@ -494,6 +498,10 @@
 
     .copy-text input.text {
         font-size: 16px;
+    }
+
+    .accordion{
+        margin-bottom: 25px;
     }
 
     .accordion button {
