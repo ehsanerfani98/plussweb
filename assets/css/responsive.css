@@ -50,9 +50,6 @@
         font-size: 10px;
         margin: 0 4px
     }
-    .header-product-single {
-        padding: 1rem 1rem;
-    }
     .woocommerce .woocommerce-breadcrumb {
         font-size: .8em !important;
     }
@@ -66,6 +63,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 1rem 1rem;
     }
 }
 
@@ -134,6 +132,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 1rem 1rem;
     }
 }
 
@@ -202,6 +201,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 1rem 1rem;
     }
 }
 
@@ -270,6 +270,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 1rem 1rem;
     }
 }
 
