@@ -13,6 +13,7 @@
   :root {
       --primary-color: #04aa6d;
       --second-color: #d9eee1;
+      --new-color-btn: #d9eee1;
       --border-input-color: #d9eee1;
       --bg-input-color: #fff;
       --second-light-color: #deffe9;
@@ -189,7 +190,8 @@
       margin-bottom: 2rem;
   }
 
-  .content-card p , .faq p{
+  .content-card p,
+  .faq p {
       font-size: 15px;
       font-weight: 200;
       line-height: 2.2;
@@ -261,11 +263,12 @@
   .btn-primary {
       width: 100%;
       display: block;
-      background: var(--second-color) !important;
-      color: var(--primary-color) !important;
+      background: linear-gradient(90deg, #17ce9c, #4fdd52) !important;
+      color: #ffffff !important;
       padding: 15px 10px !important;
       border-radius: var(--border-radius-btn);
       text-align: center;
+      box-shadow: 0px 0px 18px -2px #ddffe3 !important;
   }
 
   .btn-primary i {
@@ -1295,10 +1298,10 @@
       color: #ffe6e6;
   }
 
- .headline-time {
-    background: #f7f7f7;
-    padding: 4px 10px;
-    font-size: 12px;
-    border-radius: 6px;
-    margin-right: 10px;
-}
+  .headline-time {
+      background: #f7f7f7;
+      padding: 4px 10px;
+      font-size: 12px;
+      border-radius: 6px;
+      margin-right: 10px;
+  }
