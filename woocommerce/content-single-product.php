@@ -55,7 +55,7 @@ if (is_user_logged_in()) {
 			<a href="<?= get_permalink() ?>" class="tab-item <?= get_query_var('pagename') == '' ? 'tab-active' : '' ?>">توضیحات</a>
 			<a href="<?= get_permalink() . 'headlines' ?>" class="tab-item <?= get_query_var('pagename') == 'headlines' ? 'tab-active' : '' ?>">سرفصل ها</a>
 			<a href="<?= get_permalink() . 'discussions' ?>" class="tab-item <?= get_query_var('pagename') == 'discussions' ? 'tab-active' : '' ?>">پرسش و پاسخ</a>
-			<a href="#" class="tab-item">سوالات متداول</a>
+			<a href="<?= get_permalink() . 'faq' ?>" class="tab-item <?= get_query_var('pagename') == 'faq' ? 'tab-active' : '' ?>">سوالات متداول</a>
 		</div>
 		<?php if (get_query_var('pagename') == 'discussions') : ?>
 			<?php include PLSWB_THEME_PATH . 'template-parts/woocommerce/single-product/single-discussions.php'; ?>
