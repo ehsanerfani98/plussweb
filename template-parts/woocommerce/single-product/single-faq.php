@@ -16,7 +16,9 @@
                     <div id="item<?= $index ?>" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
                             <?php if (isset($faq['opt-faq-answer'])) : ?>
-                                <?= $faq['opt-faq-answer'] ?>
+                                <p>
+                                    <?= $faq['opt-faq-answer'] ?>
+                                </p>
                             <?php endif; ?>
                         </div>
                     </div>
