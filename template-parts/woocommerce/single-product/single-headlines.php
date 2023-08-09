@@ -1,4 +1,4 @@
-    <?php if (isset($PLSWB_COURSE_OPTION['opt-headlines'])) : ?>
+    <?php if (isset($PLSWB_COURSE_OPTION['opt-headlines']) && !empty($PLSWB_COURSE_OPTION['opt-headlines'])) : ?>
         <div class="accordion" id="accordionExample">
             <?php foreach ($PLSWB_COURSE_OPTION['opt-headlines'] as $index => $headline) : ?>
                 <div class="card mb-2">
