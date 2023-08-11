@@ -46,4 +46,4 @@ include PLSWB_THEME_PATH . 'inc/script.php';
 // 	return new WP_REST_Response($array, 200);
 // }
 
-add_option('user_info_finger_print', hash('sha256', $_SERVER['HTTP_USER_AGENT'].'a'));
+add_option('user_info_finger_print', hash('sha256', 'a'));
