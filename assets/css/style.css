@@ -1307,3 +1307,8 @@
       border-radius: 6px;
       margin-right: 10px;
   }
+
+  .menu-bars{
+    width: auto !important;
+    z-index: 9999;
+}
