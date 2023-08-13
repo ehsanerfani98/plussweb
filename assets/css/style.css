@@ -725,6 +725,7 @@
       transform: translateX(214px);
       opacity: 0;
       transition: all .3s;
+      z-index: 999;
   }
 
   .plswb-show-alert {

@@ -141,6 +141,7 @@
 
     .menu-bars{
         width: auto !important;
+        z-index: 9999;
     }
 }
 
