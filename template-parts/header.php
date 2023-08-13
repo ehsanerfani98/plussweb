@@ -35,11 +35,11 @@
 
     <div class="container-fluid main">
 
-        <div class="row nav d-lg-none d-block">
+        <div class="row nav d-lg-none d-flex">
 
-            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <i class="fa fa-bars"></i>
-            </a>
+            </button>
 
         </div>
 
