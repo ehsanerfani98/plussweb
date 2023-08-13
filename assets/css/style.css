@@ -1310,5 +1310,5 @@
 
   .menu-bars{
     width: auto !important;
-    z-index: 9999;
+    z-index: 1002;
 }
