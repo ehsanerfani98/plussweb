@@ -35,9 +35,9 @@
 
     <div class="container-fluid main">
 
-        <div class="row nav d-lg-none d-flex">
+        <div class="row nav d-lg-none d-flex justify-content-between align-items-center">
 
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <button class="btn menu-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <i class="fa fa-bars"></i>
             </button>
 

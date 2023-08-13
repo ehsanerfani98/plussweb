@@ -420,7 +420,9 @@
         font-size: 9px;
     }
 
-    
+    .menu-bars{
+        width: auto !important;
+    }
 
 }
 
