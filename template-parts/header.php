@@ -37,7 +37,7 @@
 
         <div class="row nav d-lg-none d-block">
 
-            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                 <i class="fa fa-bars"></i>
             </a>
 
