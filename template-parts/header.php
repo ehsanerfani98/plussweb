@@ -116,6 +116,8 @@
                     <div class="title">
                         <?php if (is_category()) : ?>
                             <h1><?php single_cat_title() ?></h1>
+                        <?php elseif (is_product_category()) : ?>
+                            <h1><?php single_cat_title() ?></h1>
                         <?php elseif (is_shop()) : ?>
                             <h1><?php woocommerce_page_title() ?></h1>
                         <?php else : ?>
