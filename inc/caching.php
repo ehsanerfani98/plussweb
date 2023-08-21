@@ -18,7 +18,7 @@ function all_product_cache(){
 function post_free_video_cache(){
     $cache_key = 'post_free_video_cache';
     $result = get_transient($cache_key);
-    if(false === false){
+    if($result === false){
         $args = [
             'post_type' => 'post',
             'posts_per_page' => 6,
