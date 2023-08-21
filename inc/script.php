@@ -11,6 +11,8 @@ function header_scripts()
         } else {
             echo '<meta name="description" content="' . esc_attr(get_bloginfo('description')) . '" />' . "\n";
         }
+    }else{
+        echo '<meta name="description" content="' . esc_attr(get_bloginfo('description')) . '" />' . "\n";
     }
 ?>
     <?php if (is_singular()) : ?>
