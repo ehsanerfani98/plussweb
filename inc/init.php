@@ -55,3 +55,4 @@ add_filter('woocommerce_comment_pagination_args', function ($data) {
     $data = array_merge($data, ['base' => get_the_permalink() . 'discussions/comment-page-%#%']);
     return $data;
 });
+

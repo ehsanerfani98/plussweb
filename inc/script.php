@@ -3,6 +3,15 @@
 add_action('wp_head', 'header_scripts');
 function header_scripts()
 {
+     if (is_single() || is_page()) {
+        global $post;
+        $meta_description = get_post_meta($post->ID, '_custom_meta_description', true);
+        if (!empty($meta_description)) {
+            echo '<meta name="description" content="' . esc_attr($meta_description) . '" />' . "\n";
+        } else {
+            echo '<meta name="description" content="' . esc_attr(get_bloginfo('description')) . '" />' . "\n";
+        }
+    }
 ?>
     <?php if (is_singular()) : ?>
         <link rel="canonical" href="<?= get_permalink() ?>" />
