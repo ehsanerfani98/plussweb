@@ -56,3 +56,10 @@ add_filter('woocommerce_comment_pagination_args', function ($data) {
     return $data;
 });
 
+add_filter('woocommerce_show_page_title', 'njengah_remove_product_category_title', 20);
+
+function njengah_remove_product_category_title(){
+
+    return false;
+
+}
