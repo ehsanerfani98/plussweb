@@ -10,7 +10,7 @@ function header_scripts()
         }
         echo '<meta name="description" content="' .  $des . '" />' . "\n";
     } elseif (is_category() || is_product_category()) {
-        echo '<meta name="description" content="' .  single_cat_title() . '" />' . "\n";
+        echo '<meta name="description" content="' .  get_the_archive_title() . '" />' . "\n";
     } else {
         echo '<meta name="description" content="' . esc_attr(get_bloginfo('description')) . '" />' . "\n";
     }
