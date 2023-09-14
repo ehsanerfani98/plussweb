@@ -7,7 +7,7 @@
                             <div class="list-icon">
                                 <i class="<?= $headline['opt-headline-icon'] ?>"></i>
                             </div>
-                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#item<?= $index ?>" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-block text-left" type="button" data-bs-toggle="collapse" data-bs-target="#item<?= $index ?>" aria-expanded="true" aria-controls="collapseOne">
                                 <?= $headline['opt-headline-title'] ?>
                             </button>
                         </h2>
