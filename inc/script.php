@@ -9,6 +9,9 @@ function header_scripts()
             $des = 'سبد خرید';
         }
         echo '<meta name="description" content="' .  $des . '" />' . "\n";
+    } elseif (is_category()) {
+        $des = esc_attr(get_the_content());
+        echo '<meta name="description" content="' .  $des . '" />' . "\n";
     } else {
         echo '<meta name="description" content="' . esc_attr(get_bloginfo('description')) . '" />' . "\n";
     }
