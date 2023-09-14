@@ -13,7 +13,7 @@
                         </h2>
                     </div>
 
-                    <div id="item<?= $index ?>" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div id="item<?= $index ?>" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="card-body">
                             <?php if (isset($headline['opt-headline-item'])) : ?>
                                 <?php foreach ($headline['opt-headline-item'] as $item) : ?>
