@@ -4,7 +4,7 @@ add_action('wp_head', 'header_scripts');
 function header_scripts()
 {
     if (is_single() || is_page()) {
-        echo '<meta name="description" content="' . esc_attr(get_the_content()) . '" />' . "\n";
+        echo '<meta name="description" content="' . is_cart() ? 'سبد خرید' : esc_attr(get_the_content()) . '" />' . "\n";
     } else {
         echo '<meta name="description" content="' . esc_attr(get_bloginfo('description')) . '" />' . "\n";
     }
