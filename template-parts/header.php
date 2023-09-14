@@ -42,7 +42,16 @@
             </button>
 
             <div class="logo">
-                <img class="img-fluid" src="<?= PLSWB_THEME_ASSETS ?>images/logo.png" alt="">
+                <?php
+                $logo = get_theme_mod('custom_logo');
+                $image = wp_get_attachment_image_src($logo, 'full');
+                $image_url = $image[0];
+                $alt = get_post_meta($logo, '_wp_attachment_image_alt', true);
+                if (empty($alt)) {
+                    $alt = get_bloginfo('name', 'display');
+                }
+                ?>
+                <img class="img-fluid" src="<?= $image_url ?>" alt="<?= $alt ?>">
             </div>
         </div>
 
@@ -52,7 +61,16 @@
             <div class="col-lg-9">
                 <div class="menu">
                     <div class="logo">
-                        <img class="img-fluid" src="<?= PLSWB_THEME_ASSETS ?>images/logo.png" alt="">
+                        <?php
+                        $logo = get_theme_mod('custom_logo');
+                        $image = wp_get_attachment_image_src($logo, 'full');
+                        $image_url = $image[0];
+                        $alt = get_post_meta($logo, '_wp_attachment_image_alt', true);
+                        if (empty($alt)) {
+                            $alt = get_bloginfo('name', 'display');
+                        }
+                        ?>
+                        <img class="img-fluid" src="<?= $image_url ?>" alt="<?= $alt ?>">
                     </div>
                     <?php
                     $locations = get_nav_menu_locations();
