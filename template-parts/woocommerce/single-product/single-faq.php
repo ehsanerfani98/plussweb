@@ -7,13 +7,13 @@
                             <div class="list-icon">
                                 <i class="fa fa-question-circle"></i>
                             </div>
-                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#item<?= $index ?>" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-block text-left" type="button" data-bs-toggle="collapse" data-bs-target="#item<?= $index ?>" aria-expanded="true" aria-controls="collapseOne">
                                 <?= $faq['opt-faq-question'] ?>
                             </button>
                         </h2>
                     </div>
 
-                    <div id="item<?= $index ?>" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div id="item<?= $index ?>" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="card-body faq">
                             <?php if (isset($faq['opt-faq-answer'])) : ?>
                                 <p>
