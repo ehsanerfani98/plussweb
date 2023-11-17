@@ -14,7 +14,7 @@
 		پرسش و پاسخ
 	</div>
 
-	<button type="button" class="btn-success" data-toggle="modal" data-target="#newcomment">ثبت پرسش</button>
+	<button type="button" class="btn-success" data-bs-toggle="modal" data-bs-target="#newcomment">ثبت پرسش</button>
 
 </div>
 

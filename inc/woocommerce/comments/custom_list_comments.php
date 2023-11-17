@@ -68,7 +68,7 @@ function custom_list_comments($comment, $args, $depth)
         </div>
         <div class="comment-option">
             <input type="hidden" class="comment-id" value="<?= $comment_id ?>">
-            <button type="button" class="btn-light reply" data-toggle="modal" data-target="#replyComment">پاسخ</button>
+            <button type="button" class="btn-light reply" data-bs-toggle="modal" data-bs-target="#replyComment">پاسخ</button>
             <?php comment_date() ?>
         </div>
     </div>
