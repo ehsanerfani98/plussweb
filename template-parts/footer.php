@@ -56,6 +56,7 @@
             </div>
             <div class="copy-right">
                 <h6>کپی از محتوای این سایت تحت هیچ شرایطی مجاز نیست.</h6>
+                <h6><a href="https://diarasoft.com/">طراحی و توسعه با تیم دیاراسافت</a></h6>
             </div>
             <div class="social">
                 <a href="https://www.instagram.com/plussweb.ir">
