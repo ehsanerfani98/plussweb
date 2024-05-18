@@ -59,7 +59,6 @@
                 <h6><a style="color:white" href="https://diarasoft.com/">طراحی و توسعه : دیاراسافت</a></h6>
                <h6> ارتباط با ما :</h6>
 <h6>09911064110</h6>
-<h6>09911064110</h6>
 <h6>info@diarasoft.com</h6>
             </div>
             <div class="social">
