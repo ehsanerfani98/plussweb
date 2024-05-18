@@ -57,10 +57,10 @@
             <div class="copy-right">
                 <h6>کپی از محتوای این سایت تحت هیچ شرایطی مجاز نیست.</h6>
                 <h6><a style="color:white" href="https://diarasoft.com/">طراحی و توسعه : دیاراسافت</a></h6>
-                ارتباط با ما :
-<p>099 110 64 110</p>
-<p>099 110 64 110</p>
-<p>info@diarasoft.com</p>
+               <h6> ارتباط با ما :</h6>
+<h6>099 110 64 110</h6>
+<h6>099 110 64 110</h6>
+<h6>info@diarasoft.com</h6>
             </div>
             <div class="social">
                 <a href="https://www.instagram.com/plussweb.ir">
